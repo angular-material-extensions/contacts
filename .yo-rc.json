@@ -1,0 +1,43 @@
+{
+  "generator-ngx-library": {
+    "version": "5.7.1",
+    "authorName": "anthonynahas",
+    "authorEmail": "anthony.na@hotmail.de",
+    "githubUsername": "anthonynahas",
+    "githubRepoName": "ngx-material-contacts",
+    "projectName": "ngx-material-contacts",
+    "projectVersion": "0.0.1",
+    "projectDescription": "Angular Library to manage contacts and users with a material deisgn",
+    "projectKeywords": [
+      "angular",
+      " library",
+      " ngx",
+      " material",
+      " material design",
+      " contacts",
+      " users",
+      " management"
+    ],
+    "ngVersion": "5.0.0",
+    "ngModules": [
+      "core",
+      "common"
+    ],
+    "otherDependencies": [
+      "@angular/material",
+      " @angular/cdk",
+      " @angular/flex-layout"
+    ],
+    "dependenciesRange": "^",
+    "ngPrefix": "ngx-material-contacts",
+    "testingFramework": "jest",
+    "useGreenkeeper": true,
+    "useCompodoc": true,
+    "enforceNgGitCommitMsg": true,
+    "exclusions": [
+      "config/karma.conf.js",
+      "config/webpack.test.js",
+      "config/karma-test-shim.js"
+    ]
+  }
+}
