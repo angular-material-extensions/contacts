@@ -1,16 +1,34 @@
-<mat-toolbar color="primary">Contacts</mat-toolbar>
+<mat-toolbar color="primary">
+  <div *ngIf="selection.selected.length > 0; then contactSelected else none"></div>
+  <ng-template #contactSelected>
+    {{selection.selected.length}}
+    <button mat-icon-button matTooltip="remove" (click)="removeSelected()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </ng-template>
+  <ng-template #none>
+    {{title}}
+  </ng-template>
+  <span class="fill-remaining"></span>
+  <button *ngIf="!readonly" fxHide.xs mat-fab color="accent" class="fab-add" matTooltip="add new contact">
+    <mat-icon>add</mat-icon>
+  </button>
+  <button *ngIf="!readonly" fxHide fxShow.xs mat-icon-button matTooltip="add new contact">
+    <mat-icon>add</mat-icon>
+  </button>
+</mat-toolbar>
 <div class="example-container mat-elevation-z8" style="margin-bottom: 50px">
-  <mat-table #table [dataSource]="dataSource">
+  <mat-table #table [dataSource]="contactsDataSource">
 
     <!-- Checkbox Column -->
-    <ng-container matColumnDef="select">
-      <mat-header-cell *matHeaderCellDef>
+    <ng-container *ngIf="!readonly" matColumnDef="select">
+      <mat-header-cell *matHeaderCellDef class="cell-shrink-checkbox">
         <mat-checkbox (change)="$event ? masterToggle() : null"
                       [checked]="selection.hasValue() && isAllSelected()"
                       [indeterminate]="selection.hasValue() && !isAllSelected()">
         </mat-checkbox>
       </mat-header-cell>
-      <mat-cell *matCellDef="let row">
+      <mat-cell *matCellDef="let row" class="cell-shrink-checkbox">
         <mat-checkbox (click)="$event.stopPropagation()"
                       (change)="$event ? selection.toggle(row) : null"
                       [checked]="selection.isSelected(row)">
@@ -18,34 +36,55 @@
       </mat-cell>
     </ng-container>
 
-    <!-- Position Column -->
-    <ng-container matColumnDef="position">
-      <mat-header-cell *matHeaderCellDef> No.</mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.position}}</mat-cell>
-    </ng-container>
-
     <!-- Name Column -->
     <ng-container matColumnDef="name">
       <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.name}}</mat-cell>
+      <mat-cell *matCellDef="let element">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <img class="ngx-avatar" mat-card-avatar [src]="element.photoURL">
+          <p>{{element.name}}</p>
+        </div>
+      </mat-cell>
     </ng-container>
 
-    <!-- Weight Column -->
-    <ng-container matColumnDef="weight">
-      <mat-header-cell *matHeaderCellDef> Weight</mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.weight}}</mat-cell>
+    <!-- Email Column -->
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef> Email</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.email}}</mat-cell>
     </ng-container>
 
-    <!-- Symbol Column -->
-    <ng-container matColumnDef="symbol">
-      <mat-header-cell *matHeaderCellDef> Symbol</mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.symbol}}</mat-cell>
+    <!-- PhoneNumber Column -->
+    <ng-container matColumnDef="phoneNumber">
+      <mat-header-cell *matHeaderCellDef> Phone Number</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.phoneNumber}}</mat-cell>
     </ng-container>
 
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"
-             (click)="selection.toggle(row)">
+    <!--More Options Column-->
+    <ng-container *ngIf="!readonly" matColumnDef="more">
+      <mat-header-cell *matHeaderCellDef class="cell-shrink-more">
+      </mat-header-cell>
+      <mat-cell *matCellDef="let element" class="cell-shrink-more">
+        <button mat-icon-button
+                [matMenuTriggerFor]="posXMenu"
+                class="mat-24"
+                aria-label="Open x-positioned menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu xPosition="before" #posXMenu="matMenu">
+          <button mat-menu-item [disabled]="false" (click)="remove(element)">
+            <mat-icon>delete</mat-icon>
+            remove
+          </button>
+        </mat-menu>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="contactsDisplayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: contactsDisplayedColumns;"
+             (click)="select(row)">
     </mat-row>
   </mat-table>
 </div>
+
+
 
