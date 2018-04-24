@@ -10,10 +10,20 @@
     {{title}}
   </ng-template>
   <span class="fill-remaining"></span>
-  <button *ngIf="!readonly" fxHide.xs mat-fab color="accent" class="fab-add" matTooltip="add new contact">
+  <button *ngIf="!readonly"
+          fxHide.xs
+          mat-fab
+          color="accent"
+          class="fab-add"
+          matTooltip="add new contact"
+          (click)="openAddDialogContainer()">
     <mat-icon>add</mat-icon>
   </button>
-  <button *ngIf="!readonly" fxHide fxShow.xs mat-icon-button matTooltip="add new contact">
+  <button *ngIf="!readonly" fxHide
+          fxShow.xs
+          mat-icon-button
+          matTooltip="add new contact"
+          (click)="openAddDialogContainer()">
     <mat-icon>add</mat-icon>
   </button>
 </mat-toolbar>
@@ -63,7 +73,9 @@
     <ng-container *ngIf="!readonly" matColumnDef="more">
       <mat-header-cell *matHeaderCellDef class="cell-shrink-more">
       </mat-header-cell>
-      <mat-cell *matCellDef="let element" class="cell-shrink-more">
+      <mat-cell *matCellDef="let element"
+                class="cell-shrink-more"
+                (click)="$event.stopPropagation()">
         <button mat-icon-button
                 [matMenuTriggerFor]="posXMenu"
                 class="mat-24"
