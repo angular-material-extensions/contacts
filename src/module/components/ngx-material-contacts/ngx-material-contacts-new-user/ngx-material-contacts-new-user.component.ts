@@ -23,15 +23,6 @@ export class NgxMaterialContactsNewUserComponent implements OnInit {
   phoneNumber: string;
 
   constructor(public dialogRef: MatDialogRef<NgxMaterialContactsNewUserComponent>) {
-    console.log('regex = ', this.multilineRegExp([EMAIL_REGEX]));
-  }
-
-  multilineRegExp(regs, options?) {
-    return new RegExp(regs.map(
-      function (reg) {
-        return reg.source;
-      }
-    ).join(''), options);
   }
 
   ngOnInit() {
