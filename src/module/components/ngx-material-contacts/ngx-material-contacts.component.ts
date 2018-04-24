@@ -23,7 +23,7 @@ export interface Contact {
 })
 export class NgxMaterialContactsComponent implements OnInit, OnDestroy {
 
-  @ViewChild(MatTable) table;
+  @ViewChild(MatTable) table: MatTable<any>;
 
   @Input()
   contacts: Contact[];

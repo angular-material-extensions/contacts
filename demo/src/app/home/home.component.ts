@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {Contact} from './ngx-material-contacts/ngx-material-contacts.component';
+import {Contact} from '../../../../src/module/components/ngx-material-contacts/ngx-material-contacts.component';
 
 const CONTACT_DATA: Contact[] = [
   {

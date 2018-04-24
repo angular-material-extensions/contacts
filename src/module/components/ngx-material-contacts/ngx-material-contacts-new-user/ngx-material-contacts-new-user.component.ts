@@ -9,7 +9,7 @@ const EMAIL_REGEX = new RegExp(['^(([^<>()[\\]\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\
   '[a-zA-Z]{2,}))$'].join(''));
 
 @Component({
-  selector: 'app-ngx-material-contacts-new-user',
+  selector: 'ngx-material-contacts-new-user',
   templateUrl: './ngx-material-contacts-new-user.component.html',
   styleUrls: ['./ngx-material-contacts-new-user.component.scss']
 })

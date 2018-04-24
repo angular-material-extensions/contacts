@@ -13,7 +13,7 @@ import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader'
     ServerModule,
     ModuleMapLoaderModule
   ],
-  // Since the bootstrapped component is not inherited from your
+  // Since the bootstrapped components is not inherited from your
   // imported AppModule, it needs to be repeated here.
   bootstrap: [AppComponent],
 })

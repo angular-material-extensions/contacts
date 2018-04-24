@@ -1,6 +1,7 @@
-import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {NgxMaterialContactsComponent} from './ngx-material-contacts.component';
+import {NgModule, ModuleWithProviders} from '@angular/core';
+
+
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {
   MatButtonModule,
@@ -11,8 +12,17 @@ import {
   MatToolbarModule,
   MatTooltipModule
 } from '@angular/material';
-import {NgxMaterialContactsNewUserComponent} from './ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {
+  NgxMaterialContactsNewUserComponent
+} from './components/ngx-material-contacts/ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
+import {NgxMaterialContactsComponent} from 'module/components/ngx-material-contacts/ngx-material-contacts.component';
+
+// Export module's public API
+export {
+  NgxMaterialContactsNewUserComponent
+} from './components/ngx-material-contacts/ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
+export {Contact, NgxMaterialContactsComponent} from 'module/components/ngx-material-contacts/ngx-material-contacts.component';
 
 @NgModule({
   imports: [
@@ -52,4 +62,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ]
 })
 export class NgxMaterialContactsModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: NgxMaterialContactsModule,
+      providers: []
+    };
+  }
 }
+
