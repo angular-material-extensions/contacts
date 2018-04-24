@@ -1,13 +1,15 @@
-import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
-import {MatTable, MatTableDataSource} from '@angular/material';
+import {Component, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild, ViewEncapsulation} from '@angular/core';
+import {MatDialog, MatDialogRef, MatTable, MatTableDataSource} from '@angular/material';
 import {SelectionModel} from '@angular/cdk/collections';
+import {NgxMaterialContactsNewUserComponent} from './ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
+import {Subscription} from 'rxjs/Subscription';
 
 export interface Contact {
-  id: string;
+  id?: string;
   name: string;
   email: string;
-  photoURL: string;
-  phoneNumber: string;
+  photoURL?: string;
+  phoneNumber?: string;
 }
 
 /**
@@ -17,8 +19,9 @@ export interface Contact {
   selector: 'ngx-material-contacts',
   styleUrls: ['ngx-material-contacts.component.scss'],
   templateUrl: 'ngx-material-contacts.component.html',
+  encapsulation: ViewEncapsulation.Emulated,
 })
-export class NgxMaterialContactsComponent implements OnInit {
+export class NgxMaterialContactsComponent implements OnInit, OnDestroy {
 
   @ViewChild(MatTable) table;
 
@@ -32,14 +35,19 @@ export class NgxMaterialContactsComponent implements OnInit {
   readonly: boolean;
 
   @Output()
+  onContactAdded: EventEmitter<Contact> = new EventEmitter<Contact>();
+
+  @Output()
   onContactRemoved: EventEmitter<Contact> = new EventEmitter<Contact>();
 
   contactsDataSource: MatTableDataSource<Contact>;
   contactsDisplayedColumns = ['name', 'email', 'phoneNumber'];
   selection = new SelectionModel<Contact>(true, []);
+  dialogRef: MatDialogRef<NgxMaterialContactsNewUserComponent> | null;
+  dialogAfterCloseSubscription: Subscription;
 
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
 
   }
 
@@ -50,6 +58,12 @@ export class NgxMaterialContactsComponent implements OnInit {
       this.contactsDisplayedColumns.splice(0, 0, 'select');
       this.contactsDisplayedColumns.push('more');
       console.log('data : ', this.contactsDataSource.data);
+    }
+  }
+
+  ngOnDestroy(): void {
+    if (this.dialogAfterCloseSubscription) {
+      this.dialogAfterCloseSubscription.unsubscribe();
     }
   }
 
@@ -71,6 +85,22 @@ export class NgxMaterialContactsComponent implements OnInit {
     if (!this.readonly) {
       this.selection.toggle(row);
     }
+  }
+
+  openAddDialogContainer() {
+    this.dialogRef = this.dialog.open(NgxMaterialContactsNewUserComponent, {
+      panelClass: 'new-contact-dialog'
+    });
+    this.dialogAfterCloseSubscription = this.dialogRef
+      .afterClosed()
+      .subscribe((result: Contact) => {
+        console.log('contact added -> ', result);
+        if (result) {
+          this.contactsDataSource.data.splice(0, 0, result);
+          this.onContactAdded.emit(result);
+          this.table.renderRows();
+        }
+      });
   }
 
   remove(contact: Contact) {

@@ -1,3 +1,75 @@
-<div fxLayoutAlign="center">
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    New
+    <span class="fill-remaining"></span>
+    <button mat-icon-button
+            mat-dialog-close
+            matTooltip="close">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-toolbar-row>
+  <mat-toolbar-row fxLayoutAlign="center center">
+    <img class="ngx-avatar" src="../../../../assets/profiles/1p60.png">
+  </mat-toolbar-row>
+</mat-toolbar>
+<form #form [formGroup]="newContactForm" (ngSubmit)="newContactForm.valid && save()">
+  <div fxLayout="column" fxLayoutAlign="center" class="contact-form">
 
-</div>
+    <!--name-->
+    <mat-form-field>
+      <input matInput
+             placeholder="Name"
+             minlength="2"
+             maxlength="30"
+             [formControl]="nameFormControl"
+             required>
+      <mat-icon matSuffix color="accent">person</mat-icon>
+      <mat-hint align="end" aria-live="polite">
+        {{newContactForm.value.name.length}} / 25
+      </mat-hint>
+      <mat-error *ngIf="nameFormControl.hasError('required')">
+        Name is required
+      </mat-error>
+      <mat-error *ngIf="nameFormControl.hasError('minlength')">
+        The name is too short!
+      </mat-error>
+      <mat-error *ngIf="nameFormControl.hasError('maxlength')">
+        The name is too long!
+      </mat-error>
+    </mat-form-field>
+
+    <!--email-->
+    <mat-form-field>
+      <input matInput
+             type="email"
+             placeholder="E-mail address"
+             [formControl]="emailFormControl">
+      <mat-icon matSuffix color="accent">email</mat-icon>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        E-mail is required
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('pattern')">
+        Please enter a valid e-mail address
+      </mat-error>
+    </mat-form-field>
+
+    <!--phone number-->
+    <mat-form-field>
+      <input matInput
+             placeholder="Phone number"
+             [(ngModel)]="phoneNumber"
+             [ngModelOptions]="{standalone: true}">
+      <mat-icon matSuffix color="accent">phone</mat-icon>
+    </mat-form-field>
+
+    <!--save-->
+    <button mat-raised-button
+            class="save-button"
+            type="submit"
+            color="accent"
+            [disabled]="newContactForm.invalid">
+      Save
+    </button>
+
+  </div>
+</form>

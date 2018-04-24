@@ -10,11 +10,15 @@
   max-height: 500px;
 }
 
+.mat-row {
+  cursor: pointer;
+}
+
 .mat-column-select {
   overflow: visible;
 }
 
-img {
+::ng-deep img {
   max-width: 100%;
   object-fit: cover;
 }
@@ -52,3 +56,11 @@ img {
   margin-top: 55px;
   margin-right: 20px;
 }
+
+::ng-deep .new-contact-dialog {
+  .mat-dialog-container {
+    padding: 0 0 24px 0;
+    min-width: 300px;
+  }
+}
+
