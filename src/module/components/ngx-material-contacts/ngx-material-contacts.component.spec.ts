@@ -1,6 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { NgxMaterialContactsComponent } from './ngx-material-contacts.component';
+import {NgxMaterialContactsComponent} from './ngx-material-contacts.component';
+import {
+  MatButtonModule,
+  MatCheckboxModule,
+  MatIconModule,
+  MatMenuModule,
+  MatTableModule,
+  MatToolbarModule,
+  MatDialogModule
+} from '@angular/material';
 
 describe('NgxMaterialContactsComponent', () => {
   let component: NgxMaterialContactsComponent;
@@ -8,9 +17,18 @@ describe('NgxMaterialContactsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxMaterialContactsComponent ]
+      imports: [
+        MatTableModule,
+        MatButtonModule,
+        MatCheckboxModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatMenuModule,
+        MatDialogModule
+      ],
+      declarations: [NgxMaterialContactsComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

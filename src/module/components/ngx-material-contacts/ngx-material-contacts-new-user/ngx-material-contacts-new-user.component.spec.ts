@@ -1,16 +1,33 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed, inject} from '@angular/core/testing';
 
-import { NgxMaterialContactsNewUserComponent } from './ngx-material-contacts-new-user.component';
+import {NgxMaterialContactsNewUserComponent} from './ngx-material-contacts-new-user.component';
+import {MatDialogModule, MatDialogRef, MatIconModule, MatInputModule, MatToolbarModule} from '@angular/material';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 describe('NgxMaterialContactsNewUserComponent', () => {
   let component: NgxMaterialContactsNewUserComponent;
   let fixture: ComponentFixture<NgxMaterialContactsNewUserComponent>;
+  let dialog: MatDialogRef<NgxMaterialContactsNewUserComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxMaterialContactsNewUserComponent ]
+      imports: [
+        // animations
+        NoopAnimationsModule,
+        // material
+        MatIconModule,
+        MatToolbarModule,
+        MatInputModule,
+        MatDialogModule,
+        // forms
+        FormsModule,
+        ReactiveFormsModule
+      ],
+      declarations: [NgxMaterialContactsNewUserComponent],
+      providers: [{provide: MatDialogRef, useValue: {}}]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
