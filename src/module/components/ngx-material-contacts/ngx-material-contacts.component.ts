@@ -45,9 +45,7 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy {
   dialogRef: MatDialogRef<NgxMaterialContactsNewUserComponent> | null;
   dialogAfterCloseSubscription: any;
 
-
   constructor(public dialog: MatDialog) {
-
   }
 
   ngOnInit(): void {

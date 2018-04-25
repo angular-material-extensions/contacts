@@ -50,9 +50,20 @@
     <ng-container matColumnDef="name">
       <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>
       <mat-cell *matCellDef="let element">
-        <div fxLayout="row" fxLayoutAlign="start center">
-          <img class="ngx-avatar" mat-card-avatar [src]="element.photoURL">
-          <p>{{element.name}}</p>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+          <div *ngIf="element.photoURL; then image else avatar"></div>
+          <ng-template #image>
+            <img class="ngx-avatar"
+                 mat-card-avatar
+                 [src]="element.photoURL">
+          </ng-template>
+          <ng-template #avatar>
+            <avatar [email]="element.email"
+                    [name]="element.name"
+                    [displayType]="'circle'">
+            </avatar>
+          </ng-template>
+          <span>{{element.name}}</span>
         </div>
       </mat-cell>
     </ng-container>

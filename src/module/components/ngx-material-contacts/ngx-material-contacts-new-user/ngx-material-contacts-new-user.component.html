@@ -9,7 +9,10 @@
     </button>
   </mat-toolbar-row>
   <mat-toolbar-row fxLayoutAlign="center center">
-    <img class="ngx-avatar" src="../../../../../demo/src/assets/profiles/1p60.png">
+    <avatar [email]="newContactForm.value.email"
+            [name]="newContactForm.value.name"
+            [displayType]="'circle'">
+    </avatar>
   </mat-toolbar-row>
 </mat-toolbar>
 <form #form [formGroup]="newContactForm" (ngSubmit)="newContactForm.valid && save()">

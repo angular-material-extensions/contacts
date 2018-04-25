@@ -17,6 +17,7 @@ import {
   NgxMaterialContactsNewUserComponent
 } from './components/ngx-material-contacts/ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
 import {NgxMaterialContactsComponent} from './components/ngx-material-contacts/ngx-material-contacts.component';
+import {AvatarModule} from 'ng2-avatar';
 
 // Export module's public API
 export {
@@ -42,7 +43,8 @@ export {
     MatMenuModule,
     MatTooltipModule,
     MatRippleModule,
-    MatDialogModule
+    MatDialogModule,
+    AvatarModule
   ],
   declarations:
     [
@@ -65,7 +67,8 @@ export {
       MatMenuModule,
       MatTooltipModule,
       MatRippleModule,
-      MatDialogModule
+      MatDialogModule,
+      AvatarModule
     ]
 })
 export class NgxMaterialContactsModule {

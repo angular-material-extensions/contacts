@@ -10,6 +10,15 @@
   margin-top: 50px;
 }
 
+::ng-deep div .avatar {
+  //width: 96px;
+  //line-height: 96px !important;
+  //height: 96px;
+  //font-size: 18px !important;
+  //max-width: 96px;
+  //max-height: 96px;
+}
+
 .ngx-avatar {
   width: 96px;
   min-width: 96px;

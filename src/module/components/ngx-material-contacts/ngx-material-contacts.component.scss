@@ -23,6 +23,15 @@
   object-fit: cover;
 }
 
+::ng-deep div .avatar {
+  width: 40px;
+  line-height: 40px !important;
+  height: 40px;
+  font-size: 18px !important;
+  max-width: 40px;
+  max-height: 40px;
+}
+
 .ngx-avatar {
   width: 40px;
   min-width: 40px;
