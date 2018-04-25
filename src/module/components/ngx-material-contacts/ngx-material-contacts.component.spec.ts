@@ -10,6 +10,7 @@ import {
   MatToolbarModule,
   MatDialogModule
 } from '@angular/material';
+import {AvatarModule} from 'ng2-avatar';
 
 describe('NgxMaterialContactsComponent', () => {
   let component: NgxMaterialContactsComponent;
@@ -24,7 +25,8 @@ describe('NgxMaterialContactsComponent', () => {
         MatToolbarModule,
         MatIconModule,
         MatMenuModule,
-        MatDialogModule
+        MatDialogModule,
+        AvatarModule
       ],
       declarations: [NgxMaterialContactsComponent]
     })

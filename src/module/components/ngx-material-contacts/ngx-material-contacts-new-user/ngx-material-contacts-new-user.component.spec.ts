@@ -4,6 +4,7 @@ import {NgxMaterialContactsNewUserComponent} from './ngx-material-contacts-new-u
 import {MatDialogModule, MatDialogRef, MatIconModule, MatInputModule, MatToolbarModule} from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {AvatarModule} from 'ng2-avatar';
 
 describe('NgxMaterialContactsNewUserComponent', () => {
   let component: NgxMaterialContactsNewUserComponent;
@@ -22,7 +23,9 @@ describe('NgxMaterialContactsNewUserComponent', () => {
         MatDialogModule,
         // forms
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        // avatar
+        AvatarModule
       ],
       declarations: [NgxMaterialContactsNewUserComponent],
       providers: [{provide: MatDialogRef, useValue: {}}]
