@@ -103,7 +103,11 @@ export class OtherModule {
 add the `ngx-material-contacts` element to your template:
 
 ```html
-<ngx-material-contacts [contacts]="contacts" [readonly]="false"></ngx-material-contacts>
+<ngx-material-contacts [contacts]="contacts"
+                           [readonly]="false"
+                           (onContactAdded)="addContact($event)"
+                           (onContactRemoved)="removeContact($event)">
+    </ngx-material-contacts>
 ```
 
 in your component --> 
@@ -131,6 +135,20 @@ const CONTACT_DATA: Contact[] = [
 export class HomeComponent implements OnInit {
 
   contacts = CONTACT_DATA;
+  
+  ngOnInit() {
+      console.log('my contacts: ', this.contacts);
+    }
+  
+  addContact(contact: Contact) {
+      console.log('on new contact: ', contact);
+      // do whatever you want with the added contact
+    }
+  
+    removeContact(contact: Contact) {
+      console.log('on removed contact: ', contact);
+      // do whatever you want with the deleted contact
+    }
 
   }
   
