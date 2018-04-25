@@ -2,7 +2,6 @@ import {Component, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild, Vi
 import {MatDialog, MatDialogRef, MatTable, MatTableDataSource} from '@angular/material';
 import {SelectionModel} from '@angular/cdk/collections';
 import {NgxMaterialContactsNewUserComponent} from './ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
-import {Subscription} from 'rxjs/Subscription';
 
 export interface Contact {
   id?: string;
@@ -44,7 +43,7 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy {
   contactsDisplayedColumns = ['name', 'email', 'phoneNumber'];
   selection = new SelectionModel<Contact>(true, []);
   dialogRef: MatDialogRef<NgxMaterialContactsNewUserComponent> | null;
-  dialogAfterCloseSubscription: Subscription;
+  dialogAfterCloseSubscription: any;
 
 
   constructor(public dialog: MatDialog) {
