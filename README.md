@@ -5,11 +5,19 @@
 # ngx-material-contacts - Angular Library to manage contacts and users with a material deisgn
 
 [![npm version](https://badge.fury.io/js/ngx-material-contacts.svg)](https://badge.fury.io/js/ngx-material-contacts),
+[![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/ngx-material-contacts)
+[![Coverage Status](https://coveralls.io/repos/github/anthonynahas/ngx-material-contacts/badge.svg?branch=master)](https://coveralls.io/github/anthonynahas/ngx-material-contacts?branch=master)
 [![Build Status](https://travis-ci.org/anthonynahas/ngx-material-contacts.svg?branch=master)](https://travis-ci.org/anthonynahas/ngx-material-contacts)
 [![Coverage Status](https://coveralls.io/repos/github/anthonynahas/ngx-material-contacts/badge.svg?branch=master)](https://coveralls.io/github/anthonynahas/ngx-material-contacts?branch=master)
 [![dependency Status](https://david-dm.org/anthonynahas/ngx-material-contacts/status.svg)](https://david-dm.org/anthonynahas/ngx-material-contacts)
 [![devDependency Status](https://david-dm.org/anthonynahas/ngx-material-contacts/dev-status.svg?branch=master)](https://david-dm.org/anthonynahas/ngx-material-contacts#info=devDependencies)
 [![Greenkeeper Badge](https://badges.greenkeeper.io/anthonynahas/ngx-material-contacts.svg)](https://greenkeeper.io/)
+[![license](https://img.shields.io/github/license/anthonynahas/ngx-material-contacts.svg?style=flat-square)](https://github.com/AnthonyNahas/ngx-material-contacts/blob/master/LICENSE)
+
+<p align="center">
+  <img alt="ngx-material-password-strength" style="text-align: center;"
+   src="assets/">
+</p>
 
 ## Demo
 
@@ -17,6 +25,21 @@ View all the directives in action at https://anthonynahas.github.io/ngx-material
 
 ## Dependencies
 * [Angular](https://angular.io) (*requires* Angular 2 or higher, tested with 2.0.0)
+
+### Requirements (peer dependencies):
+- [angular flex-layout ](https://www.npmjs.com/package/@angular/flex-layout)
+- [angular material ](https://www.npmjs.com/package/@angular/material)
+- [angular material theme](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
+- [angular cdk ](https://www.npmjs.com/package/@angular/cdk)
+- [angular animations ](https://www.npmjs.com/package/@angular/animations)
+- [angular forms ](https://www.npmjs.com/package/@angular/forms)
+- if you need a built in theme --> please let me know
+
+
+```bash
+npm i @angular/cdk @angular/material @angular/flex-layout @angular/animations @angular/forms 
+```
+
 
 ## Installation
 Install above dependencies via *npm*. 
@@ -70,6 +93,48 @@ export class OtherModule {
 
 ## Usage
 
+add the `ngx-material-contacts` element to your template:
+
+```html
+<ngx-material-contacts>
+          </ngx-material-contacts>
+```
+
+### Please checkout the full documentation [here](https://anthonynahas.github.io/ngx-material-contacts/doc/index.html) or follow the official [tutorial](https://anthonynahas.github.io/ngx-material-contacts/getting-started)
+
+## Development
+
+1. clone this [repo]()
+2. Install the dependencies by running `npm i`
+3. build the library `npm run build` or `gulp build`
+To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
+
+```bash
+$ npm run build
+```
+
+4. Link the library 
+  - on windows `gulp link` or `locally npx gulp link`
+  - on mac/linux `sudo gulp link` or locally `sudo npx gulp link`
+  
+ 5. Navigate to the demo app
+  - `cd demo`
+  _ `npm i`
+  _ `npm start`
+
+extras
+To lint all `*.ts` files:
+
+```bash
+$ npm run lint
+```
+
+## Other Angular Libraries
+- [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)
+- [ngx-material-pages](https://github.com/AnthonyNahas/ngx-material-pages)
+- [ngx-material-password-strength](https://github.com/AnthonyNahas/ngx-material-password-strength)
+- [ngx-material-faq](https://github.com/AnthonyNahas/ngx-material-faq)
+- [ngx-combination-generator](https://github.com/AnthonyNahas/combination-generator)
 
 
 ## License
