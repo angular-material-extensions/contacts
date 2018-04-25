@@ -2,7 +2,7 @@
   <img height="256px" width="256px" style="text-align: center;" src="https://cdn.rawgit.com/anthonynahas/ngx-material-contacts/master/demo/src/assets/logo.svg">
 </p>
 
-# ngx-material-contacts - Angular Library to manage contacts and users with a material deisgn
+# ngx-material-contacts - Angular Library to manage contacts and users with a material design
 
 [![npm version](https://badge.fury.io/js/ngx-material-contacts.svg)](https://badge.fury.io/js/ngx-material-contacts),
 [![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/ngx-material-contacts)
