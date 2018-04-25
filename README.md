@@ -15,7 +15,7 @@
 [![license](https://img.shields.io/github/license/anthonynahas/ngx-material-contacts.svg?style=flat-square)](https://github.com/AnthonyNahas/ngx-material-contacts/blob/master/LICENSE)
 
 <p align="center">
-  <img alt="ngx-material-password-strength" style="text-align: center;"
+  <img alt="ngx-material-contacts" style="text-align: center;"
    src="assets/">
 </p>
 
@@ -96,8 +96,49 @@ export class OtherModule {
 add the `ngx-material-contacts` element to your template:
 
 ```html
-<ngx-material-contacts>
-          </ngx-material-contacts>
+<ngx-material-contacts [contacts]="contacts" [readonly]="false"></ngx-material-contacts>
+```
+
+in your component --> 
+
+```typescript
+const CONTACT_DATA: Contact[] = [
+  {
+    id: 'RnCSW7Y88iTx',
+    name: 'Anthony Nahas',
+    email: 'anthony.na@your_domain.com',
+    photoURL: '../../../assets/profiles/17p60.png',
+    phoneNumber: '+1-202-555-0169'
+  },
+  {
+    id: 'KXgJviXd4EL9',
+    name: 'Amanda Lee',
+    email: 'amanda.lee@ngx-material-contacts.de',
+    photoURL: '../../../assets/profiles/1p60.png',
+    phoneNumber: '+1-502-555-0156'
+  }
+  ]
+```
+
+```typescript
+export class HomeComponent implements OnInit {
+
+  contacts = CONTACT_DATA;
+
+  }
+  
+```
+
+## Contact's interface
+
+```typescript
+export interface Contact {
+  id?: string;
+  name: string;
+  email: string;
+  photoURL?: string;
+  phoneNumber?: string;
+}
 ```
 
 ### Please checkout the full documentation [here](https://anthonynahas.github.io/ngx-material-contacts/doc/index.html) or follow the official [tutorial](https://anthonynahas.github.io/ngx-material-contacts/getting-started)
