@@ -149,5 +149,15 @@ export class HomeComponent implements OnInit {
     console.log('x', this.contacts);
   }
 
+  addContact(contact: Contact) {
+    console.log('on new contact: ', contact);
+    // do whatever you want with the added contact
+  }
+
+  removeContact(contact: Contact) {
+    console.log('on removed contact: ', contact);
+    // do whatever you want with the deleted contact
+  }
+
 }
 

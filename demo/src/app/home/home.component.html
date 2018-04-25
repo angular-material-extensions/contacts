@@ -22,6 +22,10 @@
 
 <section class="home">
   <div class="container">
-    <ngx-material-contacts [contacts]="contacts" [readonly]="false"></ngx-material-contacts>
+    <ngx-material-contacts [contacts]="contacts"
+                           [readonly]="false"
+                           (onContactAdded)="addContact($event)"
+                           (onContactRemoved)="removeContact($event)">
+    </ngx-material-contacts>
   </div>
 </section>
