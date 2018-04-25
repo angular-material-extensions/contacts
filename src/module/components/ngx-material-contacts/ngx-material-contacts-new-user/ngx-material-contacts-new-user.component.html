@@ -56,10 +56,17 @@
     <!--phone number-->
     <mat-form-field>
       <input matInput
+             type="number"
              placeholder="Phone number"
-             [(ngModel)]="phoneNumber"
-             [ngModelOptions]="{standalone: true}">
+             [formControl]="phoneNumberFormControl">
       <mat-icon matSuffix color="accent">phone</mat-icon>
+      <mat-hint align="end" aria-live="polite">
+        The phone number is international. Therefore, it should start with a + sign,
+        followed by the country code and national number
+      </mat-hint>
+      <mat-error *ngIf="phoneNumberFormControl.hasError('pattern')">
+        Please enter a valid phone number
+      </mat-error>
     </mat-form-field>
 
     <!--save-->

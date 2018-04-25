@@ -8,6 +8,8 @@ const EMAIL_REGEX = new RegExp(['^(([^<>()[\\]\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\
   '[0-9]{1,3}\])|(([a-zA-Z\\-0-9]+\\.)+',
   '[a-zA-Z]{2,}))$'].join(''));
 
+const PHONE_NUMBER_REGEX = new RegExp(/^\+(?:[0-9] ?){6,14}[0-9]$/);
+
 @Component({
   selector: 'ngx-material-contacts-new-user',
   templateUrl: './ngx-material-contacts-new-user.component.html',
@@ -19,6 +21,7 @@ export class NgxMaterialContactsNewUserComponent implements OnInit {
 
   nameFormControl: AbstractControl;
   emailFormControl: AbstractControl;
+  phoneNumberFormControl: AbstractControl;
 
   phoneNumber: string;
 
@@ -38,6 +41,9 @@ export class NgxMaterialContactsNewUserComponent implements OnInit {
           Validators.required,
           Validators.pattern(EMAIL_REGEX)
         ]),
+
+      phoneNumber: this.phoneNumberFormControl = new FormControl('',
+        [Validators.pattern(PHONE_NUMBER_REGEX)])
     });
   }
 
