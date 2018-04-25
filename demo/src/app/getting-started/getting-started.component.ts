@@ -105,6 +105,51 @@ export class GettingStartedComponent implements OnInit {
                                                 export class OtherModule {
                                                 }`;
 
+
+  componentExample = `<ngx-material-contacts [contacts]="contacts"
+                           [readonly]="false"
+                           (onContactAdded)="addContact($event)"
+                           (onContactRemoved)="removeContact($event)">
+    </ngx-material-contacts>`;
+
+  componentExampleTS = `
+              const CONTACT_DATA: Contact[] = [
+              {
+                id: 'RnCSW7Y88iTx',
+                name: 'Anthony Nahas',
+                email: 'anthony.na@your_domain.com',
+                photoURL: '../../../assets/profiles/17p60.png',
+                phoneNumber: '+1-202-555-0169'
+              },
+              {
+                id: 'KXgJviXd4EL9',
+                name: 'Amanda Lee',
+                email: 'amanda.lee@ngx-material-contacts.de',
+                photoURL: '../../../assets/profiles/1p60.png',
+                phoneNumber: '+1-502-555-0156'
+              }
+              ]
+
+              export class HomeComponent implements OnInit {
+
+              contacts = CONTACT_DATA;
+
+              ngOnInit() {
+                  console.log('my contacts: ', this.contacts);
+                }
+
+              addContact(contact: Contact) {
+                  console.log('on new contact: ', contact);
+                  // do whatever you want with the added contact
+                }
+
+                removeContact(contact: Contact) {
+                  console.log('on removed contact: ', contact);
+                  // do whatever you want with the deleted contact
+                }
+
+              }`;
+
   constructor(private titleService: Title,
               public snackBar: MatSnackBar) {
   }

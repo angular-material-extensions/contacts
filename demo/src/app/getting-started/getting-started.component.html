@@ -141,7 +141,7 @@
         <ngx-material-page-outlook title="Peer dependencies">
         </ngx-material-page-outlook>
         <ngx-material-page-content>
-          <mat-card-title>Animations + Material + CDK</mat-card-title>
+          <mat-card-title>Animations + Material + CDK + Forms + FlexLayout + Ng2Avatar</mat-card-title>
           <div class="comment-container">
             <p><a href="https://www.npmjs.com/package/ngx-material-contacts"
                   mat-button
@@ -158,8 +158,8 @@
                  mat-button
                  color="primary">
                 angular component development kit
-              </a> ! That's why we need to install them as peer dependencies to the ngx-material-contacts
-              module.
+              </a> ! That's why we need to install them as peer dependencies
+              for the ngx-material-contacts module.
             </p>
           </div>
           <div fxLayout="row" fxLayoutAlign="space-between">
@@ -217,6 +217,36 @@
             <a href="https://material.angular.io/guide/getting-started#step-2-animations"
                mat-button color="primary">Learn more</a>
           </mat-card-footer>
+
+          <div class="comment-container">
+            <p>Flexi texi</p>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="space-between">
+            <pre><code highlight [code]="'$ npm i -s @angular/flex-layout'"></code></pre>
+            <button mat-icon-button
+                    ngxClipboard
+                    [cbContent]="'npm i -s @angular/flex-layout'"
+                    matTooltip="copy"
+                    (click)="showCopyMessage('npm i -s @angular/flex-layout')">
+              <mat-icon aria-label="copy content" class="mat-18">content_copy</mat-icon>
+            </button>
+          </div>
+
+          <div class="comment-container">
+            <p>What about ng2-avatar ?</p>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="space-between">
+            <pre><code highlight [code]="'$ npm i -s ng2-avatarng2-avatar'"></code></pre>
+            <button mat-icon-button
+                    ngxClipboard
+                    [cbContent]="'npm i -s ng2-avatar'"
+                    matTooltip="copy"
+                    (click)="showCopyMessage('npm i -s ng2-avatar')">
+              <mat-icon aria-label="copy content" class="mat-18">content_copy</mat-icon>
+            </button>
+          </div>
+
+
         </ngx-material-page-content>
       </ngx-material-page-loader>
 
@@ -513,6 +543,14 @@
 
               <pre><code highlight
                          [code]="componentExample"></code></pre>
+
+            </div>
+
+            <div class="comment-container">
+              <p>and in your component 😎--> </p>
+
+              <pre><code highlight
+                         [code]="componentExampleTS"></code></pre>
 
             </div>
           </mat-card-content>
