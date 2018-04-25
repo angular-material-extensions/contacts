@@ -16,13 +16,16 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {
   NgxMaterialContactsNewUserComponent
 } from './components/ngx-material-contacts/ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
-import {NgxMaterialContactsComponent} from 'module/components/ngx-material-contacts/ngx-material-contacts.component';
+import {NgxMaterialContactsComponent} from './components/ngx-material-contacts/ngx-material-contacts.component';
 
 // Export module's public API
 export {
   NgxMaterialContactsNewUserComponent
 } from './components/ngx-material-contacts/ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
-export {Contact, NgxMaterialContactsComponent} from 'module/components/ngx-material-contacts/ngx-material-contacts.component';
+export {
+  Contact,
+  NgxMaterialContactsComponent
+}from './components/ngx-material-contacts/ngx-material-contacts.component';
 
 @NgModule({
   imports: [
@@ -41,7 +44,11 @@ export {Contact, NgxMaterialContactsComponent} from 'module/components/ngx-mater
     MatRippleModule,
     MatDialogModule
   ],
-  declarations: [NgxMaterialContactsComponent, NgxMaterialContactsNewUserComponent],
+  declarations:
+    [
+      NgxMaterialContactsComponent,
+      NgxMaterialContactsNewUserComponent
+    ],
   entryComponents: [NgxMaterialContactsNewUserComponent],
   exports:
     [
