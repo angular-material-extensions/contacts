@@ -16,7 +16,12 @@
 
 <p align="center">
   <img alt="ngx-material-contacts" style="text-align: center;"
-   src="assets/">
+   src="assets/demo2.gif">
+</p>
+
+<p align="center">
+  <img alt="ngx-material-contacts" style="text-align: center;"
+   src="assets/demo3.gif">
 </p>
 
 ## Demo
@@ -33,18 +38,19 @@ View all the directives in action at https://anthonynahas.github.io/ngx-material
 ## Dependencies
 * [Angular](https://angular.io) (*requires* Angular 2 or higher, tested with 2.0.0)
 
-### Requirements (peer dependencies):
+### Requirements (peer dependencies) - please instsall the packages before using ngx-material-contacts:
 - [angular flex-layout ](https://www.npmjs.com/package/@angular/flex-layout)
 - [angular material ](https://www.npmjs.com/package/@angular/material)
 - [angular material theme](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
 - [angular cdk ](https://www.npmjs.com/package/@angular/cdk)
 - [angular animations ](https://www.npmjs.com/package/@angular/animations)
 - [angular forms ](https://www.npmjs.com/package/@angular/forms)
+- [ng2-avatar](https://www.npmjs.com/package/ng2-avatar)
 - if you need a built in theme --> please let me know
 
 
 ```bash
-npm i @angular/cdk @angular/material @angular/flex-layout @angular/animations @angular/forms 
+npm i @angular/cdk @angular/material @angular/flex-layout @angular/animations @angular/forms ng2-avatar
 ```
 
 
