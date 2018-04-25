@@ -23,6 +23,13 @@
 
 View all the directives in action at https://anthonynahas.github.io/ngx-material-contacts
 
+
+## Features
+- Display contacts in a table including name, email, phone number and photo
+- Delete a contact via event `onContactRemoved`
+- Add a contact via event `onContactAdded`
+- Validation for adding a new contact incl. name, email and phone number form controls
+
 ## Dependencies
 * [Angular](https://angular.io) (*requires* Angular 2 or higher, tested with 2.0.0)
 
