@@ -1,5 +1,10 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/anthonynahas/ngx-material-contacts/compare/v1.0.0...v1.0.1) (2018-04-26)
+
+
+
 <a name="1.0.0"></a>
-# 1.0.0 (2018-04-25)
+# [1.0.0](https://github.com/anthonynahas/ngx-material-contacts/compare/0f2bda4...v1.0.0) (2018-04-25)
 
 
 ### Bug Fixes
