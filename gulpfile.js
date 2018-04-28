@@ -518,6 +518,10 @@ gulp.task('build:demo', () => {
   return execDemoCmd(`build --preserve-symlinks --prod --aot --build-optimizer`, {cwd: `${config.demoDir}`});
 });
 
+gulp.task('build:demo:prod', () => {
+  return execDemoCmd(`build --preserve-symlinks --prod --aot --build-optimizer --base-href /ngx-material-contacts/ --deploy-url /ngx-material-contacts/`, {cwd: `${config.demoDir}`});
+});
+
 gulp.task('serve:demo-ssr', ['build:demo'], () => {
   return execDemoCmd(`build --preserve-symlinks --prod --aot --build-optimizer --app ssr --output-hashing=none`, {cwd: `${config.demoDir}`})
     .then(exitCode => {
@@ -549,7 +553,7 @@ gulp.task('push:demo', () => {
 });
 
 gulp.task('deploy:demo', (cb) => {
-  runSequence('build:demo', 'build:doc', 'push:demo', cb);
+  runSequence('build:demo:prod', 'build:doc', 'push:demo', cb);
 });
 
 
