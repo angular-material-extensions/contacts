@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AbstractControl, FormControl, FormGroup, Validators} from '@angular/forms';
 import {MatDialogRef} from '@angular/material';
-import {Contact} from '../ngx-material-contacts.component';
+import {Contact} from '../../../interfaces';
 
 const EMAIL_REGEX = new RegExp(['^(([^<>()[\\]\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\.,;:\\s@\"]+)*)',
   '|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.',
@@ -51,7 +51,11 @@ export class NgxMaterialContactsNewUserComponent implements OnInit {
     const contact: Contact = {
       name: this.nameFormControl.value,
       email: this.emailFormControl.value,
-      phoneNumber: this.phoneNumber
+      phoneNumber: this.phoneNumber,
+      metadata: {
+        created_at: new Date(),
+        updated_at: new Date()
+      }
     };
     this.dialogRef.close(contact);
   }

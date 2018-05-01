@@ -24,9 +24,11 @@ export {
   NgxMaterialContactsNewUserComponent
 } from './components/ngx-material-contacts/ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
 export {
-  Contact,
   NgxMaterialContactsComponent
 }from './components/ngx-material-contacts/ngx-material-contacts.component';
+// intefaces
+export {Contact} from './interfaces'
+
 
 @NgModule({
   imports: [

@@ -1,15 +1,19 @@
-import {Component, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild, ViewEncapsulation} from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  Output,
+  SimpleChanges,
+  ViewChild,
+  ViewEncapsulation
+} from '@angular/core';
 import {MatDialog, MatDialogRef, MatTable, MatTableDataSource} from '@angular/material';
 import {SelectionModel} from '@angular/cdk/collections';
 import {NgxMaterialContactsNewUserComponent} from './ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
-
-export interface Contact {
-  id?: string;
-  name: string;
-  email: string;
-  photoURL?: string;
-  phoneNumber?: string;
-}
+import {Contact} from '../../interfaces';
 
 /**
  * @title Table with selection
@@ -20,7 +24,7 @@ export interface Contact {
   templateUrl: 'ngx-material-contacts.component.html',
   encapsulation: ViewEncapsulation.Emulated,
 })
-export class NgxMaterialContactsComponent implements OnInit, OnDestroy {
+export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChanges {
 
   @ViewChild(MatTable) table: MatTable<any>;
 
@@ -56,6 +60,10 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy {
       this.contactsDisplayedColumns.push('more');
       console.log('data : ', this.contactsDataSource.data);
     }
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log('on changes: ', changes);
   }
 
   ngOnDestroy(): void {
