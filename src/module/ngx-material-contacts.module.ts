@@ -4,31 +4,38 @@ import {NgModule, ModuleWithProviders} from '@angular/core';
 
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {
-  MatButtonModule,
+  MatButtonModule, MatCardModule,
   MatCheckboxModule, MatDialogModule,
   MatIconModule, MatInputModule,
-  MatMenuModule, MatRippleModule,
+  MatMenuModule, MatProgressBarModule, MatRippleModule, MatSidenavModule,
   MatTableModule,
   MatToolbarModule,
   MatTooltipModule
 } from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {
-  NgxMaterialContactsNewUserComponent
-} from './components/ngx-material-contacts/ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
-import {NgxMaterialContactsComponent} from './components/ngx-material-contacts/ngx-material-contacts.component';
 import {AvatarModule} from 'ng2-avatar';
+import {
+  NgxMaterialContactDetailsComponent
+} from './components/ngx-material-contacts/ngx-material-contact-details/ngx-material-contact-details.component';
+import {NgxMaterialContactsComponent} from './components/ngx-material-contacts/ngx-material-contacts.component';
+import {
+  NgxMaterialContactMenuComponent
+} from './components/ngx-material-contacts/ngx-material-contact-menu/ngx-material-contact-menu.component';
 
 // Export module's public API
 export {
-  NgxMaterialContactsNewUserComponent
-} from './components/ngx-material-contacts/ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
+  NgxMaterialContactDetailsComponent
+} from './components/ngx-material-contacts/ngx-material-contact-details/ngx-material-contact-details.component';
 export {
   NgxMaterialContactsComponent
 }from './components/ngx-material-contacts/ngx-material-contacts.component';
+export {
+  NgxMaterialContactMenuComponent
+} from './components/ngx-material-contacts/ngx-material-contact-menu/ngx-material-contact-menu.component';
 // intefaces
 export {Contact} from './interfaces'
-
+// enums
+export {Methods} from './enums';
 
 @NgModule({
   imports: [
@@ -37,33 +44,39 @@ export {Contact} from './interfaces'
     ReactiveFormsModule,
     FlexLayoutModule,
     MatToolbarModule,
+    MatProgressBarModule,
     MatInputModule,
     MatButtonModule,
     MatTableModule,
+    MatCardModule,
     MatCheckboxModule,
     MatIconModule,
     MatMenuModule,
     MatTooltipModule,
     MatRippleModule,
     MatDialogModule,
+    MatSidenavModule,
     AvatarModule
   ],
   declarations:
     [
       NgxMaterialContactsComponent,
-      NgxMaterialContactsNewUserComponent
+      NgxMaterialContactDetailsComponent,
+      NgxMaterialContactMenuComponent
     ],
-  entryComponents: [NgxMaterialContactsNewUserComponent],
+  entryComponents: [NgxMaterialContactDetailsComponent],
   exports:
     [
       FormsModule,
       ReactiveFormsModule,
       NgxMaterialContactsComponent,
+      NgxMaterialContactMenuComponent,
       FlexLayoutModule,
       MatTableModule,
       MatButtonModule,
       MatCheckboxModule,
       MatToolbarModule,
+      MatProgressBarModule,
       MatInputModule,
       MatIconModule,
       MatMenuModule,

@@ -8,7 +8,7 @@ import {
   MatMenuModule,
   MatTableModule,
   MatToolbarModule,
-  MatDialogModule
+  MatDialogModule, MatProgressBarModule
 } from '@angular/material';
 import {AvatarModule} from 'ng2-avatar';
 
@@ -23,6 +23,7 @@ describe('NgxMaterialContactsComponent', () => {
         MatButtonModule,
         MatCheckboxModule,
         MatToolbarModule,
+        MatProgressBarModule,
         MatIconModule,
         MatMenuModule,
         MatDialogModule,

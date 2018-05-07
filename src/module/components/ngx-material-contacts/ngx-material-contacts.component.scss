@@ -5,6 +5,15 @@
   min-width: 300px;
 }
 
+mat-sidenav {
+  width: 200px;
+  height: 350px;
+}
+
+mat-sidenav-content {
+  margin-left: 250px !important;
+}
+
 .mat-table {
   overflow: auto;
   max-height: 500px;

@@ -12,8 +12,9 @@ import {
 } from '@angular/core';
 import {MatDialog, MatDialogRef, MatTable, MatTableDataSource} from '@angular/material';
 import {SelectionModel} from '@angular/cdk/collections';
-import {NgxMaterialContactsNewUserComponent} from './ngx-material-contacts-new-user/ngx-material-contacts-new-user.component';
-import {Contact} from '../../interfaces';
+import {NgxMaterialContactDetailsComponent} from './ngx-material-contact-details/ngx-material-contact-details.component';
+import {Contact, IContactDialogResult} from '../../interfaces';
+import {Methods} from '../../enums';
 
 /**
  * @title Table with selection
@@ -35,6 +36,9 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   title = 'Contacts';
 
   @Input()
+  isLoading: boolean;
+
+  @Input()
   readonly: boolean;
 
   @Output()
@@ -43,16 +47,20 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   @Output()
   onContactRemoved: EventEmitter<Contact> = new EventEmitter<Contact>();
 
+  @Output()
+  onAddingNewContactCanceled: EventEmitter<void> = new EventEmitter<void>();
+
   contactsDataSource: MatTableDataSource<Contact>;
   contactsDisplayedColumns = ['name', 'email', 'phoneNumber'];
   selection = new SelectionModel<Contact>(true, []);
-  dialogRef: MatDialogRef<NgxMaterialContactsNewUserComponent> | null;
+  dialogRef: MatDialogRef<NgxMaterialContactDetailsComponent> | null;
   dialogAfterCloseSubscription: any;
 
   constructor(public dialog: MatDialog) {
   }
 
   ngOnInit(): void {
+    console.log('ConfigurationHelper ngOnInit');
     this.contactsDataSource = new MatTableDataSource<Contact>(this.contacts);
     console.log('readonly', this.readonly);
     if (!this.readonly) {
@@ -64,6 +72,10 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
 
   ngOnChanges(changes: SimpleChanges): void {
     console.log('on changes: ', changes);
+    if (!changes.contacts.isFirstChange()) {
+      this.table.renderRows();
+      console.log('yoww rendering !!');
+    }
   }
 
   ngOnDestroy(): void {
@@ -93,19 +105,38 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   }
 
   openAddDialogContainer() {
-    this.dialogRef = this.dialog.open(NgxMaterialContactsNewUserComponent, {
+    this.dialogRef = this.dialog.open(NgxMaterialContactDetailsComponent, {
       panelClass: 'new-contact-dialog'
     });
     this.dialogAfterCloseSubscription = this.dialogRef
       .afterClosed()
-      .subscribe((result: Contact) => {
-        console.log('contact added -> ', result);
+      .subscribe((result: IContactDialogResult) => {
         if (result) {
-          this.contactsDataSource.data.splice(0, 0, result);
-          this.onContactAdded.emit(result);
-          this.table.renderRows();
+          const method: Methods = result.method;
+          const contact: Contact = result.contact;
+
+          switch (method) {
+            case Methods.POST:
+              console.log('on post');
+              console.log('contact added -> ', result);
+              this.add(contact);
+              break;
+            case Methods.DELETE:
+              console.log('on delete');
+              this.remove(contact);
+              break;
+          }
+
+        } else {
+          this.onAddingNewContactCanceled.emit();
         }
       });
+  }
+
+  add(contact: Contact) {
+    this.contactsDataSource.data.splice(0, 0, contact);
+    this.onContactAdded.emit(contact);
+    this.table.renderRows();
   }
 
   remove(contact: Contact) {
