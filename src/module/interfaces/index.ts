@@ -1,3 +1,5 @@
+import {Methods} from '../enums';
+
 export interface Contact {
   id?: string;
   path?: string;
@@ -5,10 +7,16 @@ export interface Contact {
   email: string;
   photoURL?: string;
   phoneNumber?: string;
-  metadata: MetaData;
+  isFavorite?: boolean;
+  metadata?: MetaData;
 }
 
 export interface MetaData {
   created_at: Date;
   updated_at: Date;
+}
+
+export interface IContactDialogResult {
+  method: Methods,
+  contact: Contact
 }
