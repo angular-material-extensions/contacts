@@ -22,3 +22,7 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 // Alternatively, you can import and @include the theme mixins for each components
 // that you are using.
 @include angular-material-theme($candy-app-theme);
+
+@import "ngx-material-contact.theme";
+// Using the $theme variable from the pre-built theme you can call the theming function
+@include candy-carousel-theme($candy-app-theme);
