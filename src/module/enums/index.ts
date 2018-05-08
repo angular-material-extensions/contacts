@@ -3,3 +3,10 @@ export enum Methods {
   PUT = 'PUT',
   DELETE = 'DELETE'
 }
+
+export enum Filter {
+  ALL = 'ALL',
+  PRIVATE = 'PRIVATE',
+  SHARED = 'SHARED',
+  'RECENTLY' = 'RECENTLY'
+}
