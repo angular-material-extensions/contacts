@@ -5,13 +5,34 @@
   min-width: 300px;
 }
 
+::ng-deep .mat-list
+.mat-list-item
+.mat-list-item-content,
+.mat-list
+.mat-list-option
+.mat-list-item-content,
+.mat-nav-list
+.mat-list-item
+.mat-list-item-content,
+.mat-nav-list
+.mat-list-option
+.mat-list-item-content,
+.mat-selection-list
+.mat-list-item
+.mat-list-item-content,
+.mat-selection-list
+.mat-list-option
+.mat-list-item-content {
+  padding: 0;
+}
+
 mat-sidenav {
-  width: 200px;
-  height: 350px;
+  //width: 200px;
+  height: 500px;
 }
 
 mat-sidenav-content {
-  margin-left: 250px !important;
+  //margin-left: 250px !important;
 }
 
 .mat-table {

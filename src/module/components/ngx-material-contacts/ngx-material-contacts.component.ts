@@ -1,6 +1,6 @@
 import {
   Component,
-  EventEmitter,
+  EventEmitter, HostListener,
   Input,
   OnChanges,
   OnDestroy,
@@ -10,11 +10,11 @@ import {
   ViewChild,
   ViewEncapsulation
 } from '@angular/core';
-import {MatDialog, MatDialogRef, MatTable, MatTableDataSource} from '@angular/material';
+import {MatDialog, MatDialogRef, MatSidenav, MatTable, MatTableDataSource} from '@angular/material';
 import {SelectionModel} from '@angular/cdk/collections';
 import {NgxMaterialContactDetailsComponent} from './ngx-material-contact-details/ngx-material-contact-details.component';
 import {Contact, IContactDialogResult} from '../../interfaces';
-import {Methods} from '../../enums';
+import {Filter, Methods} from '../../enums';
 
 /**
  * @title Table with selection
@@ -26,6 +26,8 @@ import {Methods} from '../../enums';
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChanges {
+
+  @ViewChild('sidenav') sidenav: MatSidenav;
 
   @ViewChild(MatTable) table: MatTable<any>;
 
@@ -50,6 +52,7 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   @Output()
   onAddingNewContactCanceled: EventEmitter<void> = new EventEmitter<void>();
 
+  filter: Filter;
   contactsDataSource: MatTableDataSource<Contact>;
   contactsDisplayedColumns = ['name', 'email', 'phoneNumber'];
   selection = new SelectionModel<Contact>(true, []);
@@ -81,6 +84,16 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   ngOnDestroy(): void {
     if (this.dialogAfterCloseSubscription) {
       this.dialogAfterCloseSubscription.unsubscribe();
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    if (event.target.innerWidth < 768) {
+      this.sidenav.close();
+    }
+    if (event.target.innerWidth > 768) {
+      this.sidenav.open();
     }
   }
 

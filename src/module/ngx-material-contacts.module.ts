@@ -6,7 +6,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {
   MatButtonModule, MatCardModule,
   MatCheckboxModule, MatDialogModule,
-  MatIconModule, MatInputModule,
+  MatIconModule, MatInputModule, MatListModule,
   MatMenuModule, MatProgressBarModule, MatRippleModule, MatSidenavModule,
   MatTableModule,
   MatToolbarModule,
@@ -56,6 +56,7 @@ export {Methods} from './enums';
     MatRippleModule,
     MatDialogModule,
     MatSidenavModule,
+    MatListModule,
     AvatarModule
   ],
   declarations:
@@ -83,6 +84,7 @@ export {Methods} from './enums';
       MatTooltipModule,
       MatRippleModule,
       MatDialogModule,
+      MatListModule,
       AvatarModule
     ]
 })
