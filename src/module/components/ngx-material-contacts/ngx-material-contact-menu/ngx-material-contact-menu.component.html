@@ -10,11 +10,7 @@
 
     <mat-nav-list>
 
-      <mat-nav-list>
-        <a mat-list-item routerLinkActive="active">test</a>
-      </mat-nav-list>
-
-      <mat-list-item (click)="setFilter(filters.ALL)">
+      <mat-list-item (click)="setFilter(filters.ALL)" class="custom">
         <mat-icon color="primary">done_all</mat-icon>
         <span class="menu-item">All contacts</span>
       </mat-list-item>

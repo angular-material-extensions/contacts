@@ -1,12 +1,6 @@
-<mat-sidenav-container fxLayout="row" fxLayoutGap="20px">
-  <mat-sidenav #sidenav [mode]="'side'" opened="true">
-    <!--<mat-toolbar color="primary">-->
-      <!--Start-->
-    <!--</mat-toolbar>-->
-    <ngx-material-contacts-menu></ngx-material-contacts-menu>
-  </mat-sidenav>
-
-  <mat-sidenav-content>
+<div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center">
+  <ngx-material-contacts-menu fxFlex="none" fxHide.lt-md></ngx-material-contacts-menu>
+  <div fxFlex>
     <mat-progress-bar *ngIf="isLoading" color="accent" mode="query"></mat-progress-bar>
     <mat-toolbar color="primary">
       <div *ngIf="selection.selected.length > 0; then contactSelected else none"></div>
@@ -118,7 +112,5 @@
         </mat-row>
       </mat-table>
     </div>
-
-
-  </mat-sidenav-content>
-</mat-sidenav-container>
+  </div>
+</div>

@@ -4,10 +4,16 @@ import {NgModule, ModuleWithProviders} from '@angular/core';
 
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {
-  MatButtonModule, MatCardModule,
-  MatCheckboxModule, MatDialogModule,
-  MatIconModule, MatInputModule, MatListModule,
-  MatMenuModule, MatProgressBarModule, MatRippleModule, MatSidenavModule,
+  MatButtonModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatDialogModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatMenuModule,
+  MatProgressBarModule,
+  MatRippleModule,
   MatTableModule,
   MatToolbarModule,
   MatTooltipModule
@@ -55,7 +61,6 @@ export {Methods} from './enums';
     MatTooltipModule,
     MatRippleModule,
     MatDialogModule,
-    MatSidenavModule,
     MatListModule,
     AvatarModule
   ],
