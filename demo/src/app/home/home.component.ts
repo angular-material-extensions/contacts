@@ -147,6 +147,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle('Home | ngx-material-contacts');
     console.log('x', this.contacts);
+    setTimeout(() => {
+      this.addContact({name: 'asd', email: 'asdasd'});
+      console.log('ahahha added new contact');
+    }, 5000);
   }
 
   addContact(contact: Contact) {
