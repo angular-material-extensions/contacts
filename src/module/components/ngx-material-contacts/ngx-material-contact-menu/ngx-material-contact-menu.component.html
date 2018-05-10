@@ -8,29 +8,41 @@
   <!--</mat-card-header>-->
   <mat-card-content>
 
-    <mat-nav-list>
+    <mat-selection-list #filters
+                        (ngModelChange)="onSelectedOptionsChange($event)"
+                        (selectionChange)="onSelectedFiltersChange($event)"
+                        [ngModel]="selectedFilters">
 
-      <mat-list-item (click)="setFilter(filters.ALL)" class="custom">
-        <mat-icon color="primary">done_all</mat-icon>
-        <span class="menu-item">All contacts</span>
-      </mat-list-item>
+      <mat-list-option>
+        <div fxLayout="row">
+          <mat-icon>done_all</mat-icon>
+          <span class="menu-item"> All contacts</span>
+        </div>
+      </mat-list-option>
 
-      <mat-list-item (click)="setFilter(filters.PRIVATE)">
-        <mat-icon color="">lock</mat-icon>
-        <span class="menu-item">Private contacts</span>
-      </mat-list-item>
+      <mat-list-option value="filters.PRIVATE">
+        <div fxLayout="row">
+          <mat-icon color="">lock</mat-icon>
+          <span class="menu-item"> Private contacts</span>
+        </div>
+      </mat-list-option>
 
-      <mat-list-item (click)="setFilter(filters.SHARED)">
-        <mat-icon>shared</mat-icon>
-        <span class="menu-item">Shared contacts</span>
-      </mat-list-item>
+      <mat-list-option [value]="filters.SHARED">
+        <div fxLayout="row">
+          <mat-icon>shared</mat-icon>
+          <span class="menu-item">Shared contacts</span>
+        </div>
+      </mat-list-option>
 
-      <mat-list-item (click)="setFilter(filters.RECENTLY)">
-        <mat-icon>history</mat-icon>
-        <span class="menu-item">Recently contacted</span>
-      </mat-list-item>
+      <mat-list-option [value]="filters.RECENTLY">
+        <div fxLayout="row">
+          <mat-icon>history</mat-icon>
+          <span class="menu-item">Recently contacted</span>
+        </div>
+      </mat-list-option>
 
-    </mat-nav-list>
+    </mat-selection-list>
 
+    <p>Selected: {{selectedFilters | json}}</p>
   </mat-card-content>
 </mat-card>

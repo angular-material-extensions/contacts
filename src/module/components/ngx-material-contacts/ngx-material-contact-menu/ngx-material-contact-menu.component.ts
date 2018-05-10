@@ -1,5 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Filter} from '../../../enums';
+import {MatSelectionListChange} from '@angular/material';
 
 @Component({
   selector: 'ngx-material-contacts-menu',
@@ -12,7 +13,7 @@ export class NgxMaterialContactMenuComponent implements OnInit {
   onFilterChanged: EventEmitter<Filter> = new EventEmitter<Filter>();
 
   filters = Filter;
-  selectedFilter: Filter;
+  selectedFilters: Filter[];
 
   constructor() {
   }
@@ -20,10 +21,18 @@ export class NgxMaterialContactMenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  setFilter(filter: Filter) {
-    console.log('on changed filter: ', filter);
-    this.selectedFilter = filter;
-    this.onFilterChanged.emit(filter);
+  onSelectedFiltersChange($event: MatSelectionListChange) {
+    console.log('onSelectedFiltersChange', $event);
   }
+
+  onSelectedOptionsChange(values: Filter[]) {
+    console.log('onSelectedOptionsChange', values);
+  }
+
+  // setFilter(filter: Filter) {
+  //   console.log('on changed filter: ', filter);
+  //   this.selectedFilter = filter;
+  //   this.onFilterChanged.emit(filter);
+  // }
 
 }
