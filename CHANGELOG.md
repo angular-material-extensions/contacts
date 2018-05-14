@@ -1,3 +1,26 @@
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/anthonynahas/ngx-material-contacts/compare/v1.0.1...v1.0.2) (2018-05-14)
+
+
+### Bug Fixes
+
+* **ngx-material-contact-new-user:** removed the old component ([811d3b8](https://github.com/anthonynahas/ngx-material-contacts/commit/811d3b8))
+
+
+### Features
+
+* **ngx-material-contact:** added a new menu component for the contacts ([a5e18ef](https://github.com/anthonynahas/ngx-material-contacts/commit/a5e18ef))
+* **ngx-material-contact:** added isLoading input and onAddingNewContactCanceled output ([63fcf3f](https://github.com/anthonynahas/ngx-material-contacts/commit/63fcf3f))
+* **ngx-material-contact:** added the IContactDialogResult interface for the contact dialog ([5bc1494](https://github.com/anthonynahas/ngx-material-contacts/commit/5bc1494))
+* **ngx-material-contact-deatils-component:** renamed the component - added a remove contact button ([1f80ccc](https://github.com/anthonynahas/ngx-material-contacts/commit/1f80ccc))
+* **ngx-material-contacts:** added contact interface and metadata property ([6b3adcd](https://github.com/anthonynahas/ngx-material-contacts/commit/6b3adcd))
+* **ngx-material-contacts:** added enum filter ([1dff676](https://github.com/anthonynahas/ngx-material-contacts/commit/1dff676))
+* **ngx-material-contacts:** added methods' enum - POST PUT DELETE ([d226a11](https://github.com/anthonynahas/ngx-material-contacts/commit/d226a11))
+* **ngx-material-contacts:** integration of the contact menu + filter functions ([a83cd25](https://github.com/anthonynahas/ngx-material-contacts/commit/a83cd25))
+* **ngx-material-contacts:** optional menu for filter purposes ([c8678ea](https://github.com/anthonynahas/ngx-material-contacts/commit/c8678ea))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/anthonynahas/ngx-material-contacts/compare/v1.0.0...v1.0.1) (2018-04-26)
 
