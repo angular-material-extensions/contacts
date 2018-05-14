@@ -86,14 +86,14 @@
                         <a href="modules/NgxMaterialContactsModule.html" data-type="entity-link">NgxMaterialContactsModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-NgxMaterialContactsModule-5929874b-ed18-4dae-8582-68368e74bbcd"
+                                        data-target="#xs-components-links-module-NgxMaterialContactsModule-a56645c3-5684-43e4-ba2d-db5a51335b97"
                                     >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="xs-components-links-module-NgxMaterialContactsModule-5929874b-ed18-4dae-8582-68368e74bbcd"
+                                        id="xs-components-links-module-NgxMaterialContactsModule-a56645c3-5684-43e4-ba2d-db5a51335b97"
                                     >
                                         <li class="link">
                                             <a href="components/NgxMaterialContactsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialContactsComponent</a>
@@ -238,14 +238,14 @@
                         <a href="modules/NgxMaterialContactsModule.html" data-type="entity-link">NgxMaterialContactsModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-NgxMaterialContactsModule-5929874b-ed18-4dae-8582-68368e74bbcd"
+                                        data-target="#components-links-module-NgxMaterialContactsModule-a56645c3-5684-43e4-ba2d-db5a51335b97"
 >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="components-links-module-NgxMaterialContactsModule-5929874b-ed18-4dae-8582-68368e74bbcd"
+                                        id="components-links-module-NgxMaterialContactsModule-a56645c3-5684-43e4-ba2d-db5a51335b97"
 >
                                         <li class="link">
                                             <a href="components/NgxMaterialContactsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialContactsComponent</a>
@@ -1829,7 +1829,7 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   ngOnInit(): void {
     console.log(&#x27;ConfigurationHelper ngOnInit&#x27;);
     this.contactsDataSource &#x3D; new MatTableDataSource&lt;Contact&gt;(this.contacts);
-    this.contactsDataSource.sort &#x3D; this.sort;
+    // this.contactsDataSource.sort &#x3D; this.sort;
 
     if (!this.readonly) {
       this.contactsDisplayedColumns.splice(0, 0, &#x27;select&#x27;);
@@ -2000,7 +2000,7 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
 
         &lt;!-- Name Column --&gt;
         &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
-          &lt;mat-header-cell *matHeaderCellDef mat-sort-header&gt; Name&lt;/mat-header-cell&gt;
+          &lt;mat-header-cell *matHeaderCellDef&gt; Name&lt;/mat-header-cell&gt;
           &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;
             &lt;div fxLayout&#x3D;&quot;row&quot; fxLayoutAlign&#x3D;&quot;start center&quot; fxLayoutGap&#x3D;&quot;10px&quot;&gt;
               &lt;div *ngIf&#x3D;&quot;element.photoURL; then image else avatar&quot;&gt;&lt;/div&gt;
@@ -2022,13 +2022,13 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
 
         &lt;!-- Email Column --&gt;
         &lt;ng-container matColumnDef&#x3D;&quot;email&quot;&gt;
-          &lt;mat-header-cell *matHeaderCellDef mat-sort-header&gt; Email&lt;/mat-header-cell&gt;
+          &lt;mat-header-cell *matHeaderCellDef&gt; Email&lt;/mat-header-cell&gt;
           &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{element.email}}&lt;/mat-cell&gt;
         &lt;/ng-container&gt;
 
         &lt;!-- PhoneNumber Column --&gt;
         &lt;ng-container matColumnDef&#x3D;&quot;phoneNumber&quot;&gt;
-          &lt;mat-header-cell *matHeaderCellDef mat-sort-header&gt; Phone Number&lt;/mat-header-cell&gt;
+          &lt;mat-header-cell *matHeaderCellDef&gt; Phone Number&lt;/mat-header-cell&gt;
           &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{element.phoneNumber}}&lt;/mat-cell&gt;
         &lt;/ng-container&gt;
 
@@ -2088,7 +2088,7 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center">  <ngx-material-contacts-menu *ngIf="enableMenu" fxFlex="none" fxHide.lt-md></ngx-material-contacts-menu>  <div fxFlex>    <mat-progress-bar *ngIf="isLoading" color="accent" mode="query"></mat-progress-bar>    <mat-toolbar color="primary">      <div *ngIf="selection.selected.length > 0; then contactSelected else none"></div>      <ng-template #contactSelected>        {{selection.selected.length}}        <button mat-icon-button matTooltip="remove" (click)="removeSelected()">          <mat-icon>delete</mat-icon>        </button>      </ng-template>      <ng-template #none>        {{title}}      </ng-template>      <span class="fill-remaining"></span>      <button *ngIf="!readonly"              fxHide.xs              mat-fab              color="accent"              class="fab-add"              matTooltip="add new contact"              (click)="openAddDialogContainer(methods.POST)">        <mat-icon>add</mat-icon>      </button>      <button *ngIf="!readonly" fxHide              fxShow.xs              mat-icon-button              matTooltip="add new contact"              (click)="openAddDialogContainer(methods.POST)">        <mat-icon>add</mat-icon>      </button>    </mat-toolbar>    <div class="example-container mat-elevation-z8" style="margin-bottom: 50px">      <mat-table #table [dataSource]="contactsDataSource" matSort>        <!-- Checkbox Column -->        <ng-container *ngIf="!readonly" matColumnDef="select">          <mat-header-cell *matHeaderCellDef class="cell-shrink-checkbox">            <mat-checkbox (change)="$event ? masterToggle() : null"                          [checked]="selection.hasValue() && isAllSelected()"                          [indeterminate]="selection.hasValue() && !isAllSelected()">            </mat-checkbox>          </mat-header-cell>          <mat-cell *matCellDef="let row" class="cell-shrink-checkbox">            <mat-checkbox (click)="$event.stopPropagation()"                          (change)="$event ? selection.toggle(row) : null"                          [checked]="selection.isSelected(row)">            </mat-checkbox>          </mat-cell>        </ng-container>        <!-- Name Column -->        <ng-container matColumnDef="name">          <mat-header-cell *matHeaderCellDef mat-sort-header> Name</mat-header-cell>          <mat-cell *matCellDef="let element">            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">              <div *ngIf="element.photoURL; then image else avatar"></div>              <ng-template #image>                <img class="ngx-avatar"                     mat-card-avatar                     [src]="element.photoURL">              </ng-template>              <ng-template #avatar>                <avatar [email]="element.email"                        [name]="element.name"                        [displayType]="\'circle\'">                </avatar>              </ng-template>              <span>{{element.name}}</span>            </div>          </mat-cell>        </ng-container>        <!-- Email Column -->        <ng-container matColumnDef="email">          <mat-header-cell *matHeaderCellDef mat-sort-header> Email</mat-header-cell>          <mat-cell *matCellDef="let element"> {{element.email}}</mat-cell>        </ng-container>        <!-- PhoneNumber Column -->        <ng-container matColumnDef="phoneNumber">          <mat-header-cell *matHeaderCellDef mat-sort-header> Phone Number</mat-header-cell>          <mat-cell *matCellDef="let element"> {{element.phoneNumber}}</mat-cell>        </ng-container>        <!--More Options Column-->        <ng-container *ngIf="!readonly" matColumnDef="more">          <mat-header-cell *matHeaderCellDef class="cell-shrink-more">          </mat-header-cell>          <mat-cell *matCellDef="let element"                    class="cell-shrink-more"                    (click)="$event.stopPropagation()">            <button mat-icon-button                    [matMenuTriggerFor]="posXMenu"                    class="mat-24"                    aria-label="Open x-positioned menu">              <mat-icon>more_vert</mat-icon>            </button>            <mat-menu xPosition="before" #posXMenu="matMenu">              <button mat-menu-item [disabled]="false" (click)="remove(element)">                <mat-icon>delete</mat-icon>                remove              </button>            </mat-menu>          </mat-cell>        </ng-container>        <mat-header-row *matHeaderRowDef="contactsDisplayedColumns"></mat-header-row>        <mat-row *matRowDef="let row; columns: contactsDisplayedColumns;"                 (click)="select(row)">        </mat-row>      </mat-table>    </div>  </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center">  <ngx-material-contacts-menu *ngIf="enableMenu" fxFlex="none" fxHide.lt-md></ngx-material-contacts-menu>  <div fxFlex>    <mat-progress-bar *ngIf="isLoading" color="accent" mode="query"></mat-progress-bar>    <mat-toolbar color="primary">      <div *ngIf="selection.selected.length > 0; then contactSelected else none"></div>      <ng-template #contactSelected>        {{selection.selected.length}}        <button mat-icon-button matTooltip="remove" (click)="removeSelected()">          <mat-icon>delete</mat-icon>        </button>      </ng-template>      <ng-template #none>        {{title}}      </ng-template>      <span class="fill-remaining"></span>      <button *ngIf="!readonly"              fxHide.xs              mat-fab              color="accent"              class="fab-add"              matTooltip="add new contact"              (click)="openAddDialogContainer(methods.POST)">        <mat-icon>add</mat-icon>      </button>      <button *ngIf="!readonly" fxHide              fxShow.xs              mat-icon-button              matTooltip="add new contact"              (click)="openAddDialogContainer(methods.POST)">        <mat-icon>add</mat-icon>      </button>    </mat-toolbar>    <div class="example-container mat-elevation-z8" style="margin-bottom: 50px">      <mat-table #table [dataSource]="contactsDataSource" matSort>        <!-- Checkbox Column -->        <ng-container *ngIf="!readonly" matColumnDef="select">          <mat-header-cell *matHeaderCellDef class="cell-shrink-checkbox">            <mat-checkbox (change)="$event ? masterToggle() : null"                          [checked]="selection.hasValue() && isAllSelected()"                          [indeterminate]="selection.hasValue() && !isAllSelected()">            </mat-checkbox>          </mat-header-cell>          <mat-cell *matCellDef="let row" class="cell-shrink-checkbox">            <mat-checkbox (click)="$event.stopPropagation()"                          (change)="$event ? selection.toggle(row) : null"                          [checked]="selection.isSelected(row)">            </mat-checkbox>          </mat-cell>        </ng-container>        <!-- Name Column -->        <ng-container matColumnDef="name">          <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>          <mat-cell *matCellDef="let element">            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">              <div *ngIf="element.photoURL; then image else avatar"></div>              <ng-template #image>                <img class="ngx-avatar"                     mat-card-avatar                     [src]="element.photoURL">              </ng-template>              <ng-template #avatar>                <avatar [email]="element.email"                        [name]="element.name"                        [displayType]="\'circle\'">                </avatar>              </ng-template>              <span>{{element.name}}</span>            </div>          </mat-cell>        </ng-container>        <!-- Email Column -->        <ng-container matColumnDef="email">          <mat-header-cell *matHeaderCellDef> Email</mat-header-cell>          <mat-cell *matCellDef="let element"> {{element.email}}</mat-cell>        </ng-container>        <!-- PhoneNumber Column -->        <ng-container matColumnDef="phoneNumber">          <mat-header-cell *matHeaderCellDef> Phone Number</mat-header-cell>          <mat-cell *matCellDef="let element"> {{element.phoneNumber}}</mat-cell>        </ng-container>        <!--More Options Column-->        <ng-container *ngIf="!readonly" matColumnDef="more">          <mat-header-cell *matHeaderCellDef class="cell-shrink-more">          </mat-header-cell>          <mat-cell *matCellDef="let element"                    class="cell-shrink-more"                    (click)="$event.stopPropagation()">            <button mat-icon-button                    [matMenuTriggerFor]="posXMenu"                    class="mat-24"                    aria-label="Open x-positioned menu">              <mat-icon>more_vert</mat-icon>            </button>            <mat-menu xPosition="before" #posXMenu="matMenu">              <button mat-menu-item [disabled]="false" (click)="remove(element)">                <mat-icon>delete</mat-icon>                remove              </button>            </mat-menu>          </mat-cell>        </ng-container>        <mat-header-row *matHeaderRowDef="contactsDisplayedColumns"></mat-header-row>        <mat-row *matRowDef="let row; columns: contactsDisplayedColumns;"                 (click)="select(row)">        </mat-row>      </mat-table>    </div>  </div></div></div>'
     var COMPONENTS = [{'name': 'NgxMaterialContactDetailsComponent', 'selector': 'ngx-material-contacts-new-user'},{'name': 'NgxMaterialContactMenuComponent', 'selector': 'ngx-material-contacts-menu'},{'name': 'NgxMaterialContactsComponent', 'selector': 'ngx-material-contacts'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'NgxMaterialContactsComponent'};

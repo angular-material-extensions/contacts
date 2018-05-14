@@ -217,7 +217,7 @@ ngx-highlightjs@1.4.1
 MIT
 MIT
 
-ngx-material-contacts@1.0.2
+ngx-material-contacts@1.0.3
 MIT
 The MIT License (MIT)
 
