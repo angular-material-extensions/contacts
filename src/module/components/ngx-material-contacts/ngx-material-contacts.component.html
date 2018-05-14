@@ -53,7 +53,7 @@
 
         <!-- Name Column -->
         <ng-container matColumnDef="name">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Name</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>
           <mat-cell *matCellDef="let element">
             <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
               <div *ngIf="element.photoURL; then image else avatar"></div>
@@ -75,13 +75,13 @@
 
         <!-- Email Column -->
         <ng-container matColumnDef="email">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Email</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Email</mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.email}}</mat-cell>
         </ng-container>
 
         <!-- PhoneNumber Column -->
         <ng-container matColumnDef="phoneNumber">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Phone Number</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Phone Number</mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.phoneNumber}}</mat-cell>
         </ng-container>
 

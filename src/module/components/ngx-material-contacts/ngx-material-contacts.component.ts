@@ -69,7 +69,7 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   ngOnInit(): void {
     console.log('ConfigurationHelper ngOnInit');
     this.contactsDataSource = new MatTableDataSource<Contact>(this.contacts);
-    this.contactsDataSource.sort = this.sort;
+    // this.contactsDataSource.sort = this.sort;
 
     if (!this.readonly) {
       this.contactsDisplayedColumns.splice(0, 0, 'select');
