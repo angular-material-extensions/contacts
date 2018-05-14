@@ -1,3 +1,13 @@
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/anthonynahas/ngx-material-contacts/compare/v1.0.2...v1.0.3) (2018-05-14)
+
+
+### Bug Fixes
+
+* **ngx-material-contacts:** removed matsort to be able to render the table ([19bfdb2](https://github.com/anthonynahas/ngx-material-contacts/commit/19bfdb2))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/anthonynahas/ngx-material-contacts/compare/v1.0.1...v1.0.2) (2018-05-14)
 
