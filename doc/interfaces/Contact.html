@@ -86,20 +86,23 @@
                         <a href="modules/NgxMaterialContactsModule.html" data-type="entity-link">NgxMaterialContactsModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-NgxMaterialContactsModule-e31cb197-a18d-44f7-9724-d3b178d68b72"
+                                        data-target="#xs-components-links-module-NgxMaterialContactsModule-5929874b-ed18-4dae-8582-68368e74bbcd"
                                     >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="xs-components-links-module-NgxMaterialContactsModule-e31cb197-a18d-44f7-9724-d3b178d68b72"
+                                        id="xs-components-links-module-NgxMaterialContactsModule-5929874b-ed18-4dae-8582-68368e74bbcd"
                                     >
                                         <li class="link">
                                             <a href="components/NgxMaterialContactsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialContactsComponent</a>
                                         </li>
                                         <li class="link">
-                                            <a href="components/NgxMaterialContactsNewUserComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialContactsNewUserComponent</a>
+                                            <a href="components/NgxMaterialContactDetailsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialContactDetailsComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/NgxMaterialContactMenuComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialContactMenuComponent</a>
                                         </li>
                                 </ul>
                             </li>
@@ -126,6 +129,12 @@
                     <li class="link">
                         <a href="interfaces/Contact.html" data-type="entity-link">Contact</a>
                     </li>
+                    <li class="link">
+                        <a href="interfaces/IContactDialogData.html" data-type="entity-link">IContactDialogData</a>
+                    </li>
+                    <li class="link">
+                        <a href="interfaces/MetaData.html" data-type="entity-link">MetaData</a>
+                    </li>
             </ul>
         </li>
 
@@ -141,6 +150,9 @@
             <ul class="links collapse"
                     id="xs-miscellaneous-links"
                 >
+                    <li class="link">
+                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
+                    </li>
                     <li class="link">
                       <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
                     </li>
@@ -226,20 +238,23 @@
                         <a href="modules/NgxMaterialContactsModule.html" data-type="entity-link">NgxMaterialContactsModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-NgxMaterialContactsModule-e31cb197-a18d-44f7-9724-d3b178d68b72"
+                                        data-target="#components-links-module-NgxMaterialContactsModule-5929874b-ed18-4dae-8582-68368e74bbcd"
 >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="components-links-module-NgxMaterialContactsModule-e31cb197-a18d-44f7-9724-d3b178d68b72"
+                                        id="components-links-module-NgxMaterialContactsModule-5929874b-ed18-4dae-8582-68368e74bbcd"
 >
                                         <li class="link">
                                             <a href="components/NgxMaterialContactsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialContactsComponent</a>
                                         </li>
                                         <li class="link">
-                                            <a href="components/NgxMaterialContactsNewUserComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialContactsNewUserComponent</a>
+                                            <a href="components/NgxMaterialContactDetailsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialContactDetailsComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/NgxMaterialContactMenuComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialContactMenuComponent</a>
                                         </li>
                                 </ul>
                             </li>
@@ -266,6 +281,12 @@
                     <li class="link">
                         <a href="interfaces/Contact.html" data-type="entity-link">Contact</a>
                     </li>
+                    <li class="link">
+                        <a href="interfaces/IContactDialogData.html" data-type="entity-link">IContactDialogData</a>
+                    </li>
+                    <li class="link">
+                        <a href="interfaces/MetaData.html" data-type="entity-link">MetaData</a>
+                    </li>
             </ul>
         </li>
 
@@ -281,6 +302,9 @@
             <ul class="links collapse"
                     id="miscellaneous-links"
 >
+                    <li class="link">
+                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
+                    </li>
                     <li class="link">
                       <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
                     </li>
@@ -329,7 +353,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/module/components/ngx-material-contacts/ngx-material-contacts.component.ts</code>
+            <code>src/module/interfaces/index.ts</code>
         </p>
 
 
@@ -354,7 +378,19 @@
                                         <a href="#id">id</a>
                                 </li>
                                 <li>
+                                            <span class="modifier">Optional</span>
+                                        <a href="#isFavorite">isFavorite</a>
+                                </li>
+                                <li>
+                                            <span class="modifier">Optional</span>
+                                        <a href="#metadata">metadata</a>
+                                </li>
+                                <li>
                                         <a href="#name">name</a>
+                                </li>
+                                <li>
+                                            <span class="modifier">Optional</span>
+                                        <a href="#path">path</a>
                                 </li>
                                 <li>
                                             <span class="modifier">Optional</span>
@@ -403,7 +439,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/module/components/ngx-material-contacts/ngx-material-contacts.component.ts:9</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/module/interfaces/index.ts:7</a></div>
                                         </td>
                                     </tr>
 
@@ -442,7 +478,85 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/module/components/ngx-material-contacts/ngx-material-contacts.component.ts:7</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="4" class="link-to-prism">src/module/interfaces/index.ts:4</a></div>
+                                        </td>
+                                    </tr>
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="isFavorite"></a>
+                                        <span class="name"><b>isFavorite</b><a href="#isFavorite"><span class="fa fa-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>isFavorite:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/module/interfaces/index.ts:10</a></div>
+                                        </td>
+                                    </tr>
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="metadata"></a>
+                                        <span class="name"><b>metadata</b><a href="#metadata"><span class="fa fa-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>metadata:     <code><a href="../interfaces/MetaData.html" target="_self" >MetaData</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code><a href="../interfaces/MetaData.html" target="_self" >MetaData</a></code>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/module/interfaces/index.ts:11</a></div>
                                         </td>
                                     </tr>
 
@@ -476,7 +590,46 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/module/components/ngx-material-contacts/ngx-material-contacts.component.ts:8</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/module/interfaces/index.ts:6</a></div>
+                                        </td>
+                                    </tr>
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="path"></a>
+                                        <span class="name"><b>path</b><a href="#path"><span class="fa fa-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>path:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="5" class="link-to-prism">src/module/interfaces/index.ts:5</a></div>
                                         </td>
                                     </tr>
 
@@ -515,7 +668,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/module/components/ngx-material-contacts/ngx-material-contacts.component.ts:11</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/module/interfaces/index.ts:9</a></div>
                                         </td>
                                     </tr>
 
@@ -554,7 +707,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/module/components/ngx-material-contacts/ngx-material-contacts.component.ts:10</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/module/interfaces/index.ts:8</a></div>
                                         </td>
                                     </tr>
 
@@ -565,132 +718,28 @@
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild, ViewEncapsulation} from &#x27;@angular/core&#x27;;
-import {MatDialog, MatDialogRef, MatTable, MatTableDataSource} from &#x27;@angular/material&#x27;;
-import {SelectionModel} from &#x27;@angular/cdk/collections&#x27;;
-import {NgxMaterialContactsNewUserComponent} from &#x27;./ngx-material-contacts-new-user/ngx-material-contacts-new-user.component&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Methods} from &#x27;../enums&#x27;;
 
 export interface Contact {
   id?: string;
+  path?: string;
   name: string;
   email: string;
   photoURL?: string;
   phoneNumber?: string;
+  isFavorite?: boolean;
+  metadata?: MetaData;
 }
 
-/**
- * @title Table with selection
- */
-@Component({
-  selector: &#x27;ngx-material-contacts&#x27;,
-  styleUrls: [&#x27;ngx-material-contacts.component.scss&#x27;],
-  templateUrl: &#x27;ngx-material-contacts.component.html&#x27;,
-  encapsulation: ViewEncapsulation.Emulated,
-})
-export class NgxMaterialContactsComponent implements OnInit, OnDestroy {
-
-  @ViewChild(MatTable) table: MatTable&lt;any&gt;;
-
-  @Input()
-  contacts: Contact[];
-
-  @Input()
-  title &#x3D; &#x27;Contacts&#x27;;
-
-  @Input()
-  readonly: boolean;
-
-  @Output()
-  onContactAdded: EventEmitter&lt;Contact&gt; &#x3D; new EventEmitter&lt;Contact&gt;();
-
-  @Output()
-  onContactRemoved: EventEmitter&lt;Contact&gt; &#x3D; new EventEmitter&lt;Contact&gt;();
-
-  contactsDataSource: MatTableDataSource&lt;Contact&gt;;
-  contactsDisplayedColumns &#x3D; [&#x27;name&#x27;, &#x27;email&#x27;, &#x27;phoneNumber&#x27;];
-  selection &#x3D; new SelectionModel&lt;Contact&gt;(true, []);
-  dialogRef: MatDialogRef&lt;NgxMaterialContactsNewUserComponent&gt; | null;
-  dialogAfterCloseSubscription: any;
-
-  constructor(public dialog: MatDialog) {
-  }
-
-  ngOnInit(): void {
-    this.contactsDataSource &#x3D; new MatTableDataSource&lt;Contact&gt;(this.contacts);
-    console.log(&#x27;readonly&#x27;, this.readonly);
-    if (!this.readonly) {
-      this.contactsDisplayedColumns.splice(0, 0, &#x27;select&#x27;);
-      this.contactsDisplayedColumns.push(&#x27;more&#x27;);
-      console.log(&#x27;data : &#x27;, this.contactsDataSource.data);
-    }
-  }
-
-  ngOnDestroy(): void {
-    if (this.dialogAfterCloseSubscription) {
-      this.dialogAfterCloseSubscription.unsubscribe();
-    }
-  }
-
-  /** Whether the number of selected elements matches the total number of rows. */
-  isAllSelected() {
-    const numSelected &#x3D; this.selection.selected.length;
-    const numRows &#x3D; this.contactsDataSource.data.length;
-    return numSelected &#x3D;&#x3D;&#x3D; numRows;
-  }
-
-  /** Selects all rows if they are not all selected; otherwise clear selection. */
-  masterToggle() {
-    this.isAllSelected() ?
-      this.selection.clear() :
-      this.contactsDataSource.data.forEach(row &#x3D;&gt; this.selection.select(row));
-  }
-
-  select(row: any) {
-    if (!this.readonly) {
-      this.selection.toggle(row);
-    }
-  }
-
-  openAddDialogContainer() {
-    this.dialogRef &#x3D; this.dialog.open(NgxMaterialContactsNewUserComponent, {
-      panelClass: &#x27;new-contact-dialog&#x27;
-    });
-    this.dialogAfterCloseSubscription &#x3D; this.dialogRef
-      .afterClosed()
-      .subscribe((result: Contact) &#x3D;&gt; {
-        console.log(&#x27;contact added -&gt; &#x27;, result);
-        if (result) {
-          this.contactsDataSource.data.splice(0, 0, result);
-          this.onContactAdded.emit(result);
-          this.table.renderRows();
-        }
-      });
-  }
-
-  remove(contact: Contact) {
-    console.log(&#x27;contact -&gt; &#x27;, contact);
-    console.log(&#x27;data.length before: &#x27;, this.contactsDataSource.data.length);
-    const index &#x3D; this.contactsDataSource.data.indexOf(contact);
-    console.log(&#x27;contactToRemove &#x3D; &#x27;, index);
-    if (index &gt; -1) {
-      this.contactsDataSource.data.splice(index, 1);
-      console.log(&#x27;data.length after: &#x27;, this.contactsDataSource.data.length);
-      this.selection.clear();
-      this.table.renderRows();
-      this.onContactRemoved.emit(contact);
-    }
-  }
-
-  removeSelected() {
-    const selectedContacts &#x3D; this.selection.selected;
-    selectedContacts.forEach((contact) &#x3D;&gt; {
-      this.remove(contact);
-    });
-  }
-
+export interface MetaData {
+  created_at: Date;
+  updated_at: Date;
 }
 
-
+export interface IContactDialogData {
+  method: Methods,
+  contact: Contact
+}
 </code></pre>
     </div>
 </div>
