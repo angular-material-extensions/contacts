@@ -1,6 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { NgxMaterialContactMenuComponent } from './ngx-material-contact-menu.component';
+import {NgxMaterialContactMenuComponent} from './ngx-material-contact-menu.component';
+import {FormsModule} from '@angular/forms';
+import {MatCardModule, MatIconModule, MatListModule} from '@angular/material';
 
 describe('NgxMaterialContactMenuComponent', () => {
   let component: NgxMaterialContactMenuComponent;
@@ -8,9 +10,15 @@ describe('NgxMaterialContactMenuComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxMaterialContactMenuComponent ]
+      imports: [
+        FormsModule,
+        MatCardModule,
+        MatListModule,
+        MatIconModule
+      ],
+      declarations: [NgxMaterialContactMenuComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -1,7 +1,7 @@
 import {async, ComponentFixture, TestBed, inject} from '@angular/core/testing';
 
 import {NgxMaterialContactDetailsComponent} from './ngx-material-contact-details.component';
-import {MatDialogModule, MatDialogRef, MatIconModule, MatInputModule, MatToolbarModule} from '@angular/material';
+import {MAT_DIALOG_DATA, MatDialogModule, MatDialogRef, MatIconModule, MatInputModule, MatToolbarModule} from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {AvatarModule} from 'ng2-avatar';
@@ -28,7 +28,10 @@ describe('NgxMaterialContactsNewUserComponent', () => {
         AvatarModule
       ],
       declarations: [NgxMaterialContactDetailsComponent],
-      providers: [{provide: MatDialogRef, useValue: {}}]
+      providers: [
+        {provide: MatDialogRef, useValue: {}},
+        {provide: MAT_DIALOG_DATA, useValue: {}}
+      ]
     })
       .compileComponents();
   }));

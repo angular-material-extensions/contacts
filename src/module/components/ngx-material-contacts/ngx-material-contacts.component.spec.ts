@@ -8,9 +8,11 @@ import {
   MatMenuModule,
   MatTableModule,
   MatToolbarModule,
-  MatDialogModule, MatProgressBarModule
+  MatDialogModule, MatProgressBarModule, MatListModule, MatCardModule
 } from '@angular/material';
 import {AvatarModule} from 'ng2-avatar';
+import {NgxMaterialContactMenuComponent} from './ngx-material-contact-menu/ngx-material-contact-menu.component';
+import {FormsModule} from '@angular/forms';
 
 describe('NgxMaterialContactsComponent', () => {
   let component: NgxMaterialContactsComponent;
@@ -19,6 +21,7 @@ describe('NgxMaterialContactsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
+        FormsModule,
         MatTableModule,
         MatButtonModule,
         MatCheckboxModule,
@@ -27,9 +30,15 @@ describe('NgxMaterialContactsComponent', () => {
         MatIconModule,
         MatMenuModule,
         MatDialogModule,
+        MatListModule,
+        MatCardModule,
         AvatarModule
       ],
-      declarations: [NgxMaterialContactsComponent]
+      declarations:
+        [
+          NgxMaterialContactsComponent,
+          NgxMaterialContactMenuComponent
+        ]
     })
       .compileComponents();
   }));
