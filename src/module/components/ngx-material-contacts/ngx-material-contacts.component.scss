@@ -5,6 +5,10 @@
   min-width: 300px;
 }
 
+.mat-header-cell.mat-sort-header-sorted {
+  color: black;
+}
+
 ::ng-deep .mat-list
 .mat-list-item
 .mat-list-item-content,

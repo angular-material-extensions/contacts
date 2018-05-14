@@ -8,41 +8,41 @@
   <!--</mat-card-header>-->
   <mat-card-content>
 
-    <mat-selection-list #filters
+    <mat-selection-list #selectionFilter
+                        [ngModel]="selectedFilters"
                         (ngModelChange)="onSelectedOptionsChange($event)"
-                        (selectionChange)="onSelectedFiltersChange($event)"
-                        [ngModel]="selectedFilters">
+                        (selectionChange)="onSelectedFiltersChange($event)">
 
-      <mat-list-option>
+      <mat-list-option #all [value]="filters.ALL"
+                       (click)="all.selected ? selectionFilter.selectAll() : selectionFilter.deselectAll()">
         <div fxLayout="row">
-          <mat-icon>done_all</mat-icon>
+          <mat-icon [color]="all.selected ? 'accent':''">done_all</mat-icon>
           <span class="menu-item"> All contacts</span>
         </div>
       </mat-list-option>
 
-      <mat-list-option value="filters.PRIVATE">
+      <mat-list-option #private [value]="filters.PRIVATE">
         <div fxLayout="row">
-          <mat-icon color="">lock</mat-icon>
+          <mat-icon [color]="private.selected ? 'accent':''">lock</mat-icon>
           <span class="menu-item"> Private contacts</span>
         </div>
       </mat-list-option>
 
-      <mat-list-option [value]="filters.SHARED">
+      <mat-list-option #shared [value]="filters.SHARED">
         <div fxLayout="row">
-          <mat-icon>shared</mat-icon>
+          <mat-icon [color]="shared.selected ? 'accent':''">shared</mat-icon>
           <span class="menu-item">Shared contacts</span>
         </div>
       </mat-list-option>
 
-      <mat-list-option [value]="filters.RECENTLY">
+      <mat-list-option #recently [value]="filters.RECENTLY">
         <div fxLayout="row">
-          <mat-icon>history</mat-icon>
+          <mat-icon [color]="recently.selected ? 'accent':''">history</mat-icon>
           <span class="menu-item">Recently contacted</span>
         </div>
       </mat-list-option>
 
     </mat-selection-list>
 
-    <p>Selected: {{selectedFilters | json}}</p>
   </mat-card-content>
 </mat-card>

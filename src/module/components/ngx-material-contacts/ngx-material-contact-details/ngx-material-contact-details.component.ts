@@ -1,7 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {AbstractControl, FormControl, FormGroup, Validators} from '@angular/forms';
-import {MatDialogRef} from '@angular/material';
-import {Contact, IContactDialogResult} from '../../../interfaces';
+import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
+import {Contact, IContactDialogData} from '../../../interfaces';
 import {Methods} from '../../../enums';
 
 const EMAIL_REGEX = new RegExp(['^(([^<>()[\\]\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\.,;:\\s@\"]+)*)',
@@ -26,7 +26,11 @@ export class NgxMaterialContactDetailsComponent implements OnInit {
 
   phoneNumber: string;
 
-  constructor(public dialogRef: MatDialogRef<NgxMaterialContactDetailsComponent>) {
+  methods = Methods;
+
+  constructor(public dialogRef: MatDialogRef<NgxMaterialContactDetailsComponent>,
+              @Inject(MAT_DIALOG_DATA) public data: IContactDialogData) {
+    console.log('data = ', this.data);
   }
 
   ngOnInit() {
@@ -58,7 +62,7 @@ export class NgxMaterialContactDetailsComponent implements OnInit {
         updated_at: new Date()
       }
     };
-    const result: IContactDialogResult = {
+    const result: IContactDialogData = {
       method: Methods.POST,
       contact: contact
     };
@@ -66,7 +70,7 @@ export class NgxMaterialContactDetailsComponent implements OnInit {
   }
 
   delete() {
-    const result: IContactDialogResult = {
+    const result: IContactDialogData = {
       method: Methods.DELETE,
       contact: {name: 'asd', email: 'ycs'}
     };

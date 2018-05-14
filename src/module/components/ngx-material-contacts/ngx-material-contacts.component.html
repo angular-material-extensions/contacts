@@ -1,5 +1,5 @@
 <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center">
-  <ngx-material-contacts-menu fxFlex="none" fxHide.lt-md></ngx-material-contacts-menu>
+  <ngx-material-contacts-menu *ngIf="enableMenu" fxFlex="none" fxHide.lt-md></ngx-material-contacts-menu>
   <div fxFlex>
     <mat-progress-bar *ngIf="isLoading" color="accent" mode="query"></mat-progress-bar>
     <mat-toolbar color="primary">
@@ -20,19 +20,20 @@
               color="accent"
               class="fab-add"
               matTooltip="add new contact"
-              (click)="openAddDialogContainer()">
+              (click)="openAddDialogContainer(methods.POST)">
         <mat-icon>add</mat-icon>
       </button>
       <button *ngIf="!readonly" fxHide
               fxShow.xs
               mat-icon-button
               matTooltip="add new contact"
-              (click)="openAddDialogContainer()">
+              (click)="openAddDialogContainer(methods.POST)">
         <mat-icon>add</mat-icon>
       </button>
     </mat-toolbar>
+
     <div class="example-container mat-elevation-z8" style="margin-bottom: 50px">
-      <mat-table #table [dataSource]="contactsDataSource">
+      <mat-table #table [dataSource]="contactsDataSource" matSort>
 
         <!-- Checkbox Column -->
         <ng-container *ngIf="!readonly" matColumnDef="select">
@@ -52,7 +53,7 @@
 
         <!-- Name Column -->
         <ng-container matColumnDef="name">
-          <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Name</mat-header-cell>
           <mat-cell *matCellDef="let element">
             <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
               <div *ngIf="element.photoURL; then image else avatar"></div>
@@ -74,13 +75,13 @@
 
         <!-- Email Column -->
         <ng-container matColumnDef="email">
-          <mat-header-cell *matHeaderCellDef> Email</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Email</mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.email}}</mat-cell>
         </ng-container>
 
         <!-- PhoneNumber Column -->
         <ng-container matColumnDef="phoneNumber">
-          <mat-header-cell *matHeaderCellDef> Phone Number</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Phone Number</mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.phoneNumber}}</mat-cell>
         </ng-container>
 

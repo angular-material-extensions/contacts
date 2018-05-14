@@ -82,9 +82,10 @@
     </button>
 
     <!--delete-->
-    <button mat-button
-            (click)="removeContact()"
+    <button *ngIf="data.method !== methods.POST"
+            mat-button
             color="warn"
+            (click)="removeContact()"
             [disabled]="newContactForm.invalid">
       Remove
     </button>

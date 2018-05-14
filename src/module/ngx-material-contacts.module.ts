@@ -13,7 +13,7 @@ import {
   MatListModule,
   MatMenuModule,
   MatProgressBarModule,
-  MatRippleModule,
+  MatRippleModule, MatSortModule,
   MatTableModule,
   MatToolbarModule,
   MatTooltipModule
@@ -62,6 +62,7 @@ export {Methods} from './enums';
     MatRippleModule,
     MatDialogModule,
     MatListModule,
+    MatSortModule,
     AvatarModule
   ],
   declarations:
@@ -90,6 +91,7 @@ export {Methods} from './enums';
       MatRippleModule,
       MatDialogModule,
       MatListModule,
+      MatSortModule,
       AvatarModule
     ]
 })

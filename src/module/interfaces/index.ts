@@ -16,7 +16,7 @@ export interface MetaData {
   updated_at: Date;
 }
 
-export interface IContactDialogResult {
+export interface IContactDialogData {
   method: Methods,
   contact: Contact
 }

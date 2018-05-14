@@ -10,10 +10,10 @@ import {
   ViewChild,
   ViewEncapsulation
 } from '@angular/core';
-import {MatDialog, MatDialogRef, MatTable, MatTableDataSource} from '@angular/material';
+import {MatDialog, MatDialogRef, MatSort, MatTable, MatTableDataSource} from '@angular/material';
 import {SelectionModel} from '@angular/cdk/collections';
 import {NgxMaterialContactDetailsComponent} from './ngx-material-contact-details/ngx-material-contact-details.component';
-import {Contact, IContactDialogResult} from '../../interfaces';
+import {Contact, IContactDialogData} from '../../interfaces';
 import {Filter, Methods} from '../../enums';
 
 /**
@@ -29,6 +29,8 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
 
   @ViewChild(MatTable) table: MatTable<any>;
 
+  @ViewChild(MatSort) sort: MatSort;
+
   @Input()
   contacts: Contact[];
 
@@ -41,6 +43,9 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   @Input()
   readonly: boolean;
 
+  @Input()
+  enableMenu: boolean;
+
   @Output()
   onContactAdded: EventEmitter<Contact> = new EventEmitter<Contact>();
 
@@ -50,6 +55,7 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   @Output()
   onAddingNewContactCanceled: EventEmitter<void> = new EventEmitter<void>();
 
+  methods = Methods;
   filter: Filter;
   contactsDataSource: MatTableDataSource<Contact>;
   contactsDisplayedColumns = ['name', 'email', 'phoneNumber'];
@@ -63,7 +69,8 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   ngOnInit(): void {
     console.log('ConfigurationHelper ngOnInit');
     this.contactsDataSource = new MatTableDataSource<Contact>(this.contacts);
-    console.log('readonly', this.readonly);
+    this.contactsDataSource.sort = this.sort;
+
     if (!this.readonly) {
       this.contactsDisplayedColumns.splice(0, 0, 'select');
       this.contactsDisplayedColumns.push('more');
@@ -72,10 +79,9 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('on changes: ', changes);
+    // console.log('on changes: ', changes);
     if (!changes.contacts.isFirstChange()) {
       this.table.renderRows();
-      console.log('yoww rendering !!');
     }
   }
 
@@ -105,26 +111,31 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
     }
   }
 
-  openAddDialogContainer() {
+  openAddDialogContainer(method?: Methods, contact?: Contact) {
+    const dialogData: IContactDialogData = {
+      method: method,
+      contact: contact
+    };
     this.dialogRef = this.dialog.open(NgxMaterialContactDetailsComponent, {
-      panelClass: 'new-contact-dialog'
+      panelClass: 'new-contact-dialog',
+      data: dialogData
     });
     this.dialogAfterCloseSubscription = this.dialogRef
       .afterClosed()
-      .subscribe((result: IContactDialogResult) => {
+      .subscribe((result: IContactDialogData) => {
         if (result) {
-          const method: Methods = result.method;
-          const contact: Contact = result.contact;
+          const methodFromResult: Methods = result.method;
+          const contactFromResult: Contact = result.contact;
 
-          switch (method) {
+          switch (methodFromResult) {
             case Methods.POST:
-              console.log('on post');
-              console.log('contact added -> ', result);
-              this.add(contact);
+              // console.log('on post');
+              // console.log('contact added -> ', result);
+              this.add(contactFromResult);
               break;
             case Methods.DELETE:
-              console.log('on delete');
-              this.remove(contact);
+              // console.log('on delete');
+              this.remove(contactFromResult);
               break;
           }
 
@@ -159,6 +170,12 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
     selectedContacts.forEach((contact) => {
       this.remove(contact);
     });
+  }
+
+  applyFilter(filterValue: string) {
+    filterValue = filterValue.trim(); // Remove whitespace
+    filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
+    this.contactsDataSource.filter = filterValue;
   }
 
 }

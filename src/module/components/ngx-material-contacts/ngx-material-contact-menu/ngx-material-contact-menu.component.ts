@@ -26,6 +26,7 @@ export class NgxMaterialContactMenuComponent implements OnInit {
   }
 
   onSelectedOptionsChange(values: Filter[]) {
+    this.selectedFilters = values;
     console.log('onSelectedOptionsChange', values);
   }
 
