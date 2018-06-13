@@ -1,3 +1,18 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/anthonynahas/ngx-material-contacts/compare/v1.0.3...v2.0.0) (2018-06-13)
+
+
+### Bug Fixes
+
+* **layout:** adjusted the layout after upgrading angular and material to v6 ([ed739f4](https://github.com/anthonynahas/ngx-material-contacts/commit/ed739f4))
+
+
+### Features
+
+* **ngx-material-contacts:** supporting angular v6 and material v7  rxjs v6 ([92d313a](https://github.com/anthonynahas/ngx-material-contacts/commit/92d313a))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/anthonynahas/ngx-material-contacts/compare/v1.0.2...v1.0.3) (2018-05-14)
 
