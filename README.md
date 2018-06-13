@@ -2,7 +2,7 @@
   <img height="256px" width="256px" style="text-align: center;" src="https://cdn.rawgit.com/anthonynahas/ngx-material-contacts/master/demo/src/assets/logo.svg">
 </p>
 
-# ngx-material-contacts - Angular Library to manage contacts and users with a material design
+# ngx-material-contacts - Angular Library to manage contacts and users with a material design (Angular V6 supported)
 
 [![npm version](https://badge.fury.io/js/ngx-material-contacts.svg)](https://badge.fury.io/js/ngx-material-contacts),
 [![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/ngx-material-contacts)
@@ -13,6 +13,8 @@
 [![devDependency Status](https://david-dm.org/anthonynahas/ngx-material-contacts/dev-status.svg?branch=master)](https://david-dm.org/anthonynahas/ngx-material-contacts#info=devDependencies)
 [![Greenkeeper Badge](https://badges.greenkeeper.io/anthonynahas/ngx-material-contacts.svg)](https://greenkeeper.io/)
 [![license](https://img.shields.io/github/license/anthonynahas/ngx-material-contacts.svg?style=flat-square)](https://github.com/AnthonyNahas/ngx-material-contacts/blob/master/LICENSE)
+
+> This project has been moved to [@angular-material-extensions/contacts](https://github.com/angular-material-extensions/contacts)
 
 <p align="center">
   <img alt="ngx-material-contacts" style="text-align: center;"
@@ -36,15 +38,15 @@ View all the directives in action at https://anthonynahas.github.io/ngx-material
 - Validation for adding a new contact incl. name, email and phone number form controls
 
 ## Dependencies
-* [Angular](https://angular.io) (*requires* Angular 2 or higher, tested with 2.0.0)
+* [Angular](https://angular.io) (*requires* Angular 2 or higher)
 
 ### Requirements (peer dependencies) - please instsall the packages before using ngx-material-contacts:
-- [angular flex-layout ](https://www.npmjs.com/package/@angular/flex-layout)
-- [angular material ](https://www.npmjs.com/package/@angular/material)
+- [angular flex-layout v6.0.0-beta.16](https://www.npmjs.com/package/@angular/flex-layout)
+- [angular material v6.2.1](https://www.npmjs.com/package/@angular/material)
 - [angular material theme](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
-- [angular cdk ](https://www.npmjs.com/package/@angular/cdk)
-- [angular animations ](https://www.npmjs.com/package/@angular/animations)
-- [angular forms ](https://www.npmjs.com/package/@angular/forms)
+- [angular cdk v6.2.1](https://www.npmjs.com/package/@angular/cdk)
+- [angular animations v6.2.1](https://www.npmjs.com/package/@angular/animations)
+- [angular forms v6.2.1](https://www.npmjs.com/package/@angular/forms)
 - [ng2-avatar](https://www.npmjs.com/package/ng2-avatar)
 - if you need a built in theme --> please let me know
 
@@ -205,8 +207,8 @@ $ npm run lint
 - [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)
 - [ngx-material-pages](https://github.com/AnthonyNahas/ngx-material-pages)
 - [ngx-material-password-strength](https://github.com/AnthonyNahas/ngx-material-password-strength)
-- [ngx-material-faq](https://github.com/AnthonyNahas/ngx-material-faq)
-- [ngx-combination-generator](https://github.com/AnthonyNahas/combination-generator)
+- [@angular-material-extensions/faq](https://github.com/angular-material-extensions/faq)
+- [@angular-material-extensions/combination-generator](https://github.com/angular-material-extensions/combination-generator)
 
 
 ## License

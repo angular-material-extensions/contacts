@@ -19,9 +19,10 @@
   <div fxLayout="column" fxLayoutAlign="center" class="contact-form">
 
     <!--name-->
-    <mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
       <input matInput
-             placeholder="Name"
+             placeholder="Enter the contact name here"
              minlength="2"
              maxlength="30"
              [formControl]="nameFormControl"
@@ -42,10 +43,11 @@
     </mat-form-field>
 
     <!--email-->
-    <mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>E-mail</mat-label>
       <input matInput
              type="email"
-             placeholder="E-mail address"
+             placeholder="e.g: user@domain.com"
              [formControl]="emailFormControl">
       <mat-icon matSuffix color="accent">email</mat-icon>
       <mat-error *ngIf="emailFormControl.hasError('required')">
@@ -57,10 +59,10 @@
     </mat-form-field>
 
     <!--phone number-->
-    <mat-form-field>
+    <mat-form-field appearance="outline">
       <input matInput
              type="number"
-             placeholder="Phone number"
+             placeholder="e.g: +49-12345678"
              [formControl]="phoneNumberFormControl">
       <mat-icon matSuffix color="accent">phone</mat-icon>
       <mat-hint align="end" aria-live="polite">

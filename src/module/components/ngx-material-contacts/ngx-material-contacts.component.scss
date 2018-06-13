@@ -9,27 +9,6 @@
   color: black;
 }
 
-::ng-deep .mat-list
-.mat-list-item
-.mat-list-item-content,
-.mat-list
-.mat-list-option
-.mat-list-item-content,
-.mat-nav-list
-.mat-list-item
-.mat-list-item-content,
-.mat-nav-list
-.mat-list-option
-.mat-list-item-content,
-.mat-selection-list
-.mat-list-item
-.mat-list-item-content,
-.mat-selection-list
-.mat-list-option
-.mat-list-item-content {
-  //padding: 0;
-}
-
 mat-sidenav {
   //width: 200px;
   //height: 500px;
@@ -80,15 +59,13 @@ mat-sidenav-content {
 }
 
 .cell-shrink-checkbox {
-  flex-grow: 0;
+  flex-grow: 0.1;
   flex-shrink: 1;
   flex-basis: 48px;
 }
 
 .cell-shrink-more {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: 40px;
+  flex-grow: 0.1;
 }
 
 .fill-remaining {
