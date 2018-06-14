@@ -1,1 +1,1 @@
-export * from './module/ngx-material-contacts.module';
+export * from './module/mat-contacts.module';
