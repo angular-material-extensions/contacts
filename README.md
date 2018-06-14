@@ -6,8 +6,9 @@
 
 [![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts)
 [![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/@angular-material-extensions/contacts)
-[![Coverage Status](https://coveralls.io/repos/github/angular-material-extensions/contacts/badge.svg?branch=master)](https://coveralls.io/github/angular-material-extensions/contacts?branch=master)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/angular-material-extensions/contacts/master.svg?label=circleci)](https://circleci.com/gh/angular-material-extensions/contacts)
 [![Build Status](https://travis-ci.org/angular-material-extensions/contacts.svg?branch=master)](https://travis-ci.org/angular-material-extensions/contacts)
+[![Coverage Status](https://coveralls.io/repos/github/angular-material-extensions/contacts/badge.svg?branch=master)](https://coveralls.io/github/angular-material-extensions/contacts?branch=master)
 [![dependency Status](https://david-dm.org/angular-material-extensions/contacts/status.svg)](https://david-dm.org/angular-material-extensions/contacts)
 [![devDependency Status](https://david-dm.org/angular-material-extensions/contacts/dev-status.svg?branch=master)](https://david-dm.org/angular-material-extensions/contacts#info=devDependencies)
 [![Greenkeeper Badge](https://badges.greenkeeper.io/angular-material-extensions/contacts.svg)](https://greenkeeper.io/)
