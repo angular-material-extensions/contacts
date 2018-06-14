@@ -12,11 +12,11 @@ const EMAIL_REGEX = new RegExp(['^(([^<>()[\\]\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\
 const PHONE_NUMBER_REGEX = new RegExp(/^\+(?:[0-9] ?){6,14}[0-9]$/);
 
 @Component({
-  selector: 'ngx-material-contacts-new-user',
-  templateUrl: './ngx-material-contact-details.component.html',
-  styleUrls: ['./ngx-material-contact-details.component.scss']
+  selector: 'mat-contact-dialog',
+  templateUrl: './mat-contact-dialog.component.html',
+  styleUrls: ['./mat-contact-dialog.component.scss']
 })
-export class NgxMaterialContactDetailsComponent implements OnInit {
+export class MatContactDialogComponent implements OnInit {
 
   newContactForm: FormGroup;
 
@@ -28,7 +28,7 @@ export class NgxMaterialContactDetailsComponent implements OnInit {
 
   methods = Methods;
 
-  constructor(public dialogRef: MatDialogRef<NgxMaterialContactDetailsComponent>,
+  constructor(public dialogRef: MatDialogRef<MatContactDialogComponent>,
               @Inject(MAT_DIALOG_DATA) public data: IContactDialogData) {
     console.log('data = ', this.data);
   }

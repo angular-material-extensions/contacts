@@ -12,7 +12,7 @@ import {
 } from '@angular/core';
 import {MatDialog, MatDialogRef, MatSort, MatTable, MatTableDataSource} from '@angular/material';
 import {SelectionModel} from '@angular/cdk/collections';
-import {NgxMaterialContactDetailsComponent} from './ngx-material-contact-details/ngx-material-contact-details.component';
+import {MatContactDialogComponent} from './dialog/mat-contact-dialog.component';
 import {Contact, IContactDialogData} from '../../interfaces';
 import {Filter, Methods} from '../../enums';
 
@@ -20,12 +20,12 @@ import {Filter, Methods} from '../../enums';
  * @title Table with selection
  */
 @Component({
-  selector: 'ngx-material-contacts',
-  styleUrls: ['ngx-material-contacts.component.scss'],
-  templateUrl: 'ngx-material-contacts.component.html',
+  selector: 'mat-contacts',
+  styleUrls: ['mat-contacts.component.scss'],
+  templateUrl: 'mat-contacts.component.html',
   encapsulation: ViewEncapsulation.Emulated,
 })
-export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChanges {
+export class MatContactsComponent implements OnInit, OnDestroy, OnChanges {
 
   @ViewChild(MatTable) table: MatTable<any>;
 
@@ -60,7 +60,7 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
   contactsDataSource: MatTableDataSource<Contact>;
   contactsDisplayedColumns = ['name', 'email', 'phoneNumber'];
   selection = new SelectionModel<Contact>(true, []);
-  dialogRef: MatDialogRef<NgxMaterialContactDetailsComponent> | null;
+  dialogRef: MatDialogRef<MatContactDialogComponent> | null;
   dialogAfterCloseSubscription: any;
 
   constructor(public dialog: MatDialog) {
@@ -116,7 +116,7 @@ export class NgxMaterialContactsComponent implements OnInit, OnDestroy, OnChange
       method: method,
       contact: contact
     };
-    this.dialogRef = this.dialog.open(NgxMaterialContactDetailsComponent, {
+    this.dialogRef = this.dialog.open(MatContactDialogComponent, {
       panelClass: 'new-contact-dialog',
       data: dialogData
     });

@@ -1,15 +1,15 @@
 import {async, ComponentFixture, TestBed, inject} from '@angular/core/testing';
 
-import {NgxMaterialContactDetailsComponent} from './ngx-material-contact-details.component';
+import {MatContactDialogComponent} from './mat-contact-dialog.component';
 import {MAT_DIALOG_DATA, MatDialogModule, MatDialogRef, MatIconModule, MatInputModule, MatToolbarModule} from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {AvatarModule} from 'ng2-avatar';
 
 describe('NgxMaterialContactsNewUserComponent', () => {
-  let component: NgxMaterialContactDetailsComponent;
-  let fixture: ComponentFixture<NgxMaterialContactDetailsComponent>;
-  let dialog: MatDialogRef<NgxMaterialContactDetailsComponent>;
+  let component: MatContactDialogComponent;
+  let fixture: ComponentFixture<MatContactDialogComponent>;
+  let dialog: MatDialogRef<MatContactDialogComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -27,7 +27,7 @@ describe('NgxMaterialContactsNewUserComponent', () => {
         // avatar
         AvatarModule
       ],
-      declarations: [NgxMaterialContactDetailsComponent],
+      declarations: [MatContactDialogComponent],
       providers: [
         {provide: MatDialogRef, useValue: {}},
         {provide: MAT_DIALOG_DATA, useValue: {}}
@@ -37,7 +37,7 @@ describe('NgxMaterialContactsNewUserComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxMaterialContactDetailsComponent);
+    fixture = TestBed.createComponent(MatContactDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

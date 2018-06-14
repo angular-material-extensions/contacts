@@ -1,5 +1,5 @@
 <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center">
-  <ngx-material-contacts-menu *ngIf="enableMenu" fxFlex="none" fxHide.lt-md></ngx-material-contacts-menu>
+  <mat-contact-menu *ngIf="enableMenu" fxFlex="none" fxHide.lt-md></mat-contact-menu>
   <div fxFlex>
     <mat-progress-bar *ngIf="isLoading" color="accent" mode="query"></mat-progress-bar>
     <mat-toolbar color="primary">

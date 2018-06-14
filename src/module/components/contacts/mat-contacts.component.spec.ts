@@ -1,6 +1,5 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {NgxMaterialContactsComponent} from './ngx-material-contacts.component';
 import {
   MatButtonModule,
   MatCheckboxModule,
@@ -11,12 +10,13 @@ import {
   MatDialogModule, MatProgressBarModule, MatListModule, MatCardModule
 } from '@angular/material';
 import {AvatarModule} from 'ng2-avatar';
-import {NgxMaterialContactMenuComponent} from './ngx-material-contact-menu/ngx-material-contact-menu.component';
+import {MatContactMenuComponent} from './menu/mat-contact-menu.component';
 import {FormsModule} from '@angular/forms';
+import {MatContactsComponent} from './mat-contacts.component';
 
-describe('NgxMaterialContactsComponent', () => {
-  let component: NgxMaterialContactsComponent;
-  let fixture: ComponentFixture<NgxMaterialContactsComponent>;
+describe('MatContactsComponent', () => {
+  let component: MatContactsComponent;
+  let fixture: ComponentFixture<MatContactsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -36,15 +36,15 @@ describe('NgxMaterialContactsComponent', () => {
       ],
       declarations:
         [
-          NgxMaterialContactsComponent,
-          NgxMaterialContactMenuComponent
+          MatContactsComponent,
+          MatContactMenuComponent
         ]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxMaterialContactsComponent);
+    fixture = TestBed.createComponent(MatContactsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

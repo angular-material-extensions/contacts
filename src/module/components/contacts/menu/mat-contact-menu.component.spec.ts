@@ -1,12 +1,12 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {NgxMaterialContactMenuComponent} from './ngx-material-contact-menu.component';
+import {MatContactMenuComponent} from './mat-contact-menu.component';
 import {FormsModule} from '@angular/forms';
 import {MatCardModule, MatIconModule, MatListModule} from '@angular/material';
 
 describe('NgxMaterialContactMenuComponent', () => {
-  let component: NgxMaterialContactMenuComponent;
-  let fixture: ComponentFixture<NgxMaterialContactMenuComponent>;
+  let component: MatContactMenuComponent;
+  let fixture: ComponentFixture<MatContactMenuComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -16,13 +16,13 @@ describe('NgxMaterialContactMenuComponent', () => {
         MatListModule,
         MatIconModule
       ],
-      declarations: [NgxMaterialContactMenuComponent]
+      declarations: [MatContactMenuComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxMaterialContactMenuComponent);
+    fixture = TestBed.createComponent(MatContactMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
