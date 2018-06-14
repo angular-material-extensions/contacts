@@ -1,34 +1,33 @@
 <p align="center">
-  <img height="256px" width="256px" style="text-align: center;" src="https://cdn.rawgit.com/anthonynahas/ngx-material-contacts/master/demo/src/assets/logo.svg">
+  <img height="256px" width="256px" style="text-align: center;" src="https://cdn.rawgit.com/angular-material-extensions/contacts/master/demo/src/assets/logo.svg">
 </p>
 
-# ngx-material-contacts - Angular Library to manage contacts and users with a material design (Angular V6 supported)
+# @angular-material-extensions/contacts - Angular Library to manage contacts and users with a material design (Angular V6 supported)
 
-[![npm version](https://badge.fury.io/js/ngx-material-contacts.svg)](https://badge.fury.io/js/ngx-material-contacts),
-[![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/ngx-material-contacts)
-[![Coverage Status](https://coveralls.io/repos/github/anthonynahas/ngx-material-contacts/badge.svg?branch=master)](https://coveralls.io/github/anthonynahas/ngx-material-contacts?branch=master)
-[![Build Status](https://travis-ci.org/anthonynahas/ngx-material-contacts.svg?branch=master)](https://travis-ci.org/anthonynahas/ngx-material-contacts)
-[![Coverage Status](https://coveralls.io/repos/github/anthonynahas/ngx-material-contacts/badge.svg?branch=master)](https://coveralls.io/github/anthonynahas/ngx-material-contacts?branch=master)
-[![dependency Status](https://david-dm.org/anthonynahas/ngx-material-contacts/status.svg)](https://david-dm.org/anthonynahas/ngx-material-contacts)
-[![devDependency Status](https://david-dm.org/anthonynahas/ngx-material-contacts/dev-status.svg?branch=master)](https://david-dm.org/anthonynahas/ngx-material-contacts#info=devDependencies)
-[![Greenkeeper Badge](https://badges.greenkeeper.io/anthonynahas/ngx-material-contacts.svg)](https://greenkeeper.io/)
-[![license](https://img.shields.io/github/license/anthonynahas/ngx-material-contacts.svg?style=flat-square)](https://github.com/AnthonyNahas/ngx-material-contacts/blob/master/LICENSE)
+[![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts)
+[![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/@angular-material-extensions/contacts)
+[![Coverage Status](https://coveralls.io/repos/github/angular-material-extensions/contacts/badge.svg?branch=master)](https://coveralls.io/github/angular-material-extensions/contacts?branch=master)
+[![Build Status](https://travis-ci.org/angular-material-extensions/contacts.svg?branch=master)](https://travis-ci.org/angular-material-extensions/contacts)
+[![dependency Status](https://david-dm.org/angular-material-extensions/contacts/status.svg)](https://david-dm.org/angular-material-extensions/contacts)
+[![devDependency Status](https://david-dm.org/angular-material-extensions/contacts/dev-status.svg?branch=master)](https://david-dm.org/angular-material-extensions/contacts#info=devDependencies)
+[![Greenkeeper Badge](https://badges.greenkeeper.io/angular-material-extensions/contacts.svg)](https://greenkeeper.io/)
+[![license](https://img.shields.io/github/license/angular-material-extensions/contacts.svg?style=flat-square)](https://github.com/AnthonyNahas/@angular-material-extensions/contacts/blob/master/LICENSE)
 
-> This project has been moved to [@angular-material-extensions/contacts](https://github.com/angular-material-extensions/contacts)
+> This project has been moved from [ngx-material-contacts](https://www.npmjs.com/package/ngx-material-contacts) to [@angular-material-extensions/contacts](https://github.com/angular-material-extensions/contacts)
 
 <p align="center">
-  <img alt="ngx-material-contacts" style="text-align: center;"
+  <img alt="@angular-material-extensions/contacts" style="text-align: center;"
    src="assets/demo2.gif">
 </p>
 
 <p align="center">
-  <img alt="ngx-material-contacts" style="text-align: center;"
+  <img alt="@angular-material-extensions/contacts" style="text-align: center;"
    src="assets/demo3.gif">
 </p>
 
 ## Demo
 
-View all the directives in action at https://anthonynahas.github.io/ngx-material-contacts
+View all the directives in action at https://anthonynahas.github.io/@angular-material-extensions/contacts
 
 
 ## Features
@@ -40,13 +39,13 @@ View all the directives in action at https://anthonynahas.github.io/ngx-material
 ## Dependencies
 * [Angular](https://angular.io) (*requires* Angular 2 or higher)
 
-### Requirements (peer dependencies) - please instsall the packages before using ngx-material-contacts:
+### Requirements (peer dependencies) - please instsall the packages before using @angular-material-extensions/contacts:
 - [angular flex-layout v6.0.0-beta.16](https://www.npmjs.com/package/@angular/flex-layout)
 - [angular material v6.2.1](https://www.npmjs.com/package/@angular/material)
 - [angular material theme](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
 - [angular cdk v6.2.1](https://www.npmjs.com/package/@angular/cdk)
-- [angular animations v6.2.1](https://www.npmjs.com/package/@angular/animations)
-- [angular forms v6.2.1](https://www.npmjs.com/package/@angular/forms)
+- [angular animations v6.0.5](https://www.npmjs.com/package/@angular/animations)
+- [angular forms v6.0.5](https://www.npmjs.com/package/@angular/forms)
 - [ng2-avatar](https://www.npmjs.com/package/ng2-avatar)
 - if you need a built in theme --> please let me know
 
@@ -59,30 +58,30 @@ npm i @angular/cdk @angular/material @angular/flex-layout @angular/animations @a
 ## Installation
 Install above dependencies via *npm*. 
 
-Now install `ngx-material-contacts` via:
+Now install `@angular-material-extensions/contacts` via:
 ```shell
-npm install --save ngx-material-contacts
+npm install --save @angular-material-extensions/contacts
 ```
 
 ---
 ##### SystemJS
 >**Note**:If you are using `SystemJS`, you should adjust your configuration to point to the UMD bundle.
-In your systemjs config file, `map` needs to tell the System loader where to look for `ngx-material-contacts`:
+In your systemjs config file, `map` needs to tell the System loader where to look for `@angular-material-extensions/contacts`:
 ```js
 map: {
-  'ngx-material-contacts': 'node_modules/ngx-material-contacts/bundles/ngx-material-contacts.umd.js',
+  '@angular-material-extensions/contacts': 'node_modules/@angular-material-extensions/contacts/bundles/@angular-material-extensions/contacts.umd.js',
 }
 ```
 ---
 
 Once installed you need to import the main module:
 ```js
-import { NgxMaterialPagesModule } from 'ngx-material-contacts';
+import { NgxMaterialPagesModule } from '@angular-material-extensions/contacts';
 ```
 The only remaining part is to list the imported module in your application module. The exact method will be slightly
 different for the root (top-level) module for which you should end up with the code similar to (notice ` NgxMaterialPagesModule .forRoot()`):
 ```js
-import { NgxMaterialPagesModule } from 'ngx-material-contacts';
+import { NgxMaterialPagesModule } from '@angular-material-extensions/contacts';
 
 @NgModule({
   declarations: [AppComponent, ...],
@@ -96,7 +95,7 @@ export class AppModule {
 Other modules in your application can simply import ` NgxMaterialPagesModule `:
 
 ```js
-import { NgxMaterialPagesModule } from 'ngx-material-contacts';
+import { NgxMaterialPagesModule } from '@angular-material-extensions/contacts';
 
 @NgModule({
   declarations: [OtherComponent, ...],
@@ -108,14 +107,14 @@ export class OtherModule {
 
 ## Usage
 
-add the `ngx-material-contacts` element to your template:
+add the `@angular-material-extensions/contacts` element to your template:
 
 ```html
-<ngx-material-contacts [contacts]="contacts"
-                           [readonly]="false"
-                           (onContactAdded)="addContact($event)"
-                           (onContactRemoved)="removeContact($event)">
-    </ngx-material-contacts>
+<mat-contacts [contacts]="contacts"
+              [readonly]="false"
+              (onContactAdded)="addContact($event)"
+              (onContactRemoved)="removeContact($event)">
+</mat-contacts>
 ```
 
 in your component --> 
@@ -132,7 +131,7 @@ const CONTACT_DATA: Contact[] = [
   {
     id: 'KXgJviXd4EL9',
     name: 'Amanda Lee',
-    email: 'amanda.lee@ngx-material-contacts.de',
+    email: 'amanda.lee@@angular-material-extensions/contacts.de',
     photoURL: '../../../assets/profiles/1p60.png',
     phoneNumber: '+1-502-555-0156'
   }
@@ -174,7 +173,7 @@ export interface Contact {
 }
 ```
 
-### Please checkout the full documentation [here](https://anthonynahas.github.io/ngx-material-contacts/doc/index.html) or follow the official [tutorial](https://anthonynahas.github.io/ngx-material-contacts/getting-started)
+### Please checkout the full documentation [here](https://anthonynahas.github.io/@angular-material-extensions/contacts/doc/index.html) or follow the official [tutorial](https://anthonynahas.github.io/@angular-material-extensions/contacts/getting-started)
 
 ## Development
 
