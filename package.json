@@ -1,15 +1,15 @@
 {
-  "name": "ngx-material-contacts",
+  "name": "@angular-material-extensions/contacts",
   "description": "Angular Library to manage contacts and users with a material deisgn",
   "version": "2.0.0",
-  "homepage": "https://github.com/anthonynahas/ngx-material-contacts",
+  "homepage": "https://github.com/angular-material-extensions/contacts",
   "author": {
     "name": "anthonynahas",
     "url": "https://github.com/anthonynahas"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/anthonynahas/ngx-material-contacts.git"
+    "url": "git://github.com/angular-material-extensions/contacts.git"
   },
   "license": "MIT",
   "keywords": [
@@ -23,35 +23,35 @@
     " management"
   ],
   "bugs": {
-    "url": "https://github.com/anthonynahas/ngx-material-contacts/issues"
+    "url": "https://github.com/angular-material-extensions/contacts/issues"
   },
   "private": true,
   "scripts": {
     "build": "gulp build",
     "test": " gulp test",
     "demo": " gulp build:demo",
-    "check-travis": " travis-status --repo=anthonynahas/ngx-material-contacts --branch=master --fail-pending || echo 'Not yet passing'"
+    "check-travis": " travis-status --repo=angular-material-extensions/contacts --branch=master --fail-pending || echo 'Not yet passing'"
   },
   "dependencies": {
-    "@angular/animations": "^6.0.4",
+    "@angular/animations": "^6.0.5",
     "@angular/cdk": "^6.2.1",
-    "@angular/common": "^6.0.4",
-    "@angular/core": "^6.0.4",
+    "@angular/common": "^6.0.5",
+    "@angular/core": "^6.0.5",
     "@angular/flex-layout": "^6.0.0-beta.16",
-    "@angular/forms": "^6.0.4",
+    "@angular/forms": "^6.0.5",
     "@angular/material": "^6.2.1",
     "ng2-avatar": "^2.3.1"
   },
   "devDependencies": {
-    "@angular/compiler": "6.0.4",
-    "@angular/compiler-cli": "6.0.4",
-    "@angular/platform-browser": "6.0.4",
-    "@angular/platform-browser-dynamic": "6.0.4",
-    "@angular/platform-server": "6.0.4",
+    "@angular/compiler": "6.0.5",
+    "@angular/compiler-cli": "6.0.5",
+    "@angular/platform-browser": "6.0.5",
+    "@angular/platform-browser-dynamic": "6.0.5",
+    "@angular/platform-server": "6.0.5",
     "@compodoc/gulp-compodoc": "^0.0.9",
-    "@types/jest": "^23.0.2",
+    "@types/jest": "^23.1.0",
     "@types/lodash": "4.14.109",
-    "@types/node": "^10.3.2",
+    "@types/node": "^10.3.3",
     "angular-cli-ghpages": "^0.5.2",
     "angular2-template-loader": "^0.6.2",
     "autoprefixer": "8.6.2",
@@ -84,7 +84,7 @@
     "postcss-strip-inline-comments": "0.1.5",
     "pump": "3.0.0",
     "raw-loader": "0.5.1",
-    "rollup": "0.60.4",
+    "rollup": "0.60.7",
     "rollup-plugin-commonjs": "9.1.3",
     "rollup-plugin-node-resolve": "3.3.0",
     "rollup-plugin-sourcemaps": "0.4.2",

@@ -13,8 +13,8 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "genDir": "../tmp/lib-gen-dir/",
-    "flatModuleOutFile": "ngx-material-contacts.js",
-    "flatModuleId": "ngx-material-contacts",
+    "flatModuleOutFile": "contacts.js",
+    "flatModuleId": "@angular-material-extensions/contacts",
     "annotateForClosureCompiler": true
   }
 }

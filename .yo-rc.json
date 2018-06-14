@@ -4,8 +4,8 @@
     "authorName": "anthonynahas",
     "authorEmail": "anthony.na@hotmail.de",
     "githubUsername": "anthonynahas",
-    "githubRepoName": "ngx-material-contacts",
-    "projectName": "ngx-material-contacts",
+    "githubRepoName": "@angular-material-extensions/contacts",
+    "projectName": "@angular-material-extensions/contacts",
     "projectVersion": "0.0.1",
     "projectDescription": "Angular Library to manage contacts and users with a material deisgn",
     "projectKeywords": [
@@ -29,7 +29,7 @@
       " @angular/flex-layout"
     ],
     "dependenciesRange": "^",
-    "ngPrefix": "ngx-material-contacts",
+    "ngPrefix": "@angular-material-extensions/contacts",
     "testingFramework": "jest",
     "useGreenkeeper": true,
     "useCompodoc": true,

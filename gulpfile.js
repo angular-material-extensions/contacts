@@ -78,8 +78,8 @@ const argv = yargs
   .argv;
 
 const config = {
-  libraryName: 'ngx-material-contacts',
-  unscopedLibraryName: 'ngx-material-contacts',
+  libraryName: '@angular-material-extensions/contacts',
+  unscopedLibraryName: 'contacts',
   allSrc: 'src/**/*',
   allTs: 'src/**/!(*.spec).ts',
   allSass: 'src/**/*.+(scss|sass)',
@@ -519,7 +519,7 @@ gulp.task('build:demo', () => {
 });
 
 gulp.task('build:demo:prod', () => {
-  return execDemoCmd(`build --preserve-symlinks --prod --aot --build-optimizer --base-href /ngx-material-contacts/ --deploy-url /ngx-material-contacts/`, {cwd: `${config.demoDir}`});
+  return execDemoCmd(`build --preserve-symlinks --prod --aot --build-optimizer --base-href /angular-material-extensions/contacts/ --deploy-url /angular-material-extensions/contacts/`, {cwd: `${config.demoDir}`});
 });
 
 gulp.task('serve:demo-ssr', ['build:demo'], () => {
