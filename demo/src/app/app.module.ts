@@ -1,5 +1,4 @@
 import {NgModule} from '@angular/core';
-import {HttpModule} from '@angular/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 
@@ -8,6 +7,7 @@ import {AppSharedModule} from './shared';
 import {HomeModule} from './home/home.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,11 +17,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     // Add .withServerTransition() to support Universal rendering.
     // The application ID can be any identifier which is unique on
     // the page.
-    BrowserModule.withServerTransition({appId: 'ngx-material-contacts-demo-id'}),
+    BrowserModule.withServerTransition({appId: '@angular-material-extensions/contacts-demo-id'}),
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule,
+    HttpClientModule,
     AppRoutingModule,
     AppSharedModule,
     HomeModule

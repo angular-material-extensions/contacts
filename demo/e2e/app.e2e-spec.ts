@@ -1,6 +1,6 @@
 import { NgxMaterialContactsDemoPage } from './app.po';
 
-describe('ngx-material-contacts-demo App', () => {
+describe('@angular-material-extensions/contacts-demo App', () => {
   let page: NgxMaterialContactsDemoPage;
 
   beforeEach(() => {

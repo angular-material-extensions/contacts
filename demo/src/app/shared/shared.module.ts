@@ -21,15 +21,15 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {DisqusModule} from 'ngx-disqus';
 import {HighlightModule} from 'ngx-highlightjs';
 import {NgxMaterialPagesModule} from 'ngx-material-pages';
-import {NgxMaterialContactsModule} from 'ngx-material-contacts';
+import {MatContactsModule} from '@angular-material-extensions/contacts';
 
 @NgModule({
   imports: [
     RouterModule,
     NgbCollapseModule.forRoot(),
-    NgxMaterialContactsModule.forRoot(),
+    MatContactsModule.forRoot(),
     NgxMaterialPagesModule.forRoot(),
-    DisqusModule.forRoot('ngx-material-contacts'),
+    DisqusModule.forRoot('@angular-material-extensions/contacts'),
     HighlightModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
@@ -48,7 +48,7 @@ import {NgxMaterialContactsModule} from 'ngx-material-contacts';
     HeaderComponent,
     FooterComponent,
     ContentWrapperComponent,
-    NgxMaterialContactsModule,
+    MatContactsModule,
     NgxMaterialPagesModule,
     DisqusModule,
     HighlightModule,

@@ -106,11 +106,11 @@ export class GettingStartedComponent implements OnInit {
                                                 }`;
 
 
-  componentExample = `<ngx-material-contacts [contacts]="contacts"
+  componentExample = `<@angular-material-extensions/contacts [contacts]="contacts"
                            [readonly]="false"
                            (onContactAdded)="addContact($event)"
                            (onContactRemoved)="removeContact($event)">
-    </ngx-material-contacts>`;
+    </@angular-material-extensions/contacts>`;
 
   componentExampleTS = `
               const CONTACT_DATA: Contact[] = [
@@ -124,7 +124,7 @@ export class GettingStartedComponent implements OnInit {
               {
                 id: 'KXgJviXd4EL9',
                 name: 'Amanda Lee',
-                email: 'amanda.lee@ngx-material-contacts.de',
+                email: 'amanda.lee@@angular-material-extensions/contacts.de',
                 photoURL: '../../../assets/profiles/1p60.png',
                 phoneNumber: '+1-502-555-0156'
               }
@@ -155,7 +155,7 @@ export class GettingStartedComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle('Getting Started | ngx-material-contacts');
+    this.titleService.setTitle('Getting Started | @angular-material-extensions/contacts');
   }
 
   showCopyMessage(content: string) {
