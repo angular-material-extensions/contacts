@@ -6,6 +6,7 @@
 
 [![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts)
 [![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/@angular-material-extensions/contacts)
+[![Join the chat at https://gitter.im/angular-material-extensions/Lobby](https://badges.gitter.im/angular-material-extensions/Lobby.svg)](https://gitter.im/angular-material-extensions/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![CircleCI branch](https://img.shields.io/circleci/project/github/angular-material-extensions/contacts/master.svg?label=circleci)](https://circleci.com/gh/angular-material-extensions/contacts)
 [![Build Status](https://travis-ci.org/angular-material-extensions/contacts.svg?branch=master)](https://travis-ci.org/angular-material-extensions/contacts)
 [![Coverage Status](https://coveralls.io/repos/github/angular-material-extensions/contacts/badge.svg?branch=master)](https://coveralls.io/github/angular-material-extensions/contacts?branch=master)
@@ -26,10 +27,36 @@
    src="assets/demo3.gif">
 </p>
 
-## Demo
+## Built by and for developers :heart:
+Do you have any question or suggestion ? Please do not hesitate to contact us!
+Alternatively, provide a PR | open an appropriate issue [here](https://github.com/angular-material-extensions/contacts/issues)
 
-View all the directives in action at https://anthonynahas.github.io/@angular-material-extensions/contacts
+If did you like this project, support [angular-material-extensions](https://github.com/angular-material-extensions) 
+by starring :star: and sharing it :loudspeaker:
 
+## Table of Contents
+- [Demo](#demo)
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Peer Dependencies](#peerDependencies)
+- [Additional Requirements - material (Include a theme)](#additional-requirements-material-theme)
+- [Additional Requirements - material icons](#additional-requirements-material-icons)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Documentation](#documentation)
+- [Run Demo App Locally](#run-demo-app-locally)
+- [Development](#development)
+- [Other Angular Libraries](#other-angular-libraries)
+- [Support](#support)
+- [License](#license)
+
+<a name="demo"/>
+
+## [Demo](https://angular-material-extensions.github.io/contacts)
+
+View all the directives and components in action at [https://angular-material-extensions.github.io/contacts](https://angular-material-extensions.github.io/contacts)
+
+<a name="features"/>
 
 ## Features
 - Display contacts in a table including name, email, phone number and photo
@@ -37,8 +64,12 @@ View all the directives in action at https://anthonynahas.github.io/@angular-mat
 - Add a contact via event `onContactAdded`
 - Validation for adding a new contact incl. name, email and phone number form controls
 
+<a name="dependencies"/>
+
 ## Dependencies
 * [Angular](https://angular.io) (*requires* Angular 2 or higher)
+
+<a name="peerDependencies"/>
 
 ### Requirements (peer dependencies) - please instsall the packages before using @angular-material-extensions/contacts:
 - [angular flex-layout v6.0.0-beta.16](https://www.npmjs.com/package/@angular/flex-layout)
@@ -56,7 +87,43 @@ npm i @angular/cdk @angular/material @angular/flex-layout @angular/animations @a
 ```
 
 
-## Installation
+<a name="additional-requirements-material-theme"/>
+
+### Additional requirements Theme (Material Design)
+- [angular material theme](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
+
+<a name="additional-requirements-material-icons"/>
+
+## Additional Requirements - Import the material design icons [learn more](https://material.angular.io/guide/getting-started#step-6-optional-add-material-icons)
+
+- The easiest way to import material design icons is to provide a link in your `index.html` file like below:
+
+```html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+
+- alternative solution:
+
+1. Install of the official npm module of the material design icons
+
+```bash
+npm i -s material-design-icons
+```
+
+2. Import them in your `angular.json` file
+
+```json
+"styles": [
+        "styles.css",
+        "../node_modules/material-design-icons/iconfont/material-icons.css"
+      ],
+```  
+
+----
+
+<a name="installation"/>
+
+## [Installation](https://angular-material-extensions.github.io/contacts/getting-started)
 Install above dependencies via *npm*. 
 
 Now install `@angular-material-extensions/contacts` via:
@@ -105,6 +172,8 @@ import { NgxMaterialPagesModule } from '@angular-material-extensions/contacts';
 export class OtherModule {
 }
 ```
+
+<a name="usage"/>
 
 ## Usage
 
@@ -174,11 +243,68 @@ export interface Contact {
 }
 ```
 
-### Please checkout the full documentation [here](https://anthonynahas.github.io/@angular-material-extensions/contacts/doc/index.html) or follow the official [tutorial](https://anthonynahas.github.io/@angular-material-extensions/contacts/getting-started)
+<a name="documentation"/>
+
+## [Documentation](https://angular-material-extensions.github.io/contacts/doc/index.html)
+
+Please checkout the full documentation [here](https://anthonynahas.github.io/@angular-material-extensions/contacts/doc/index.html) 
+or follow the official [tutorial](https://anthonynahas.github.io/@angular-material-extensions/contacts/getting-started)
+
+<a name="run-demo-app-locally"/>
+
+## Run Demo App Locally
+
+- [clone this repo](https://github.com/angular-material-extensions/contacts.git) by running
+```bash
+$ git clone https://github.com/angular-material-extensions/contacts.git
+```
+
+- link the **@angular-material-extensions/contacts** package
+use gulp globally
+```bash
+$ gulp link
+```
+
+use gulp locally
+```bash
+$ npx gulp link
+```
+for some mac os users, you may use the sudo command with gulp
+use gulp with sudo
+```bash
+$ sudo gulp link
+```
+or locally 
+```bash
+$ sudo npx gulp link
+```
+
+- navigate to the demo app directory
+```bash
+$ cd demo
+```
+
+- install the dependencies
+```bash
+$ npm i
+```
+
+- run/start/serve the app
+```bash
+$ npm run start
+```
+or
+```bash
+$ ng serve --open
+```
+- the app is now hosted by `http://localhost:4200/`
+
+
+<a name="development"/>
 
 ## Development
 
-1. clone this [repo]()
+1. clone this [repo](https://github.com/angular-material-extensions/contacts.git)
 2. Install the dependencies by running `npm i`
 3. build the library `npm run build` or `gulp build`
 To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
@@ -203,6 +329,8 @@ To lint all `*.ts` files:
 $ npm run lint
 ```
 
+<a name="other-angular-libraries"/>
+
 ## Other Angular Libraries
 - [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)
 - [ngx-material-pages](https://github.com/AnthonyNahas/ngx-material-pages)
@@ -210,8 +338,18 @@ $ npm run lint
 - [@angular-material-extensions/faq](https://github.com/angular-material-extensions/faq)
 - [@angular-material-extensions/combination-generator](https://github.com/angular-material-extensions/combination-generator)
 
+<a name="support"/>
+
+## Support
++ Drop an email to: [Anthony Nahas](mailto:anthony.na@hotmail.de)
++ or open an appropriate [issue](https://github.com/angular-material-extensions/pages/issues)
++ let us chat on [Gitter](https://gitter.im/angular-material-extensions/Lobby)
+ 
+ Built by and for developers :heart: we will help you :punch:
 
 ## License
 
-Copyright (c) 2018 anthonynahas. Licensed under the MIT License (MIT)
+## License
+
+Copyright (c) 2018 [Anthony Nahas](https://github.com/AnthonyNahas). Licensed under the MIT License (MIT)
 
