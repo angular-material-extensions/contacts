@@ -5,7 +5,7 @@
 # @angular-material-extensions/contacts - Angular Library to manage contacts and users with a material design (Angular V6 supported)
 
 [![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts)
-[![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/@angular-material-extensions/contacts)
+[![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://angular-material-extensions.github.io/contacts)
 [![Join the chat at https://gitter.im/angular-material-extensions/Lobby](https://badges.gitter.im/angular-material-extensions/Lobby.svg)](https://gitter.im/angular-material-extensions/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![CircleCI branch](https://img.shields.io/circleci/project/github/angular-material-extensions/contacts/master.svg?label=circleci)](https://circleci.com/gh/angular-material-extensions/contacts)
 [![Build Status](https://travis-ci.org/angular-material-extensions/contacts.svg?branch=master)](https://travis-ci.org/angular-material-extensions/contacts)

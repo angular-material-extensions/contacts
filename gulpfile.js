@@ -553,7 +553,7 @@ gulp.task('push:demo', () => {
 });
 
 gulp.task('deploy:demo', (cb) => {
-  runSequence('build:demo:prod', 'build:doc', 'push:demo', cb);
+  runSequence('build:demo', 'build:doc', 'push:demo', cb);
 });
 
 
