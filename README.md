@@ -19,12 +19,12 @@
 
 <p align="center">
   <img alt="@angular-material-extensions/contacts" style="text-align: center;"
-   src="assets/demo2.gif">
+   src="https://raw.githubusercontent.com/angular-material-extensions/contacts/HEAD/assets/demo2.gif">
 </p>
 
 <p align="center">
   <img alt="@angular-material-extensions/contacts" style="text-align: center;"
-   src="assets/demo3.gif">
+   src="https://raw.githubusercontent.com/angular-material-extensions/contacts/HEAD/assets/demo3.gif">
 </p>
 
 ## Built by and for developers :heart:
