@@ -28,7 +28,7 @@
     "@angular/platform-server": "^6.0.5",
     "@angular/router": "^6.0.5",
     "@ng-bootstrap/ng-bootstrap": "^2.1.0",
-    "bootstrap": "4.1.1",
+    "bootstrap": "4.1.2",
     "core-js": "^2.5.7",
     "font-awesome": "^4.7.0",
     "include-media": "^1.4.9",
