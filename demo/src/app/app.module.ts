@@ -7,7 +7,10 @@ import {AppSharedModule} from './shared';
 import {HomeModule} from './home/home.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {ServiceWorkerModule} from '@angular/service-worker';
+import {environment} from '../environments/environment';
+import {MarkdownModule} from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,8 @@ import {HttpClientModule} from '@angular/common/http';
     // The application ID can be any identifier which is unique on
     // the page.
     BrowserModule.withServerTransition({appId: '@angular-material-extensions/contacts-demo-id'}),
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
+    MarkdownModule.forRoot({loader: HttpClient}),
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
