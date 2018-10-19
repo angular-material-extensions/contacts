@@ -26,7 +26,7 @@
     "@angular/platform-browser": "^6.1.10",
     "@angular/platform-browser-dynamic": "^6.1.10",
     "@angular/platform-server": "^6.1.10",
-    "@angular/pwa": "^0.7.5",
+    "@angular/pwa": "^0.10.2",
     "@angular/router": "^6.1.10",
     "@angular/service-worker": "^6.1.10",
     "@ng-bootstrap/ng-bootstrap": "^2.2.2",
