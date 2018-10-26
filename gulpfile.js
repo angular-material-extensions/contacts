@@ -348,6 +348,8 @@ gulp.task('rollup-bundle', (cb) => {
         // Angular dependencies
         '@angular/core': 'ng.core',
         '@angular/common': 'ng.common',
+        '@angular/forms': 'ng.forms',
+        '@angular/forms': 'ng.forms',
 
         // Rxjs dependencies
         'rxjs/Subject': 'Rx',
@@ -374,8 +376,10 @@ gulp.task('rollup-bundle', (cb) => {
         // Add any other dependency or peer dependency of your library here
         // This is required for UMD bundle users.
         // See https://github.com/tinesoft/generator-ngx-library/TROUBLESHOUTING.md if trouble
+        'ng2-avatarl': _.camelCase('ng2-avatarl'.replace('/', '.')),
         '@angular/material': _.camelCase('@angular/material'.replace('/', '.')),
         ' @angular/cdk': _.camelCase(' @angular/cdk'.replace('/', '.')),
+        ' @angular/cdk/collections': _.camelCase(' @angular/cdk/collections'.replace('/', '.')),
         ' @angular/flex-layout': _.camelCase(' @angular/flex-layout'.replace('/', '.'))
 
       };
