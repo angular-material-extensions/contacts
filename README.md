@@ -2,7 +2,7 @@
   <img height="256px" width="256px" style="text-align: center;" src="https://cdn.rawgit.com/angular-material-extensions/contacts/master/demo/src/assets/logo.svg">
 </p>
 
-# @angular-material-extensions/contacts - Angular Library to manage contacts and users with a material design (Angular V6 supported)
+# @angular-material-extensions/contacts - Angular Library to manage contacts and users with a material design (Angular V7 supported)
 
 [![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts)
 [![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://angular-material-extensions.github.io/contacts)
@@ -67,17 +67,17 @@ View all the directives and components in action at [https://angular-material-ex
 <a name="dependencies"/>
 
 ## Dependencies
-* [Angular](https://angular.io) (*requires* Angular 2 or higher)
+* [Angular](https://angular.io) - angular V7 is supported
 
 <a name="peerDependencies"/>
 
-### Requirements (peer dependencies) - please instsall the packages before using @angular-material-extensions/contacts:
-- [angular flex-layout v6.0.0-beta.16](https://www.npmjs.com/package/@angular/flex-layout)
-- [angular material v6.2.1](https://www.npmjs.com/package/@angular/material)
+### Requirements (peer dependencies) - please install the packages before using @angular-material-extensions/contacts:
 - [angular material theme](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
-- [angular cdk v6.2.1](https://www.npmjs.com/package/@angular/cdk)
-- [angular animations v6.0.5](https://www.npmjs.com/package/@angular/animations)
-- [angular forms v6.0.5](https://www.npmjs.com/package/@angular/forms)
+- [angular material v7.0.1](https://www.npmjs.com/package/@angular/material)
+- [angular cdk v7.0.1](https://www.npmjs.com/package/@angular/cdk)
+- [angular animations v7.0.1](https://www.npmjs.com/package/@angular/animations)
+- [angular forms v7.0.1](https://www.npmjs.com/package/@angular/forms)
+- [angular flex-layout v7.0.0-beta.19](https://www.npmjs.com/package/@angular/flex-layout)
 - [ng2-avatar](https://www.npmjs.com/package/ng2-avatar)
 - if you need a built in theme --> please let me know
 
@@ -265,20 +265,6 @@ use gulp globally
 $ gulp link
 ```
 
-use gulp locally
-```bash
-$ npx gulp link
-```
-for some mac os users, you may use the sudo command with gulp
-use gulp with sudo
-```bash
-$ sudo gulp link
-```
-or locally 
-```bash
-$ sudo npx gulp link
-```
-
 - navigate to the demo app directory
 ```bash
 $ cd demo
@@ -307,15 +293,12 @@ $ ng serve --open
 1. clone this [repo](https://github.com/angular-material-extensions/contacts.git)
 2. Install the dependencies by running `npm i`
 3. build the library `npm run build` or `gulp build`
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 
 ```bash
 $ npm run build
 ```
-
 4. Link the library 
-  - on windows `gulp link` or `locally npx gulp link`
-  - on mac/linux `sudo gulp link` or locally `sudo npx gulp link`
+  - `gulp link` 
   
  5. Navigate to the demo app
   - `cd demo`
