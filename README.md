@@ -322,32 +322,39 @@ $ npm run build
   _ `npm i`
   _ `npm start`
 
-extras
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
-```
-
 <a name="other-angular-libraries"/>
 
 ## Other Angular Libraries
 - [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)
-- [ngx-material-pages](https://github.com/AnthonyNahas/ngx-material-pages)
-- [ngx-material-password-strength](https://github.com/AnthonyNahas/ngx-material-password-strength)
+- [ngx-linkifyjs](https://github.com/AnthonyNahas/ngx-linkifyjs)
+- [@firebaseui/ng-bootstrap](https://github.com/firebaseui/ng-bootstrap)
+- [@angular-material-extensions/password-strength](https://github.com/angular-material-extensions/password-strength)
+- [@angular-material-extensions/link-preview](https://github.com/angular-material-extensions/link-preview)
+- [@angular-material-extensions/google-maps-autocomplete](https://github.com/angular-material-extensions/google-maps-autocomplete)
+- [@angular-material-extensions/pages](https://github.com/angular-material-extensions/pages)
+- [@angular-material-extensions/contacts](https://github.com/angular-material-extensions/contacts)
 - [@angular-material-extensions/faq](https://github.com/angular-material-extensions/faq)
+- [@angular-material-extensions/layout](https://github.com/angular-material-extensions/layout)
 - [@angular-material-extensions/combination-generator](https://github.com/angular-material-extensions/combination-generator)
 
 <a name="support"/>
 
 ## Support
 + Drop an email to: [Anthony Nahas](mailto:anthony.na@hotmail.de)
-+ or open an appropriate [issue](https://github.com/angular-material-extensions/pages/issues)
++ or open an appropriate [issue](https://github.com/angular-material-extensions/contacts/issues)
 + let us chat on [Gitter](https://gitter.im/angular-material-extensions/Lobby)
  
  Built by and for developers :heart: we will help you :punch:
 
-## License
+---
+
+![jetbrains logo](https://raw.githubusercontent.com/angular-material-extensions/contacts/HEAD/assets/jetbrains-variant-4_logos/jetbrains-variant-4.png)
+
+This project is supported by [jetbrains](https://www.jetbrains.com/) with 1 ALL PRODUCTS PACK OS LICENSE incl. [webstorm](https://www.jetbrains.com/webstorm)
+
+---
+
+<a name="license"/>
 
 ## License
 
