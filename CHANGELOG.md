@@ -1,5 +1,17 @@
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/angular-material-extensions/contacts/compare/v3.0.0...v3.1.0) (2018-10-28)
+
+
+### Features
+
+* **demo:** updated angular to v7 ([de24c8e](https://github.com/angular-material-extensions/contacts/commit/de24c8e))
+* **package:** added support of angular v7 ([6386a76](https://github.com/angular-material-extensions/contacts/commit/6386a76))
+* **package:** updated angular to v7.0.1 ([7a0db70](https://github.com/angular-material-extensions/contacts/commit/7a0db70))
+
+
+
 <a name="3.0.0"></a>
-# [3.0.0](https://github.com/angular-material-extensions/contacts/compare/8.5.1...3.0.0) (2018-06-14)
+# [3.0.0](https://github.com/angular-material-extensions/contacts/compare/8.5.1...v3.0.0) (2018-06-14)
 
 
 
