@@ -1,7 +1,8 @@
 <p align="center">
-  <img height="256px" width="256px" style="text-align: center;" src="https://cdn.rawgit.com/angular-material-extensions/contacts/master/demo/src/assets/logo.svg">
+  <img alt="angular-material-extensions's logo"
+   height="256px" width="256px" style="text-align: center;" 
+   src="https://cdn.rawgit.com/angular-material-extensions/contacts/master/assets/angular-material-extensions-logo.svg">
 </p>
-
 # @angular-material-extensions/contacts - Angular Library to manage contacts and users with a material design (Angular V7 supported)
 
 [![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fcontacts)
@@ -260,7 +261,6 @@ $ git clone https://github.com/angular-material-extensions/contacts.git
 ```
 
 - link the **@angular-material-extensions/contacts** package
-use gulp globally
 ```bash
 $ gulp link
 ```
