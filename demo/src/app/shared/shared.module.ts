@@ -18,7 +18,6 @@ import {
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {DisqusModule} from 'ngx-disqus';
 import {HighlightModule} from 'ngx-highlightjs';
 import {NgxMaterialPagesModule} from 'ngx-material-pages';
 import {MatContactsModule} from '@angular-material-extensions/contacts';
@@ -26,10 +25,9 @@ import {MatContactsModule} from '@angular-material-extensions/contacts';
 @NgModule({
   imports: [
     RouterModule,
-    NgbCollapseModule.forRoot(),
+    NgbCollapseModule,
     MatContactsModule.forRoot(),
     NgxMaterialPagesModule.forRoot(),
-    DisqusModule.forRoot('@angular-material-extensions/contacts'),
     HighlightModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
@@ -50,7 +48,6 @@ import {MatContactsModule} from '@angular-material-extensions/contacts';
     ContentWrapperComponent,
     MatContactsModule,
     NgxMaterialPagesModule,
-    DisqusModule,
     HighlightModule,
     FormsModule,
     ReactiveFormsModule,
