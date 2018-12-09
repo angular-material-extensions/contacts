@@ -80,7 +80,7 @@
     "jest-cli": "^23.6.0",
     "jest-preset-angular": "^6.0.1",
     "lodash": "^4.17.11",
-    "node-sass": "^4.9.4",
+    "node-sass": "^4.11.0",
     "postcss": "^7.0.5",
     "postcss-strip-inline-comments": "0.1.5",
     "pump": "3.0.0",
