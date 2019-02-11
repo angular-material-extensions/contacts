@@ -74,11 +74,11 @@ View all the directives and components in action at [https://angular-material-ex
 
 ### Requirements (peer dependencies) - please install the packages before using @angular-material-extensions/contacts:
 - [angular material theme](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
-- [angular material v7.0.1](https://www.npmjs.com/package/@angular/material)
-- [angular cdk v7.0.1](https://www.npmjs.com/package/@angular/cdk)
-- [angular animations v7.0.1](https://www.npmjs.com/package/@angular/animations)
-- [angular forms v7.0.1](https://www.npmjs.com/package/@angular/forms)
-- [angular flex-layout v7.0.0-beta.19](https://www.npmjs.com/package/@angular/flex-layout)
+- [angular material v7.x](https://www.npmjs.com/package/@angular/material)
+- [angular cdk v7.x](https://www.npmjs.com/package/@angular/cdk)
+- [angular animations v7.x](https://www.npmjs.com/package/@angular/animations)
+- [angular forms v7.x](https://www.npmjs.com/package/@angular/forms)
+- [angular flex-layout v7.0.0-beta.23](https://www.npmjs.com/package/@angular/flex-layout)
 - [ng2-avatar](https://www.npmjs.com/package/ng2-avatar)
 - if you need a built in theme --> please let me know
 
@@ -315,10 +315,8 @@ $ npm run build
 - [@angular-material-extensions/link-preview](https://github.com/angular-material-extensions/link-preview)
 - [@angular-material-extensions/google-maps-autocomplete](https://github.com/angular-material-extensions/google-maps-autocomplete)
 - [@angular-material-extensions/pages](https://github.com/angular-material-extensions/pages)
-- [@angular-material-extensions/contacts](https://github.com/angular-material-extensions/contacts)
+- [@angular-material-extensions/freelancer-theme](https://github.com/angular-material-extensions/freelancer-theme)
 - [@angular-material-extensions/faq](https://github.com/angular-material-extensions/faq)
-- [@angular-material-extensions/layout](https://github.com/angular-material-extensions/layout)
-- [@angular-material-extensions/combination-generator](https://github.com/angular-material-extensions/combination-generator)
 
 <a name="support"/>
 
