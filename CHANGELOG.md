@@ -1,4 +1,13 @@
-<a name="3.1.0"></a>
+## [3.1.1](https://github.com/angular-material-extensions/contacts/compare/v3.1.0...v3.1.1) (2019-02-11)
+
+
+### Bug Fixes
+
+* **demo:** updated angular to v7.2.4 and other dependencies ([5b8df7f](https://github.com/angular-material-extensions/contacts/commit/5b8df7f))
+* **package:** updated angular to v7.2.4 and other dependencies ([0fc2353](https://github.com/angular-material-extensions/contacts/commit/0fc2353))
+
+
+
 # [3.1.0](https://github.com/angular-material-extensions/contacts/compare/v3.0.0...v3.1.0) (2018-10-28)
 
 
@@ -10,17 +19,14 @@
 
 
 
-<a name="3.0.0"></a>
 # [3.0.0](https://github.com/angular-material-extensions/contacts/compare/8.5.1...v3.0.0) (2018-06-14)
 
 
 
-<a name="8.5.1"></a>
 ## [8.5.1](https://github.com/angular-material-extensions/contacts/compare/4.14.109...8.5.1) (2018-06-13)
 
 
 
-<a name="2.0.0"></a>
 # [2.0.0](https://github.com/angular-material-extensions/contacts/compare/v1.0.3...v2.0.0) (2018-06-13)
 
 
@@ -35,7 +41,6 @@
 
 
 
-<a name="1.0.3"></a>
 ## [1.0.3](https://github.com/angular-material-extensions/contacts/compare/v1.0.2...v1.0.3) (2018-05-14)
 
 
@@ -45,7 +50,6 @@
 
 
 
-<a name="1.0.2"></a>
 ## [1.0.2](https://github.com/angular-material-extensions/contacts/compare/v1.0.1...v1.0.2) (2018-05-14)
 
 
@@ -68,12 +72,10 @@
 
 
 
-<a name="1.0.1"></a>
 ## [1.0.1](https://github.com/angular-material-extensions/contacts/compare/v1.0.0...v1.0.1) (2018-04-26)
 
 
 
-<a name="1.0.0"></a>
 # [1.0.0](https://github.com/angular-material-extensions/contacts/compare/0f2bda4...v1.0.0) (2018-04-25)
 
 
