@@ -12,6 +12,7 @@
     "url": "git://github.com/angular-material-extensions/contacts.git"
   },
   "license": "MIT",
+  "schematics": "./schematics/collection.json",
   "keywords": [
     "angular",
     " library",
@@ -28,6 +29,9 @@
   "private": true,
   "scripts": {
     "build": "gulp build",
+    "build:doc": "gulp build:doc",
+    "build:schematics": "gulp build:schematics",
+    "build:watch:fast": "gulp build:watch-fast",
     "test": " gulp test",
     "demo": " gulp build:demo",
     "check-travis": " travis-status --repo=angular-material-extensions/contacts --branch=master --fail-pending || echo 'Not yet passing'"
@@ -43,12 +47,14 @@
     "ng2-avatar": "^2.3.1"
   },
   "devDependencies": {
+    "@angular-devkit/schematics": "^7.3.5",
     "@angular/compiler": "^7.2.8",
     "@angular/compiler-cli": "^7.2.8",
     "@angular/platform-browser": "^7.2.8",
     "@angular/platform-browser-dynamic": "^7.2.8",
     "@angular/platform-server": "^7.2.8",
     "@compodoc/gulp-compodoc": "^0.0.9",
+    "@types/jasmine": "^3.3.9",
     "@types/jest": "^23.3.14",
     "@types/lodash": "^4.14.123",
     "@types/node": "^10.14.0",
@@ -60,6 +66,7 @@
     "codelyzer": "^4.5.0",
     "commitplease": "3.2.0",
     "conventional-github-releaser": "2.0.2",
+    "copy-webpack-plugin": "^5.0.1",
     "core-js": "2.5.7",
     "css-loader": "^1.0.0",
     "cssnano": "^4.1.10",
@@ -93,12 +100,16 @@
     "run-sequence": "2.2.1",
     "rxjs": "^6.4.0",
     "sass-loader": "^7.1.0",
+    "schematics-utilities": "^1.1.1",
     "source-map-loader": "^0.2.4",
     "to-string-loader": "^1.1.5",
     "travis-status": "^3.0.1",
     "tsickle": "^0.33.1",
     "tslint": "^5.13.1",
-    "typescript": "~3.1.3",
+    "typescript": "~3.2.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-node-externals": "^1.7.2",
     "yargs": "^12.0.5",
     "zone.js": "0.8.26"
   },
