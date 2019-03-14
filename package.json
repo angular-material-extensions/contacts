@@ -47,7 +47,7 @@
     "ng2-avatar": "^2.3.1"
   },
   "devDependencies": {
-    "@angular-devkit/schematics": "^7.3.5",
+    "@angular-devkit/schematics": "7.3.5",
     "@angular/compiler": "^7.2.8",
     "@angular/compiler-cli": "^7.2.8",
     "@angular/platform-browser": "^7.2.8",
