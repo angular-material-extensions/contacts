@@ -145,30 +145,30 @@ map: {
 
 Once installed you need to import the main module:
 ```js
-import { NgxMaterialPagesModule } from '@angular-material-extensions/contacts';
+import { MatContactsModule } from '@angular-material-extensions/contacts';
 ```
 The only remaining part is to list the imported module in your application module. The exact method will be slightly
-different for the root (top-level) module for which you should end up with the code similar to (notice ` NgxMaterialPagesModule .forRoot()`):
+different for the root (top-level) module for which you should end up with the code similar to (notice ` MatContactsModule .forRoot()`):
 ```js
-import { NgxMaterialPagesModule } from '@angular-material-extensions/contacts';
+import { MatContactsModule } from '@angular-material-extensions/contacts';
 
 @NgModule({
   declarations: [AppComponent, ...],
-  imports: [NgxMaterialPagesModule.forRoot(), ...],  
+  imports: [MatContactsModule.forRoot(), ...],  
   bootstrap: [AppComponent]
 })
 export class AppModule {
 }
 ```
 
-Other modules in your application can simply import ` NgxMaterialPagesModule `:
+Other modules in your application can simply import ` MatContactsModule `:
 
 ```js
-import { NgxMaterialPagesModule } from '@angular-material-extensions/contacts';
+import { MatContactsModule } from '@angular-material-extensions/contacts';
 
 @NgModule({
   declarations: [OtherComponent, ...],
-  imports: [NgxMaterialPagesModule, ...], 
+  imports: [MatContactsModule, ...], 
 })
 export class OtherModule {
 }
