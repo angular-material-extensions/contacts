@@ -30,11 +30,13 @@ export function addPackageJsonDependencies(): Rule {
     const dependencies: NodeDependency[] = [
       {
         type: NodeDependencyType.Default,
-        version: loadPackageVersionGracefully(context) || '3.5.1',
-        name: '@angular-material-extensions/password-strength'
+        version: loadPackageVersionGracefully(context) || '3.2.0',
+        name: '@angular-material-extensions/contacts'
       },
-      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.7', name: '@angular/animations'},
-      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.7', name: '@angular/forms'}
+      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.9', name: '@angular/animations'},
+      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.9', name: '@angular/forms'},
+      {type: NodeDependencyType.Default, version: '7.0.0-beta.23', name: '@angular/flex-layout'},
+      {type: NodeDependencyType.Default, version: '^2.3.1', name: 'ng2-avatar'},
     ];
 
     dependencies.forEach(dependency => {
@@ -63,9 +65,9 @@ export function addModuleToImports(options: any): Rule {
       // Takes the first project in case it's not provided by CLI
       options.project ? options.project : Object.keys(workspace['projects'])[0]
     );
-    const moduleName = 'MatPasswordStrengthModule';
+    const moduleName = 'MatContactsModule';
 
-    addModuleImportToRootModule(host, moduleName, '@angular-material-extensions/password-strength', project);
+    addModuleImportToRootModule(host, moduleName, '@angular-material-extensions/contacts', project);
     context.logger.log('info', `✅️ "${moduleName}" is imported`);
 
     return host;

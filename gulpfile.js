@@ -311,7 +311,7 @@ gulp.task('build:watch-fast', ['build-watch-no-tests'], () => {
 gulp.task('npm-package', ['build:schematics'], (cb) => {
   let pkgJson = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
   let targetPkgJson = {};
-  let fieldsToCopy = ['version', 'description', 'keywords', 'author', 'repository', 'license', 'bugs', 'homepage'];
+  let fieldsToCopy = ['version', 'description', 'keywords', 'author', 'repository', 'license', 'bugs', 'homepage', 'schematics'];
 
   targetPkgJson['name'] = config.libraryName;
 
