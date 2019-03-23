@@ -1,7 +1,7 @@
 {
   "name": "@angular-material-extensions/contacts",
   "description": "Angular Library to manage contacts and users with a material design",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "homepage": "https://github.com/angular-material-extensions/contacts",
   "author": {
     "name": "anthonynahas",

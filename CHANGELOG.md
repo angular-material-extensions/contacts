@@ -1,10 +1,22 @@
-## [3.1.1](https://github.com/angular-material-extensions/contacts/compare/v3.1.0...v3.1.1) (2019-02-11)
+## [3.1.2](https://github.com/angular-material-extensions/contacts/compare/v3.1.0...v3.1.2) (2019-03-23)
 
 
 ### Bug Fixes
 
+* **demo:** updated angular and other dependencies ([dff9b40](https://github.com/angular-material-extensions/contacts/commit/dff9b40))
+* **demo:** updated angular to v7.2.10 and other deps incl. material and flexlayout ([aab4c82](https://github.com/angular-material-extensions/contacts/commit/aab4c82))
 * **demo:** updated angular to v7.2.4 and other dependencies ([5b8df7f](https://github.com/angular-material-extensions/contacts/commit/5b8df7f))
+* **package:** added material ripple to the contacts row ([24da248](https://github.com/angular-material-extensions/contacts/commit/24da248))
+* **package:** added schematics support [#72](https://github.com/angular-material-extensions/contacts/issues/72) ([db933eb](https://github.com/angular-material-extensions/contacts/commit/db933eb))
+* **package:** updated angular and other dependencies ([316f018](https://github.com/angular-material-extensions/contacts/commit/316f018))
+* **package:** updated angular to v7.2.10 and other deps incl. material and flexlayout ([9ffdc15](https://github.com/angular-material-extensions/contacts/commit/9ffdc15))
 * **package:** updated angular to v7.2.4 and other dependencies ([0fc2353](https://github.com/angular-material-extensions/contacts/commit/0fc2353))
+* **package:** updated the schematics libs version ([d26b704](https://github.com/angular-material-extensions/contacts/commit/d26b704))
+
+
+### Features
+
+* **package:** added angular schematics support ([636cefd](https://github.com/angular-material-extensions/contacts/commit/636cefd))
 
 
 
