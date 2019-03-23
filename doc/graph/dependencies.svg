@@ -30,73 +30,73 @@
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_MatContactsModule_exports</title>
-<polygon fill="none" stroke="#000000" points="121,-208 121,-260 495,-260 495,-208 121,-208"/>
+<polygon fill="none" stroke="#000000" points="107,-208 107,-260 481,-260 481,-208 107,-208"/>
 </g>
-<!-- MatContactsComponent -->
+<!-- MatContactDialogComponent -->
 <g id="node1" class="node">
-<title>MatContactsComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="578.3739,-122 425.6261,-122 425.6261,-86 578.3739,-86 578.3739,-122"/>
-<text text-anchor="middle" x="502" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsComponent</text>
+<title>MatContactDialogComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="577.5322,-122 392.4678,-122 392.4678,-86 577.5322,-86 577.5322,-122"/>
+<text text-anchor="middle" x="485" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactDialogComponent</text>
 </g>
 <!-- MatContactsModule -->
 <g id="node4" class="node">
 <title>MatContactsModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="383.5912,-187 380.5912,-191 359.5912,-191 356.5912,-187 252.4088,-187 252.4088,-151 383.5912,-151 383.5912,-187"/>
-<text text-anchor="middle" x="318" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsModule</text>
+<polygon fill="#8dd3c7" stroke="#000000" points="349.5912,-187 346.5912,-191 325.5912,-191 322.5912,-187 218.4088,-187 218.4088,-151 349.5912,-151 349.5912,-187"/>
+<text text-anchor="middle" x="284" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsModule</text>
 </g>
-<!-- MatContactsComponent&#45;&gt;MatContactsModule -->
+<!-- MatContactDialogComponent&#45;&gt;MatContactsModule -->
 <g id="edge1" class="edge">
-<title>MatContactsComponent&#45;&gt;MatContactsModule</title>
-<path fill="none" stroke="#000000" d="M456.375,-122.1061C456.375,-141.3391 456.375,-169 456.375,-169 456.375,-169 393.9454,-169 393.9454,-169"/>
-<polygon fill="#000000" stroke="#000000" points="393.9454,-165.5001 383.9454,-169 393.9454,-172.5001 393.9454,-165.5001"/>
+<title>MatContactDialogComponent&#45;&gt;MatContactsModule</title>
+<path fill="none" stroke="#000000" d="M432.5142,-122.1061C432.5142,-141.3391 432.5142,-169 432.5142,-169 432.5142,-169 359.5728,-169 359.5728,-169"/>
+<polygon fill="#000000" stroke="#000000" points="359.5728,-165.5001 349.5728,-169 359.5728,-172.5001 359.5728,-165.5001"/>
 </g>
 <!-- MatContactMenuComponent -->
 <g id="node2" class="node">
 <title>MatContactMenuComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="408.0884,-122 227.9116,-122 227.9116,-86 408.0884,-86 408.0884,-122"/>
-<text text-anchor="middle" x="318" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactMenuComponent</text>
+<polygon fill="#ffffb3" stroke="#000000" points="374.0884,-122 193.9116,-122 193.9116,-86 374.0884,-86 374.0884,-122"/>
+<text text-anchor="middle" x="284" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactMenuComponent</text>
 </g>
 <!-- MatContactMenuComponent&#45;&gt;MatContactsModule -->
 <g id="edge2" class="edge">
 <title>MatContactMenuComponent&#45;&gt;MatContactsModule</title>
-<path fill="none" stroke="#000000" d="M318,-122.1061C318,-122.1061 318,-140.991 318,-140.991"/>
-<polygon fill="#000000" stroke="#000000" points="314.5001,-140.9909 318,-150.991 321.5001,-140.991 314.5001,-140.9909"/>
+<path fill="none" stroke="#000000" d="M284,-122.1061C284,-122.1061 284,-140.991 284,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="280.5001,-140.9909 284,-150.991 287.5001,-140.991 280.5001,-140.9909"/>
 </g>
-<!-- MatContactDialogComponent -->
+<!-- MatContactsComponent -->
 <g id="node3" class="node">
-<title>MatContactDialogComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="209.5322,-122 24.4678,-122 24.4678,-86 209.5322,-86 209.5322,-122"/>
-<text text-anchor="middle" x="117" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactDialogComponent</text>
+<title>MatContactsComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="176.3739,-122 23.6261,-122 23.6261,-86 176.3739,-86 176.3739,-122"/>
+<text text-anchor="middle" x="100" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsComponent</text>
 </g>
-<!-- MatContactDialogComponent&#45;&gt;MatContactsModule -->
+<!-- MatContactsComponent&#45;&gt;MatContactsModule -->
 <g id="edge3" class="edge">
-<title>MatContactDialogComponent&#45;&gt;MatContactsModule</title>
-<path fill="none" stroke="#000000" d="M169.4858,-122.1061C169.4858,-141.3391 169.4858,-169 169.4858,-169 169.4858,-169 242.4272,-169 242.4272,-169"/>
-<polygon fill="#000000" stroke="#000000" points="242.4272,-172.5001 252.4272,-169 242.4272,-165.5001 242.4272,-172.5001"/>
-</g>
-<!-- MatContactsComponent  -->
-<g id="node5" class="node">
-<title>MatContactsComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="487.3742,-252 330.6258,-252 330.6258,-216 487.3742,-216 487.3742,-252"/>
-<text text-anchor="middle" x="409" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsComponent </text>
-</g>
-<!-- MatContactsModule&#45;&gt;MatContactsComponent  -->
-<g id="edge4" class="edge">
-<title>MatContactsModule&#45;&gt;MatContactsComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M357.1794,-187.1061C357.1794,-187.1061 357.1794,-205.991 357.1794,-205.991"/>
-<polygon fill="#000000" stroke="#000000" points="353.6794,-205.9909 357.1794,-215.991 360.6794,-205.991 353.6794,-205.9909"/>
+<title>MatContactsComponent&#45;&gt;MatContactsModule</title>
+<path fill="none" stroke="#000000" d="M145.625,-122.1061C145.625,-141.3391 145.625,-169 145.625,-169 145.625,-169 208.0546,-169 208.0546,-169"/>
+<polygon fill="#000000" stroke="#000000" points="208.0546,-172.5001 218.0546,-169 208.0546,-165.5001 208.0546,-172.5001"/>
 </g>
 <!-- MatContactMenuComponent  -->
-<g id="node6" class="node">
+<g id="node5" class="node">
 <title>MatContactMenuComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="312.5889,-252 129.4111,-252 129.4111,-216 312.5889,-216 312.5889,-252"/>
-<text text-anchor="middle" x="221" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactMenuComponent </text>
+<polygon fill="#fb8072" stroke="#000000" points="472.5889,-252 289.4111,-252 289.4111,-216 472.5889,-216 472.5889,-252"/>
+<text text-anchor="middle" x="381" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactMenuComponent </text>
 </g>
 <!-- MatContactsModule&#45;&gt;MatContactMenuComponent  -->
-<g id="edge5" class="edge">
+<g id="edge4" class="edge">
 <title>MatContactsModule&#45;&gt;MatContactMenuComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M282.6243,-187.1061C282.6243,-187.1061 282.6243,-205.991 282.6243,-205.991"/>
-<polygon fill="#000000" stroke="#000000" points="279.1244,-205.9909 282.6243,-215.991 286.1244,-205.991 279.1244,-205.9909"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M319.3757,-187.1061C319.3757,-187.1061 319.3757,-205.991 319.3757,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="315.8758,-205.9909 319.3757,-215.991 322.8758,-205.991 315.8758,-205.9909"/>
+</g>
+<!-- MatContactsComponent  -->
+<g id="node6" class="node">
+<title>MatContactsComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="271.3742,-252 114.6258,-252 114.6258,-216 271.3742,-216 271.3742,-252"/>
+<text text-anchor="middle" x="193" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsComponent </text>
+</g>
+<!-- MatContactsModule&#45;&gt;MatContactsComponent  -->
+<g id="edge5" class="edge">
+<title>MatContactsModule&#45;&gt;MatContactsComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M244.8207,-187.1061C244.8207,-187.1061 244.8207,-205.991 244.8207,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="241.3207,-205.9909 244.8207,-215.991 248.3207,-205.991 241.3207,-205.9909"/>
 </g>
 </g>
 </svg>

@@ -14,309 +14,17 @@
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
             <a href="../" class="navbar-brand">@angular-material-extensions/contacts documentation</a>
-            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-            <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <nav>
-
-    <ul class="list">
-
-        <li class="title">
-            <a href="index.html" data-type="index-link">@angular-material-extensions/contacts documentation</a>
-        </li>
-
-        <li class="divider"></li>
-
-
-        <li class="chapter">
-            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
-            <ul class="links">
-                    <li class="link">
-                        <a 
-                            
-                             href="overview.html" 
-                             href="overview.html" 
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-th"></span>Overview
-                        </a>
-                    </li>
-                    <li class="link">
-                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
-                    </li>
-                    <li class="link">
-                            <a href="changelog.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>CHANGELOG
-                        </a>
-                    </li>
-                    <li class="link">
-                            <a href="license.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
-                        </a>
-                    </li>
-                    <li class="link">
-                        <a href="dependencies.html"
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-list"></span>Dependencies
-                        </a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter modules">
-            <a data-type="chapter-link" href="modules.html">
-                <div class="menu-toggler linked" data-toggle="collapse"
-                        data-target="#xs-modules-links"
-                >
-                    <span class="fa fa-fw fa-archive"></span>
-                    <span class="link-name">Modules</span>
-                    <span class="fa fa-angle-down"></span>
-                </div>
-            </a>
-            <ul class="links collapse"
-                    id="xs-modules-links"
-                >
-                    <li class="link">
-                        <a href="modules/MatContactsModule.html" data-type="entity-link">MatContactsModule</a>
-                            <li class="chapter inner">
-                                <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
-                                    >
-                                    <span class="fa fa-fw fa-cogs"></span>
-                                    <span>Components</span>
-                                    <span class="fa fa-angle-down"></span>
-                                </div>
-                                <ul class="links collapse"
-                                        id="xs-components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
-                                    >
-                                        <li class="link">
-                                            <a href="components/MatContactsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactsComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactMenuComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactMenuComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactDialogComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactDialogComponent</a>
-                                        </li>
-                                </ul>
-                            </li>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#xs-interfaces-links"
-                >
-                <span class="fa fa-fw fa-info"></span>
-                <span>Interfaces</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="xs-interfaces-links"
-                >
-                    <li class="link">
-                        <a href="interfaces/Contact.html" data-type="entity-link">Contact</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/IContactDialogData.html" data-type="entity-link">IContactDialogData</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/MetaData.html" data-type="entity-link">MetaData</a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#xs-miscellaneous-links"
-                >
-                <span class="fa fa-fw fa-cubes"></span>
-                <span>Miscellaneous</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="xs-miscellaneous-links"
-                >
-                    <li class="link">
-                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
-                    </li>
-                    <li class="link">
-                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-    </ul>
-
-</nav>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
            <div class="row main">
                <div class="hidden-xs menu">
-                   <nav>
-
-    <ul class="list">
-
-        <li class="title">
-            <a href="index.html" data-type="index-link">@angular-material-extensions/contacts documentation</a>
-        </li>
-
-        <li class="divider"></li>
-
-            <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-
-        <li class="chapter">
-            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
-            <ul class="links">
-                    <li class="link">
-                        <a 
-                            
-                             href="overview.html" 
-                             href="overview.html" 
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-th"></span>Overview
-                        </a>
-                    </li>
-                    <li class="link">
-                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
-                    </li>
-                    <li class="link">
-                            <a href="changelog.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>CHANGELOG
-                        </a>
-                    </li>
-                    <li class="link">
-                            <a href="license.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
-                        </a>
-                    </li>
-                    <li class="link">
-                        <a href="dependencies.html"
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-list"></span>Dependencies
-                        </a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter modules">
-            <a data-type="chapter-link" href="modules.html">
-                <div class="menu-toggler linked" data-toggle="collapse"
-                        data-target="#modules-links"
-                >
-                    <span class="fa fa-fw fa-archive"></span>
-                    <span class="link-name">Modules</span>
-                    <span class="fa fa-angle-down"></span>
-                </div>
-            </a>
-            <ul class="links collapse"
-                    id="modules-links"
->
-                    <li class="link">
-                        <a href="modules/MatContactsModule.html" data-type="entity-link">MatContactsModule</a>
-                            <li class="chapter inner">
-                                <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
->
-                                    <span class="fa fa-fw fa-cogs"></span>
-                                    <span>Components</span>
-                                    <span class="fa fa-angle-down"></span>
-                                </div>
-                                <ul class="links collapse"
-                                        id="components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
->
-                                        <li class="link">
-                                            <a href="components/MatContactsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactsComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactMenuComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactMenuComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactDialogComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactDialogComponent</a>
-                                        </li>
-                                </ul>
-                            </li>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#interfaces-links"
->
-                <span class="fa fa-fw fa-info"></span>
-                <span>Interfaces</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="interfaces-links"
->
-                    <li class="link">
-                        <a href="interfaces/Contact.html" data-type="entity-link">Contact</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/IContactDialogData.html" data-type="entity-link">IContactDialogData</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/MetaData.html" data-type="entity-link">MetaData</a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#miscellaneous-links"
->
-                <span class="fa fa-fw fa-cubes"></span>
-                <span>Miscellaneous</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="miscellaneous-links"
->
-                    <li class="link">
-                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
-                    </li>
-                    <li class="link">
-                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-    </ul>
-
-</nav>
+                   <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
                <div class="content component">
@@ -331,20 +39,21 @@
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
-    <li class="active">
-        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
-    </li>
-
-    <li>
-        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
-    </li>
-
-    <li>
-        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
-    </li>
-    <li>
-        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
-    </li>
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
 </ul>
 
 <div class="tab-content">
@@ -361,9 +70,9 @@
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
-                <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
-                <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+                    <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
     </p>
 
     <p class="comment">
@@ -407,6 +116,12 @@
                 <td class="col-md-3">templateUrl</td>
                 <td class="col-md-9"><code>mat-contacts.component.html</code></td>
             </tr>
+
+
+
+
+
+
 
 
         </tbody>
@@ -588,14 +303,14 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                    <td>dialog</td>
+                                                        <td>dialog</td>
                                                   
                                                         <td>
                                                                     <code>MatDialog</code>
                                                         </td>
                                                   
                                                     <td>
-                                                            no
+                                                            No
                                                     </td>
                                                     
                                                 </tr>
@@ -613,15 +328,15 @@
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="contacts"></a>
-                        <code>contacts</code>
+                        <b>contacts</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type:</em>    <code><a href="../interfaces/Contact.html" target="_self" >Contact[]</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Contact.html" target="_self" >Contact[]</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -634,15 +349,15 @@
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="enableMenu"></a>
-                        <code>enableMenu</code>
+                        <b>enableMenu</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -655,15 +370,15 @@
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="isLoading"></a>
-                        <code>isLoading</code>
+                        <b>isLoading</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -676,15 +391,15 @@
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="readonly"></a>
-                        <code>readonly</code>
+                        <b>readonly</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -697,14 +412,14 @@
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="title"></a>
-                        <code>title</code>
+                        <b>title</b>
                     </td>
-                    <td class="col-md-10">
-                        <p>
-                            <em>Default value: </em><code>&#x27;Contacts&#x27;</code>
-                        </p>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;Contacts&#x27;</code>
                     </td>
                 </tr>
                         <tr>
@@ -720,12 +435,14 @@
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="onAddingNewContactCanceled"></a>
-                        <code>onAddingNewContactCanceled</code>
+                        <b>onAddingNewContactCanceled</b>
                     </td>
-                    <td class="col-md-10">
-                        <em><code>$event</code> type:</em>    <code>EventEmitter&lt;void&gt;</code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter&lt;void&gt;</code>
 
                     </td>
                 </tr>
@@ -739,12 +456,14 @@
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="onContactAdded"></a>
-                        <code>onContactAdded</code>
+                        <b>onContactAdded</b>
                     </td>
-                    <td class="col-md-10">
-                        <em><code>$event</code> type:</em>    <code><a href="../interfaces/Contact.html" target="_self" >EventEmitter&lt;Contact&gt;</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Contact.html" target="_self" >EventEmitter&lt;Contact&gt;</a></code>
 
                     </td>
                 </tr>
@@ -758,12 +477,14 @@
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="onContactRemoved"></a>
-                        <code>onContactRemoved</code>
+                        <b>onContactRemoved</b>
                     </td>
-                    <td class="col-md-10">
-                        <em><code>$event</code> type:</em>    <code><a href="../interfaces/Contact.html" target="_self" >EventEmitter&lt;Contact&gt;</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Contact.html" target="_self" >EventEmitter&lt;Contact&gt;</a></code>
 
                     </td>
                 </tr>
@@ -779,620 +500,641 @@
 
     <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="add"></a>
-                        <span class="name">
-                            <b>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="add"></a>
+                    <span class="name">
+                        <b>
                             add
-                            </b>
-                            <a href="#add"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#add"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>add(contact: <a href="../interfaces/Contact.html">Contact</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="148" class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:148</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:148</a></div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>contact</td>
-                                                        <td>
-                                                                    <code><a href="../interfaces/Contact.html" target="_self" >Contact</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            no
-                                                    </td>
-                                                    
+            <tr>
+                <td class="col-md-4">
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contact</td>
+                                    <td>
+                                                <code><a href="../interfaces/Contact.html" target="_self" >Contact</a></code>
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="applyFilter"></a>
-                        <span class="name">
-                            <b>
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applyFilter"></a>
+                    <span class="name">
+                        <b>
                             applyFilter
-                            </b>
-                            <a href="#applyFilter"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#applyFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>applyFilter(filterValue: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="175" class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:175</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:175</a></div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>filterValue</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            no
-                                                    </td>
-                                                    
+            <tr>
+                <td class="col-md-4">
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filterValue</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="isAllSelected"></a>
-                        <span class="name">
-                            <b>
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAllSelected"></a>
+                    <span class="name">
+                        <b>
                             isAllSelected
-                            </b>
-                            <a href="#isAllSelected"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#isAllSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>isAllSelected()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:95</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:95</a></div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>Whether the number of selected elements matches the total number of rows. </p>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Whether the number of selected elements matches the total number of rows. </p>
 </div>
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="masterToggle"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="masterToggle"></a>
+                    <span class="name">
+                        <b>
                             masterToggle
-                            </b>
-                            <a href="#masterToggle"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#masterToggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>masterToggle()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:102</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:102</a></div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>Selects all rows if they are not all selected; otherwise clear selection. </p>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Selects all rows if they are not all selected; otherwise clear selection. </p>
 </div>
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnChanges"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnChanges"></a>
+                    <span class="name">
+                        <b>
                             ngOnChanges
-                            </b>
-                            <a href="#ngOnChanges"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnChanges(changes: <a href="https://angular.io/api/core/SimpleChanges" target="_blank">SimpleChanges</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:81</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:81</a></div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>changes</td>
-                                                        <td>
-                                                                    <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            no
-                                                    </td>
-                                                    
+            <tr>
+                <td class="col-md-4">
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>changes</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnDestroy"></a>
-                        <span class="name">
-                            <b>
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
                             ngOnDestroy
-                            </b>
-                            <a href="#ngOnDestroy"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnDestroy()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:88</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:88</a></div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            <tr>
+                <td class="col-md-4">
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnInit"></a>
-                        <span class="name">
-                            <b>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
                             ngOnInit
-                            </b>
-                            <a href="#ngOnInit"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnInit()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:69</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:69</a></div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            <tr>
+                <td class="col-md-4">
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="openAddDialogContainer"></a>
-                        <span class="name">
-                            <b>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openAddDialogContainer"></a>
+                    <span class="name">
+                        <b>
                             openAddDialogContainer
-                            </b>
-                            <a href="#openAddDialogContainer"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#openAddDialogContainer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>openAddDialogContainer(method?: <a href="../undefineds/Methods.html">Methods</a>, contact?: <a href="../interfaces/Contact.html">Contact</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:114</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:114</a></div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>method</td>
-                                                        <td>
-                                                                    <code><a href="../miscellaneous/enumerations.html#Methods" target="_self" >Methods</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            yes
-                                                    </td>
-                                                    
+            <tr>
+                <td class="col-md-4">
 
-                                                </tr>
-                                                <tr>
-                                                        <td>contact</td>
-                                                        <td>
-                                                                    <code><a href="../interfaces/Contact.html" target="_self" >Contact</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            yes
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>method</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#Methods" target="_self" >Methods</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        Yes
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="remove"></a>
-                        <span class="name">
-                            <b>
+
+                                </tr>
+                                <tr>
+                                    <td>contact</td>
+                                    <td>
+                                                <code><a href="../interfaces/Contact.html" target="_self" >Contact</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="remove"></a>
+                    <span class="name">
+                        <b>
                             remove
-                            </b>
-                            <a href="#remove"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#remove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>remove(contact: <a href="../interfaces/Contact.html">Contact</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:154</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:154</a></div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>contact</td>
-                                                        <td>
-                                                                    <code><a href="../interfaces/Contact.html" target="_self" >Contact</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            no
-                                                    </td>
-                                                    
+            <tr>
+                <td class="col-md-4">
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contact</td>
+                                    <td>
+                                                <code><a href="../interfaces/Contact.html" target="_self" >Contact</a></code>
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="removeSelected"></a>
-                        <span class="name">
-                            <b>
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeSelected"></a>
+                    <span class="name">
+                        <b>
                             removeSelected
-                            </b>
-                            <a href="#removeSelected"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#removeSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>removeSelected()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="168" class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:168</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:168</a></div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            <tr>
+                <td class="col-md-4">
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="select"></a>
-                        <span class="name">
-                            <b>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="select"></a>
+                    <span class="name">
+                        <b>
                             select
-                            </b>
-                            <a href="#select"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#select"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>select(row: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:108</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/module/components/contacts/mat-contacts.component.ts:108</a></div>
+                </td>
+            </tr>
 
-                <tr>
-                    <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>row</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            no
-                                                    </td>
-                                                    
+            <tr>
+                <td class="col-md-4">
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
     <section>
     
         <h3 id="inputs">
@@ -1405,21 +1147,14 @@
                         <a name="contactsDataSource"></a>
                         <span class="name">
                             <b>
-                            contactsDataSource
-                            </b>
-                            <a href="#contactsDataSource"><span class="fa fa-link"></span></a>
+                            contactsDataSource</b>
+                            <a href="#contactsDataSource"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>contactsDataSource:     <code><a href="../interfaces/Contact.html" target="_self" >MatTableDataSource&lt;Contact&gt;</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../interfaces/Contact.html" target="_self" >MatTableDataSource&lt;Contact&gt;</a></code>
+                            <i>Type : </i>        <code><a href="../interfaces/Contact.html" target="_self" >MatTableDataSource&lt;Contact&gt;</a></code>
 
                         </td>
                     </tr>
@@ -1439,16 +1174,9 @@
                         <a name="contactsDisplayedColumns"></a>
                         <span class="name">
                             <b>
-                            contactsDisplayedColumns
-                            </b>
-                            <a href="#contactsDisplayedColumns"><span class="fa fa-link"></span></a>
+                            contactsDisplayedColumns</b>
+                            <a href="#contactsDisplayedColumns"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>contactsDisplayedColumns:     <code>[]</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -1479,16 +1207,9 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            dialog
-                            </b>
-                            <a href="#dialog"><span class="fa fa-link"></span></a>
+                            dialog</b>
+                            <a href="#dialog"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon fa fa-reset"></span><code>dialog:     <code>MatDialog</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -1513,21 +1234,14 @@
                         <a name="dialogAfterCloseSubscription"></a>
                         <span class="name">
                             <b>
-                            dialogAfterCloseSubscription
-                            </b>
-                            <a href="#dialogAfterCloseSubscription"><span class="fa fa-link"></span></a>
+                            dialogAfterCloseSubscription</b>
+                            <a href="#dialogAfterCloseSubscription"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>dialogAfterCloseSubscription:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                         </td>
                     </tr>
@@ -1547,21 +1261,14 @@
                         <a name="dialogRef"></a>
                         <span class="name">
                             <b>
-                            dialogRef
-                            </b>
-                            <a href="#dialogRef"><span class="fa fa-link"></span></a>
+                            dialogRef</b>
+                            <a href="#dialogRef"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>dialogRef:     <code><a href="../interfaces/Contact.html" target="_self" >MatDialogRef&lt;MatContactDialogComponent&gt; | null</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../interfaces/Contact.html" target="_self" >MatDialogRef&lt;MatContactDialogComponent&gt; | null</a></code>
+                            <i>Type : </i>        <code><a href="../interfaces/Contact.html" target="_self" >MatDialogRef&lt;MatContactDialogComponent&gt; | null</a></code>
 
                         </td>
                     </tr>
@@ -1581,21 +1288,14 @@
                         <a name="filter"></a>
                         <span class="name">
                             <b>
-                            filter
-                            </b>
-                            <a href="#filter"><span class="fa fa-link"></span></a>
+                            filter</b>
+                            <a href="#filter"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>filter:     <code><a href="../miscellaneous/enumerations.html#Filter" target="_self" >Filter</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../miscellaneous/enumerations.html#Filter" target="_self" >Filter</a></code>
+                            <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#Filter" target="_self" >Filter</a></code>
 
                         </td>
                     </tr>
@@ -1615,16 +1315,9 @@
                         <a name="methods"></a>
                         <span class="name">
                             <b>
-                            methods
-                            </b>
-                            <a href="#methods"><span class="fa fa-link"></span></a>
+                            methods</b>
+                            <a href="#methods"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>methods:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -1648,16 +1341,9 @@
                         <a name="selection"></a>
                         <span class="name">
                             <b>
-                            selection
-                            </b>
-                            <a href="#selection"><span class="fa fa-link"></span></a>
+                            selection</b>
+                            <a href="#selection"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>selection:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -1681,16 +1367,9 @@
                         <a name="sort"></a>
                         <span class="name">
                             <b>
-                            sort
-                            </b>
-                            <a href="#sort"><span class="fa fa-link"></span></a>
+                            sort</b>
+                            <a href="#sort"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>sort:     <code>MatSort</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -1701,7 +1380,11 @@
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Decorators : </i><code>ViewChild</code>
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatSort)<br />
+                            </code>
                         </td>
                     </tr>
                         <tr>
@@ -1720,16 +1403,9 @@
                         <a name="table"></a>
                         <span class="name">
                             <b>
-                            table
-                            </b>
-                            <a href="#table"><span class="fa fa-link"></span></a>
+                            table</b>
+                            <a href="#table"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>table:     <code>MatTable&lt;any&gt;</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -1740,7 +1416,11 @@
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Decorators : </i><code>ViewChild</code>
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatTable)<br />
+                            </code>
                         </td>
                     </tr>
                         <tr>
@@ -1757,7 +1437,7 @@
 </div>
 
 
-    <div class="tab-pane fade tab-source-code" id="c-source">
+    <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
   Component,
   EventEmitter,
@@ -1944,7 +1624,7 @@ export class MatContactsComponent implements OnInit, OnDestroy, OnChanges {
 </code></pre>
     </div>
 
-    <div class="tab-pane fade" id="c-templateData">
+    <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;div fxLayout&#x3D;&quot;row&quot; fxLayoutGap&#x3D;&quot;20px&quot; fxLayoutAlign&#x3D;&quot;center&quot;&gt;
   &lt;mat-contact-menu *ngIf&#x3D;&quot;enableMenu&quot; fxFlex&#x3D;&quot;none&quot; fxHide.lt-md&gt;&lt;/mat-contact-menu&gt;
   &lt;div fxFlex&gt;
@@ -2055,7 +1735,7 @@ export class MatContactsComponent implements OnInit, OnDestroy, OnChanges {
         &lt;/ng-container&gt;
 
         &lt;mat-header-row *matHeaderRowDef&#x3D;&quot;contactsDisplayedColumns&quot;&gt;&lt;/mat-header-row&gt;
-        &lt;mat-row *matRowDef&#x3D;&quot;let row; columns: contactsDisplayedColumns;&quot;
+        &lt;mat-row *matRowDef&#x3D;&quot;let row; columns: contactsDisplayedColumns; matRipple&quot;
                  (click)&#x3D;&quot;select(row)&quot;&gt;
         &lt;/mat-row&gt;
       &lt;/mat-table&gt;
@@ -2065,7 +1745,100 @@ export class MatContactsComponent implements OnInit, OnDestroy, OnChanges {
 </code></pre>
     </div>
 
-    <div class="tab-pane fade" id="c-tree">
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>mat-contacts.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.example-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  min-width: 300px;
+}
+
+.mat-header-cell.mat-sort-header-sorted {
+  color: black;
+}
+
+mat-sidenav {
+  //width: 200px;
+  //height: 500px;
+}
+
+mat-sidenav-content {
+  //margin-left: 250px !important;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}
+
+.mat-row {
+  cursor: pointer;
+}
+
+.mat-column-select {
+  overflow: visible;
+}
+
+::ng-deep img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+::ng-deep div .avatar {
+  width: 40px;
+  line-height: 40px !important;
+  height: 40px;
+  font-size: 18px !important;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.ngx-avatar {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 8px 0 0;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}
+
+.cell-shrink-checkbox {
+  flex-grow: 0.1;
+  flex-shrink: 1;
+  flex-basis: 48px;
+}
+
+.cell-shrink-more {
+  flex-grow: 0.1;
+}
+
+.fill-remaining {
+  flex: 1 1 auto;
+}
+
+.fab-add {
+  margin-top: 55px;
+  margin-right: 20px;
+}
+
+::ng-deep .new-contact-dialog {
+  .mat-dialog-container {
+    padding: 0 0 24px 0;
+    min-width: 350px;
+  }
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
         <div id="tree-container"></div>
         <div class="tree-legend">
             <div class="title">
@@ -2082,13 +1855,15 @@ export class MatContactsComponent implements OnInit, OnDestroy, OnChanges {
             </div>
         </div>
     </div>
+
+    
 </div>
 
 <script src="../js/libs/vis.min.js"></script>
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center">  <mat-contact-menu *ngIf="enableMenu" fxFlex="none" fxHide.lt-md></mat-contact-menu>  <div fxFlex>    <mat-progress-bar *ngIf="isLoading" color="accent" mode="query"></mat-progress-bar>    <mat-toolbar color="primary">      <div *ngIf="selection.selected.length > 0; then contactSelected else none"></div>      <ng-template #contactSelected>        {{selection.selected.length}}        <button mat-icon-button matTooltip="remove" (click)="removeSelected()">          <mat-icon>delete</mat-icon>        </button>      </ng-template>      <ng-template #none>        {{title}}      </ng-template>      <span class="fill-remaining"></span>      <button *ngIf="!readonly"              fxHide.xs              mat-fab              color="accent"              class="fab-add"              matTooltip="add new contact"              (click)="openAddDialogContainer(methods.POST)">        <mat-icon>add</mat-icon>      </button>      <button *ngIf="!readonly" fxHide              fxShow.xs              mat-icon-button              matTooltip="add new contact"              (click)="openAddDialogContainer(methods.POST)">        <mat-icon>add</mat-icon>      </button>    </mat-toolbar>    <div class="example-container mat-elevation-z8" style="margin-bottom: 50px">      <mat-table #table [dataSource]="contactsDataSource" matSort>        <!-- Checkbox Column -->        <ng-container *ngIf="!readonly" matColumnDef="select">          <mat-header-cell *matHeaderCellDef class="cell-shrink-checkbox">            <mat-checkbox (change)="$event ? masterToggle() : null"                          [checked]="selection.hasValue() && isAllSelected()"                          [indeterminate]="selection.hasValue() && !isAllSelected()">            </mat-checkbox>          </mat-header-cell>          <mat-cell *matCellDef="let row" class="cell-shrink-checkbox">            <mat-checkbox (click)="$event.stopPropagation()"                          (change)="$event ? selection.toggle(row) : null"                          [checked]="selection.isSelected(row)">            </mat-checkbox>          </mat-cell>        </ng-container>        <!-- Name Column -->        <ng-container matColumnDef="name">          <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>          <mat-cell *matCellDef="let element">            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">              <div *ngIf="element.photoURL; then image else avatar"></div>              <ng-template #image>                <img class="ngx-avatar"                     mat-card-avatar                     [src]="element.photoURL">              </ng-template>              <ng-template #avatar>                <avatar [email]="element.email"                        [name]="element.name"                        [displayType]="\'circle\'">                </avatar>              </ng-template>              <span>{{element.name}}</span>            </div>          </mat-cell>        </ng-container>        <!-- Email Column -->        <ng-container matColumnDef="email">          <mat-header-cell *matHeaderCellDef> Email</mat-header-cell>          <mat-cell *matCellDef="let element"> {{element.email}}</mat-cell>        </ng-container>        <!-- PhoneNumber Column -->        <ng-container matColumnDef="phoneNumber">          <mat-header-cell *matHeaderCellDef> Phone Number</mat-header-cell>          <mat-cell *matCellDef="let element"> {{element.phoneNumber}}</mat-cell>        </ng-container>        <!--More Options Column-->        <ng-container *ngIf="!readonly" matColumnDef="more">          <mat-header-cell *matHeaderCellDef class="cell-shrink-more">          </mat-header-cell>          <mat-cell *matCellDef="let element"                    class="cell-shrink-more"                    (click)="$event.stopPropagation()">            <button mat-icon-button                    [matMenuTriggerFor]="posXMenu"                    class="mat-24"                    aria-label="Open x-positioned menu">              <mat-icon>more_vert</mat-icon>            </button>            <mat-menu xPosition="before" #posXMenu="matMenu">              <button mat-menu-item [disabled]="false" (click)="remove(element)">                <mat-icon>delete</mat-icon>                remove              </button>            </mat-menu>          </mat-cell>        </ng-container>        <mat-header-row *matHeaderRowDef="contactsDisplayedColumns"></mat-header-row>        <mat-row *matRowDef="let row; columns: contactsDisplayedColumns;"                 (click)="select(row)">        </mat-row>      </mat-table>    </div>  </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center">  <mat-contact-menu *ngIf="enableMenu" fxFlex="none" fxHide.lt-md></mat-contact-menu>  <div fxFlex>    <mat-progress-bar *ngIf="isLoading" color="accent" mode="query"></mat-progress-bar>    <mat-toolbar color="primary">      <div *ngIf="selection.selected.length > 0; then contactSelected else none"></div>      <ng-template #contactSelected>        {{selection.selected.length}}        <button mat-icon-button matTooltip="remove" (click)="removeSelected()">          <mat-icon>delete</mat-icon>        </button>      </ng-template>      <ng-template #none>        {{title}}      </ng-template>      <span class="fill-remaining"></span>      <button *ngIf="!readonly"              fxHide.xs              mat-fab              color="accent"              class="fab-add"              matTooltip="add new contact"              (click)="openAddDialogContainer(methods.POST)">        <mat-icon>add</mat-icon>      </button>      <button *ngIf="!readonly" fxHide              fxShow.xs              mat-icon-button              matTooltip="add new contact"              (click)="openAddDialogContainer(methods.POST)">        <mat-icon>add</mat-icon>      </button>    </mat-toolbar>    <div class="example-container mat-elevation-z8" style="margin-bottom: 50px">      <mat-table #table [dataSource]="contactsDataSource" matSort>        <!-- Checkbox Column -->        <ng-container *ngIf="!readonly" matColumnDef="select">          <mat-header-cell *matHeaderCellDef class="cell-shrink-checkbox">            <mat-checkbox (change)="$event ? masterToggle() : null"                          [checked]="selection.hasValue() && isAllSelected()"                          [indeterminate]="selection.hasValue() && !isAllSelected()">            </mat-checkbox>          </mat-header-cell>          <mat-cell *matCellDef="let row" class="cell-shrink-checkbox">            <mat-checkbox (click)="$event.stopPropagation()"                          (change)="$event ? selection.toggle(row) : null"                          [checked]="selection.isSelected(row)">            </mat-checkbox>          </mat-cell>        </ng-container>        <!-- Name Column -->        <ng-container matColumnDef="name">          <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>          <mat-cell *matCellDef="let element">            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">              <div *ngIf="element.photoURL; then image else avatar"></div>              <ng-template #image>                <img class="ngx-avatar"                     mat-card-avatar                     [src]="element.photoURL">              </ng-template>              <ng-template #avatar>                <avatar [email]="element.email"                        [name]="element.name"                        [displayType]="\'circle\'">                </avatar>              </ng-template>              <span>{{element.name}}</span>            </div>          </mat-cell>        </ng-container>        <!-- Email Column -->        <ng-container matColumnDef="email">          <mat-header-cell *matHeaderCellDef> Email</mat-header-cell>          <mat-cell *matCellDef="let element"> {{element.email}}</mat-cell>        </ng-container>        <!-- PhoneNumber Column -->        <ng-container matColumnDef="phoneNumber">          <mat-header-cell *matHeaderCellDef> Phone Number</mat-header-cell>          <mat-cell *matCellDef="let element"> {{element.phoneNumber}}</mat-cell>        </ng-container>        <!--More Options Column-->        <ng-container *ngIf="!readonly" matColumnDef="more">          <mat-header-cell *matHeaderCellDef class="cell-shrink-more">          </mat-header-cell>          <mat-cell *matCellDef="let element"                    class="cell-shrink-more"                    (click)="$event.stopPropagation()">            <button mat-icon-button                    [matMenuTriggerFor]="posXMenu"                    class="mat-24"                    aria-label="Open x-positioned menu">              <mat-icon>more_vert</mat-icon>            </button>            <mat-menu xPosition="before" #posXMenu="matMenu">              <button mat-menu-item [disabled]="false" (click)="remove(element)">                <mat-icon>delete</mat-icon>                remove              </button>            </mat-menu>          </mat-cell>        </ng-container>        <mat-header-row *matHeaderRowDef="contactsDisplayedColumns"></mat-header-row>        <mat-row *matRowDef="let row; columns: contactsDisplayedColumns; matRipple"                 (click)="select(row)">        </mat-row>      </mat-table>    </div>  </div></div></div>'
     var COMPONENTS = [{'name': 'MatContactDialogComponent', 'selector': 'mat-contact-dialog'},{'name': 'MatContactMenuComponent', 'selector': 'mat-contact-menu'},{'name': 'MatContactsComponent', 'selector': 'mat-contacts'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'MatContactsComponent'};
@@ -2105,9 +1880,12 @@ export class MatContactsComponent implements OnInit, OnDestroy, OnChanges {
 
 
 
+
+
+
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -2119,6 +1897,18 @@ export class MatContactsComponent implements OnInit, OnDestroy, OnChanges {
            </div>
        </div>
 
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MatContactsComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
        <script src="../js/libs/bootstrap-native.js"></script>
 
        <script src="../js/libs/es6-shim.min.js"></script>
@@ -2128,20 +1918,16 @@ export class MatContactsComponent implements OnInit, OnDestroy, OnChanges {
 
        <script src="../js/compodoc.js"></script>
 
-        <script>
-            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_URL = 'MatContactsComponent.html';
-        </script>
-
-       <script src="../js/search/search.js"></script>
-       <script src="../js/search/lunr.min.js"></script>
-       <script src="../js/search/search-lunr.js"></script>
-
        <script src="../js/tabs.js"></script>
        <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
        <script src="../js/libs/prism.js"></script>
        <script src="../js/sourceCode.js"></script>
-       <script src="../js/search/search_index.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
 
 
     </body>

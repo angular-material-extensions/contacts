@@ -14,309 +14,17 @@
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
             <a href="../" class="navbar-brand">@angular-material-extensions/contacts documentation</a>
-            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-            <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <nav>
-
-    <ul class="list">
-
-        <li class="title">
-            <a href="index.html" data-type="index-link">@angular-material-extensions/contacts documentation</a>
-        </li>
-
-        <li class="divider"></li>
-
-
-        <li class="chapter">
-            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
-            <ul class="links">
-                    <li class="link">
-                        <a 
-                            
-                             href="overview.html" 
-                             href="overview.html" 
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-th"></span>Overview
-                        </a>
-                    </li>
-                    <li class="link">
-                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
-                    </li>
-                    <li class="link">
-                            <a href="changelog.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>CHANGELOG
-                        </a>
-                    </li>
-                    <li class="link">
-                            <a href="license.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
-                        </a>
-                    </li>
-                    <li class="link">
-                        <a href="dependencies.html"
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-list"></span>Dependencies
-                        </a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter modules">
-            <a data-type="chapter-link" href="modules.html">
-                <div class="menu-toggler linked" data-toggle="collapse"
-                        data-target="#xs-modules-links"
-                >
-                    <span class="fa fa-fw fa-archive"></span>
-                    <span class="link-name">Modules</span>
-                    <span class="fa fa-angle-down"></span>
-                </div>
-            </a>
-            <ul class="links collapse"
-                    id="xs-modules-links"
-                >
-                    <li class="link">
-                        <a href="modules/MatContactsModule.html" data-type="entity-link">MatContactsModule</a>
-                            <li class="chapter inner">
-                                <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
-                                    >
-                                    <span class="fa fa-fw fa-cogs"></span>
-                                    <span>Components</span>
-                                    <span class="fa fa-angle-down"></span>
-                                </div>
-                                <ul class="links collapse"
-                                        id="xs-components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
-                                    >
-                                        <li class="link">
-                                            <a href="components/MatContactsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactsComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactMenuComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactMenuComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactDialogComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactDialogComponent</a>
-                                        </li>
-                                </ul>
-                            </li>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#xs-interfaces-links"
-                >
-                <span class="fa fa-fw fa-info"></span>
-                <span>Interfaces</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="xs-interfaces-links"
-                >
-                    <li class="link">
-                        <a href="interfaces/Contact.html" data-type="entity-link">Contact</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/IContactDialogData.html" data-type="entity-link">IContactDialogData</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/MetaData.html" data-type="entity-link">MetaData</a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#xs-miscellaneous-links"
-                >
-                <span class="fa fa-fw fa-cubes"></span>
-                <span>Miscellaneous</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="xs-miscellaneous-links"
-                >
-                    <li class="link">
-                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
-                    </li>
-                    <li class="link">
-                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-    </ul>
-
-</nav>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
            <div class="row main">
                <div class="hidden-xs menu">
-                   <nav>
-
-    <ul class="list">
-
-        <li class="title">
-            <a href="index.html" data-type="index-link">@angular-material-extensions/contacts documentation</a>
-        </li>
-
-        <li class="divider"></li>
-
-            <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-
-        <li class="chapter">
-            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
-            <ul class="links">
-                    <li class="link">
-                        <a 
-                            
-                             href="overview.html" 
-                             href="overview.html" 
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-th"></span>Overview
-                        </a>
-                    </li>
-                    <li class="link">
-                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
-                    </li>
-                    <li class="link">
-                            <a href="changelog.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>CHANGELOG
-                        </a>
-                    </li>
-                    <li class="link">
-                            <a href="license.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
-                        </a>
-                    </li>
-                    <li class="link">
-                        <a href="dependencies.html"
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-list"></span>Dependencies
-                        </a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter modules">
-            <a data-type="chapter-link" href="modules.html">
-                <div class="menu-toggler linked" data-toggle="collapse"
-                        data-target="#modules-links"
-                >
-                    <span class="fa fa-fw fa-archive"></span>
-                    <span class="link-name">Modules</span>
-                    <span class="fa fa-angle-down"></span>
-                </div>
-            </a>
-            <ul class="links collapse"
-                    id="modules-links"
->
-                    <li class="link">
-                        <a href="modules/MatContactsModule.html" data-type="entity-link">MatContactsModule</a>
-                            <li class="chapter inner">
-                                <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
->
-                                    <span class="fa fa-fw fa-cogs"></span>
-                                    <span>Components</span>
-                                    <span class="fa fa-angle-down"></span>
-                                </div>
-                                <ul class="links collapse"
-                                        id="components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
->
-                                        <li class="link">
-                                            <a href="components/MatContactsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactsComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactMenuComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactMenuComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactDialogComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactDialogComponent</a>
-                                        </li>
-                                </ul>
-                            </li>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#interfaces-links"
->
-                <span class="fa fa-fw fa-info"></span>
-                <span>Interfaces</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="interfaces-links"
->
-                    <li class="link">
-                        <a href="interfaces/Contact.html" data-type="entity-link">Contact</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/IContactDialogData.html" data-type="entity-link">IContactDialogData</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/MetaData.html" data-type="entity-link">MetaData</a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#miscellaneous-links"
->
-                <span class="fa fa-fw fa-cubes"></span>
-                <span>Miscellaneous</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="miscellaneous-links"
->
-                    <li class="link">
-                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
-                    </li>
-                    <li class="link">
-                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-    </ul>
-
-</nav>
+                   <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
                <div class="content module">
@@ -325,13 +33,13 @@
 
 
 <ol class="breadcrumb">
-  <li>Modules</li>
-  <li>MatContactsModule</li>
+    <li>Modules</li>
+    <li>MatContactsModule</li>
 </ol>
 
-      <div class="text-center module-graph-container">
-          <div id="module-graph-svg">
-              <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div class="text-center module-graph-container">
+    <div id="module-graph-svg">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Generated by graphviz version 2.40.1 (20161225.0304)
@@ -363,95 +71,93 @@
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_MatContactsModule_exports</title>
-<polygon fill="none" stroke="#000000" points="121,-208 121,-260 495,-260 495,-208 121,-208"/>
+<polygon fill="none" stroke="#000000" points="107,-208 107,-260 481,-260 481,-208 107,-208"/>
 </g>
-<!-- MatContactsComponent -->
+<!-- MatContactDialogComponent -->
 <g id="node1" class="node">
-<title>MatContactsComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="578.3739,-122 425.6261,-122 425.6261,-86 578.3739,-86 578.3739,-122"/>
-<text text-anchor="middle" x="502" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsComponent</text>
+<title>MatContactDialogComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="577.5322,-122 392.4678,-122 392.4678,-86 577.5322,-86 577.5322,-122"/>
+<text text-anchor="middle" x="485" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactDialogComponent</text>
 </g>
 <!-- MatContactsModule -->
 <g id="node4" class="node">
 <title>MatContactsModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="383.5912,-187 380.5912,-191 359.5912,-191 356.5912,-187 252.4088,-187 252.4088,-151 383.5912,-151 383.5912,-187"/>
-<text text-anchor="middle" x="318" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsModule</text>
+<polygon fill="#8dd3c7" stroke="#000000" points="349.5912,-187 346.5912,-191 325.5912,-191 322.5912,-187 218.4088,-187 218.4088,-151 349.5912,-151 349.5912,-187"/>
+<text text-anchor="middle" x="284" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsModule</text>
 </g>
-<!-- MatContactsComponent&#45;&gt;MatContactsModule -->
+<!-- MatContactDialogComponent&#45;&gt;MatContactsModule -->
 <g id="edge1" class="edge">
-<title>MatContactsComponent&#45;&gt;MatContactsModule</title>
-<path fill="none" stroke="#000000" d="M456.375,-122.1061C456.375,-141.3391 456.375,-169 456.375,-169 456.375,-169 393.9454,-169 393.9454,-169"/>
-<polygon fill="#000000" stroke="#000000" points="393.9454,-165.5001 383.9454,-169 393.9454,-172.5001 393.9454,-165.5001"/>
+<title>MatContactDialogComponent&#45;&gt;MatContactsModule</title>
+<path fill="none" stroke="#000000" d="M432.5142,-122.1061C432.5142,-141.3391 432.5142,-169 432.5142,-169 432.5142,-169 359.5728,-169 359.5728,-169"/>
+<polygon fill="#000000" stroke="#000000" points="359.5728,-165.5001 349.5728,-169 359.5728,-172.5001 359.5728,-165.5001"/>
 </g>
 <!-- MatContactMenuComponent -->
 <g id="node2" class="node">
 <title>MatContactMenuComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="408.0884,-122 227.9116,-122 227.9116,-86 408.0884,-86 408.0884,-122"/>
-<text text-anchor="middle" x="318" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactMenuComponent</text>
+<polygon fill="#ffffb3" stroke="#000000" points="374.0884,-122 193.9116,-122 193.9116,-86 374.0884,-86 374.0884,-122"/>
+<text text-anchor="middle" x="284" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactMenuComponent</text>
 </g>
 <!-- MatContactMenuComponent&#45;&gt;MatContactsModule -->
 <g id="edge2" class="edge">
 <title>MatContactMenuComponent&#45;&gt;MatContactsModule</title>
-<path fill="none" stroke="#000000" d="M318,-122.1061C318,-122.1061 318,-140.991 318,-140.991"/>
-<polygon fill="#000000" stroke="#000000" points="314.5001,-140.9909 318,-150.991 321.5001,-140.991 314.5001,-140.9909"/>
+<path fill="none" stroke="#000000" d="M284,-122.1061C284,-122.1061 284,-140.991 284,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="280.5001,-140.9909 284,-150.991 287.5001,-140.991 280.5001,-140.9909"/>
 </g>
-<!-- MatContactDialogComponent -->
+<!-- MatContactsComponent -->
 <g id="node3" class="node">
-<title>MatContactDialogComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="209.5322,-122 24.4678,-122 24.4678,-86 209.5322,-86 209.5322,-122"/>
-<text text-anchor="middle" x="117" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactDialogComponent</text>
+<title>MatContactsComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="176.3739,-122 23.6261,-122 23.6261,-86 176.3739,-86 176.3739,-122"/>
+<text text-anchor="middle" x="100" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsComponent</text>
 </g>
-<!-- MatContactDialogComponent&#45;&gt;MatContactsModule -->
+<!-- MatContactsComponent&#45;&gt;MatContactsModule -->
 <g id="edge3" class="edge">
-<title>MatContactDialogComponent&#45;&gt;MatContactsModule</title>
-<path fill="none" stroke="#000000" d="M169.4858,-122.1061C169.4858,-141.3391 169.4858,-169 169.4858,-169 169.4858,-169 242.4272,-169 242.4272,-169"/>
-<polygon fill="#000000" stroke="#000000" points="242.4272,-172.5001 252.4272,-169 242.4272,-165.5001 242.4272,-172.5001"/>
-</g>
-<!-- MatContactsComponent  -->
-<g id="node5" class="node">
-<title>MatContactsComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="487.3742,-252 330.6258,-252 330.6258,-216 487.3742,-216 487.3742,-252"/>
-<text text-anchor="middle" x="409" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsComponent </text>
-</g>
-<!-- MatContactsModule&#45;&gt;MatContactsComponent  -->
-<g id="edge4" class="edge">
-<title>MatContactsModule&#45;&gt;MatContactsComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M357.1794,-187.1061C357.1794,-187.1061 357.1794,-205.991 357.1794,-205.991"/>
-<polygon fill="#000000" stroke="#000000" points="353.6794,-205.9909 357.1794,-215.991 360.6794,-205.991 353.6794,-205.9909"/>
+<title>MatContactsComponent&#45;&gt;MatContactsModule</title>
+<path fill="none" stroke="#000000" d="M145.625,-122.1061C145.625,-141.3391 145.625,-169 145.625,-169 145.625,-169 208.0546,-169 208.0546,-169"/>
+<polygon fill="#000000" stroke="#000000" points="208.0546,-172.5001 218.0546,-169 208.0546,-165.5001 208.0546,-172.5001"/>
 </g>
 <!-- MatContactMenuComponent  -->
-<g id="node6" class="node">
+<g id="node5" class="node">
 <title>MatContactMenuComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="312.5889,-252 129.4111,-252 129.4111,-216 312.5889,-216 312.5889,-252"/>
-<text text-anchor="middle" x="221" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactMenuComponent </text>
+<polygon fill="#fb8072" stroke="#000000" points="472.5889,-252 289.4111,-252 289.4111,-216 472.5889,-216 472.5889,-252"/>
+<text text-anchor="middle" x="381" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactMenuComponent </text>
 </g>
 <!-- MatContactsModule&#45;&gt;MatContactMenuComponent  -->
-<g id="edge5" class="edge">
+<g id="edge4" class="edge">
 <title>MatContactsModule&#45;&gt;MatContactMenuComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M282.6243,-187.1061C282.6243,-187.1061 282.6243,-205.991 282.6243,-205.991"/>
-<polygon fill="#000000" stroke="#000000" points="279.1244,-205.9909 282.6243,-215.991 286.1244,-205.991 279.1244,-205.9909"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M319.3757,-187.1061C319.3757,-187.1061 319.3757,-205.991 319.3757,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="315.8758,-205.9909 319.3757,-215.991 322.8758,-205.991 315.8758,-205.9909"/>
+</g>
+<!-- MatContactsComponent  -->
+<g id="node6" class="node">
+<title>MatContactsComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="271.3742,-252 114.6258,-252 114.6258,-216 271.3742,-216 271.3742,-252"/>
+<text text-anchor="middle" x="193" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">MatContactsComponent </text>
+</g>
+<!-- MatContactsModule&#45;&gt;MatContactsComponent  -->
+<g id="edge5" class="edge">
+<title>MatContactsModule&#45;&gt;MatContactsComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M244.8207,-187.1061C244.8207,-187.1061 244.8207,-205.991 244.8207,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="241.3207,-205.9909 244.8207,-215.991 248.3207,-205.991 241.3207,-205.9909"/>
 </g>
 </g>
 </svg>
 
-          </div>
-          <i id="fullscreen" class="fa fa-expand module-graph-fullscreen-btn" aria-hidden="true"></i>
-          <div class="btn-group">
-              <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
-              <button id="reset" class="btn btn-default btn-sm">Reset</button>
-              <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
-          </div>
-      </div>
-      <script src="../js/libs/svg-pan-zoom.min.js"></script>
-      <script src="../js/svg-pan-zoom.controls.js"></script>
+    </div>
+    <i id="fullscreen" class="icon ion-ios-resize module-graph-fullscreen-btn" aria-hidden="true"></i>
+    <div class="btn-group">
+        <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
+        <button id="reset" class="btn btn-default btn-sm">Reset</button>
+        <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
+    </div>
+</div>
+<script src="../js/libs/svg-pan-zoom.min.js"></script>
+<script src="../js/svg-pan-zoom.controls.js"></script>
 
 <ul class="nav nav-tabs" role="tablist">
-    <li class="active">
-        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    <li  class="active" >
+        <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
     </li>
-
-
-    <li>
+    <li >
         <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
     </li>
 </ul>
@@ -467,49 +173,100 @@
         </p>
 
 
-        
+
 
         <div class="container-fluid module">
             <div class="row">
                 <div class="col-sm-3">
-                    <h3>Declarations<a href="https://angular.io/api/core/NgModule#declarations" target="_blank" title="Official documentation about module declarations"><span class="fa fa-info-circle"></span></a></h3>
+                    <h3>Declarations<a href="https://angular.io/api/core/NgModule#declarations" target="_blank"
+                            title="Official documentation about module declarations"><span class="icon ion-ios-information-circle-outline"></span></a></h3>
                     <ul class="list-group">
-                            <li class="list-group-item">
-                                <a href="../components/MatContactsComponent.html">MatContactsComponent</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="../components/MatContactMenuComponent.html">MatContactMenuComponent</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="../components/MatContactDialogComponent.html">MatContactDialogComponent</a>
-                            </li>
+                        <li class="list-group-item">
+                            <a href="../components/MatContactDialogComponent.html">MatContactDialogComponent</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="../components/MatContactMenuComponent.html">MatContactMenuComponent</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="../components/MatContactsComponent.html">MatContactsComponent</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h3>EntryComponents<a href="https://angular.io/api/core/NgModule#entryComponents" target="_blank" title="Official documentation about module entryComponents"><span class="fa fa-info-circle"></span></a></h3>
+                    <h3>EntryComponents<a href="https://angular.io/api/core/NgModule#entryComponents" target="_blank"
+                            title="Official documentation about module entryComponents"><span class="icon ion-ios-information-circle-outline"></span></a></h3>
                     <ul class="list-group">
-                            <li class="list-group-item">
-                                <a href="../components/MatContactDialogComponent.html">MatContactDialogComponent</a>
-                            </li>
+                        <li class="list-group-item">
+                            <a href="../components/MatContactDialogComponent.html">MatContactDialogComponent</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h3>Exports<a href="https://angular.io/api/core/NgModule#exports" target="_blank" title="Official documentation about module exports"><span class="fa fa-info-circle"></a></h3>
+                    <h3>Exports<a href="https://angular.io/api/core/NgModule#exports" target="_blank" title="Official documentation about module exports"><span
+                                class="icon ion-ios-information-circle-outline"></a></h3>
                     <ul class="list-group">
-                            <li class="list-group-item">
-                                    <a href="../components/MatContactsComponent.html" >MatContactsComponent</a>
-                            </li>
-                            <li class="list-group-item">
-                                    <a href="../components/MatContactMenuComponent.html" >MatContactMenuComponent</a>
-                            </li>
+                        <li class="list-group-item">
+                            <a href="../components/MatContactMenuComponent.html">MatContactMenuComponent</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="../components/MatContactsComponent.html">MatContactsComponent</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="forRoot"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            forRoot
+                        </b>
+                        <a href="#forRoot"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>forRoot()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/module/mat-contacts.module.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://angular.io/api/core/ModuleWithProviders" target="_blank" >ModuleWithProviders</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
     </div>
 
 
-    <div class="tab-pane fade tab-source-code" id="c-source">
+    <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {CommonModule} from &#x27;@angular/common&#x27;;
 import {ModuleWithProviders, NgModule} from &#x27;@angular/core&#x27;;
 import {FlexLayoutModule} from &#x27;@angular/flex-layout&#x27;;
@@ -621,9 +378,11 @@ export class MatContactsModule {
 
 
 
+
+
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -635,6 +394,18 @@ export class MatContactsModule {
            </div>
        </div>
 
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
+            var COMPODOC_CURRENT_PAGE_URL = 'MatContactsModule.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
        <script src="../js/libs/bootstrap-native.js"></script>
 
        <script src="../js/libs/es6-shim.min.js"></script>
@@ -644,20 +415,16 @@ export class MatContactsModule {
 
        <script src="../js/compodoc.js"></script>
 
-        <script>
-            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_URL = 'MatContactsModule.html';
-        </script>
-
-       <script src="../js/search/search.js"></script>
-       <script src="../js/search/lunr.min.js"></script>
-       <script src="../js/search/search-lunr.js"></script>
-
        <script src="../js/tabs.js"></script>
        <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
        <script src="../js/libs/prism.js"></script>
        <script src="../js/sourceCode.js"></script>
-       <script src="../js/search/search_index.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
 
 
     </body>

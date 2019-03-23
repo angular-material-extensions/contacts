@@ -14,349 +14,68 @@
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
             <a href="./" class="navbar-brand">@angular-material-extensions/contacts documentation</a>
-            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-            <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <nav>
-
-    <ul class="list">
-
-        <li class="title">
-            <a href="index.html" data-type="index-link">@angular-material-extensions/contacts documentation</a>
-        </li>
-
-        <li class="divider"></li>
-
-
-        <li class="chapter">
-            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
-            <ul class="links">
-                    <li class="link">
-                        <a 
-                            
-                             href="overview.html" 
-                             href="overview.html" 
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-th"></span>Overview
-                        </a>
-                    </li>
-                    <li class="link">
-                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
-                    </li>
-                    <li class="link">
-                            <a href="changelog.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>CHANGELOG
-                        </a>
-                    </li>
-                    <li class="link">
-                            <a href="license.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
-                        </a>
-                    </li>
-                    <li class="link">
-                        <a href="dependencies.html"
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-list"></span>Dependencies
-                        </a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter modules">
-            <a data-type="chapter-link" href="modules.html">
-                <div class="menu-toggler linked" data-toggle="collapse"
-                        data-target="#xs-modules-links"
-                >
-                    <span class="fa fa-fw fa-archive"></span>
-                    <span class="link-name">Modules</span>
-                    <span class="fa fa-angle-down"></span>
-                </div>
-            </a>
-            <ul class="links collapse"
-                    id="xs-modules-links"
-                >
-                    <li class="link">
-                        <a href="modules/MatContactsModule.html" data-type="entity-link">MatContactsModule</a>
-                            <li class="chapter inner">
-                                <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
-                                    >
-                                    <span class="fa fa-fw fa-cogs"></span>
-                                    <span>Components</span>
-                                    <span class="fa fa-angle-down"></span>
-                                </div>
-                                <ul class="links collapse"
-                                        id="xs-components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
-                                    >
-                                        <li class="link">
-                                            <a href="components/MatContactsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactsComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactMenuComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactMenuComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactDialogComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactDialogComponent</a>
-                                        </li>
-                                </ul>
-                            </li>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#xs-interfaces-links"
-                >
-                <span class="fa fa-fw fa-info"></span>
-                <span>Interfaces</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="xs-interfaces-links"
-                >
-                    <li class="link">
-                        <a href="interfaces/Contact.html" data-type="entity-link">Contact</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/IContactDialogData.html" data-type="entity-link">IContactDialogData</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/MetaData.html" data-type="entity-link">MetaData</a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#xs-miscellaneous-links"
-                >
-                <span class="fa fa-fw fa-cubes"></span>
-                <span>Miscellaneous</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="xs-miscellaneous-links"
-                >
-                    <li class="link">
-                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
-                    </li>
-                    <li class="link">
-                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-    </ul>
-
-</nav>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
            <div class="row main">
                <div class="hidden-xs menu">
-                   <nav>
-
-    <ul class="list">
-
-        <li class="title">
-            <a href="index.html" data-type="index-link">@angular-material-extensions/contacts documentation</a>
-        </li>
-
-        <li class="divider"></li>
-
-            <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-
-        <li class="chapter">
-            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
-            <ul class="links">
-                    <li class="link">
-                        <a 
-                            
-                             href="overview.html" 
-                             href="overview.html" 
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-th"></span>Overview
-                        </a>
-                    </li>
-                    <li class="link">
-                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
-                    </li>
-                    <li class="link">
-                            <a href="changelog.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>CHANGELOG
-                        </a>
-                    </li>
-                    <li class="link">
-                            <a href="license.html"
-                        data-type="chapter-link">
-                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
-                        </a>
-                    </li>
-                    <li class="link">
-                        <a href="dependencies.html"
-                            data-type="chapter-link">
-                            <span class="fa fa-fw fa-list"></span>Dependencies
-                        </a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter modules">
-            <a data-type="chapter-link" href="modules.html">
-                <div class="menu-toggler linked" data-toggle="collapse"
-                        data-target="#modules-links"
-                >
-                    <span class="fa fa-fw fa-archive"></span>
-                    <span class="link-name">Modules</span>
-                    <span class="fa fa-angle-down"></span>
-                </div>
-            </a>
-            <ul class="links collapse"
-                    id="modules-links"
->
-                    <li class="link">
-                        <a href="modules/MatContactsModule.html" data-type="entity-link">MatContactsModule</a>
-                            <li class="chapter inner">
-                                <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
->
-                                    <span class="fa fa-fw fa-cogs"></span>
-                                    <span>Components</span>
-                                    <span class="fa fa-angle-down"></span>
-                                </div>
-                                <ul class="links collapse"
-                                        id="components-links-module-MatContactsModule-5abefc51-8389-4f3d-9068-dbc7090f26b4"
->
-                                        <li class="link">
-                                            <a href="components/MatContactsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactsComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactMenuComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactMenuComponent</a>
-                                        </li>
-                                        <li class="link">
-                                            <a href="components/MatContactDialogComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">MatContactDialogComponent</a>
-                                        </li>
-                                </ul>
-                            </li>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#interfaces-links"
->
-                <span class="fa fa-fw fa-info"></span>
-                <span>Interfaces</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="interfaces-links"
->
-                    <li class="link">
-                        <a href="interfaces/Contact.html" data-type="entity-link">Contact</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/IContactDialogData.html" data-type="entity-link">IContactDialogData</a>
-                    </li>
-                    <li class="link">
-                        <a href="interfaces/MetaData.html" data-type="entity-link">MetaData</a>
-                    </li>
-            </ul>
-        </li>
-
-
-        <li class="chapter">
-            <div class="simple menu-toggler" data-toggle="collapse"
-                    data-target="#miscellaneous-links"
->
-                <span class="fa fa-fw fa-cubes"></span>
-                <span>Miscellaneous</span>
-                <span class="fa fa-angle-down"></span>
-            </div>
-            <ul class="links collapse"
-                    id="miscellaneous-links"
->
-                    <li class="link">
-                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
-                    </li>
-                    <li class="link">
-                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
-                    </li>
-            </ul>
-        </li>
-
-
-
-
-    </ul>
-
-</nav>
+                   <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
                <div class="content getting-started">
                    <div class="content-data">
 
-<p><a name="3.1.0"></a></p>
-<h1 id="3-1-0-2018-10-28-"><a href="https://github.com/angular-material-extensions/contacts/compare/v3.0.0...v3.1.0">3.1.0</a> (2018-10-28)</h1>
+<h2 id="312-2019-03-23"><a href="https://github.com/angular-material-extensions/contacts/compare/v3.1.0...v3.1.2">3.1.2</a> (2019-03-23)</h2>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li><strong>demo:</strong> updated angular and other dependencies (<a href="https://github.com/angular-material-extensions/contacts/commit/dff9b40">dff9b40</a>)</li>
+<li><strong>demo:</strong> updated angular to v7.2.10 and other deps incl. material and flexlayout (<a href="https://github.com/angular-material-extensions/contacts/commit/aab4c82">aab4c82</a>)</li>
+<li><strong>demo:</strong> updated angular to v7.2.4 and other dependencies (<a href="https://github.com/angular-material-extensions/contacts/commit/5b8df7f">5b8df7f</a>)</li>
+<li><strong>package:</strong> added material ripple to the contacts row (<a href="https://github.com/angular-material-extensions/contacts/commit/24da248">24da248</a>)</li>
+<li><strong>package:</strong> added schematics support <a href="https://github.com/angular-material-extensions/contacts/issues/72" title="[db933eb](https://github.com/angular-material-extensions/contacts/commit/db933eb">#72</a>)</li>
+<li><strong>package:</strong> updated angular and other dependencies (<a href="https://github.com/angular-material-extensions/contacts/commit/316f018">316f018</a>)</li>
+<li><strong>package:</strong> updated angular to v7.2.10 and other deps incl. material and flexlayout (<a href="https://github.com/angular-material-extensions/contacts/commit/9ffdc15">9ffdc15</a>)</li>
+<li><strong>package:</strong> updated angular to v7.2.4 and other dependencies (<a href="https://github.com/angular-material-extensions/contacts/commit/0fc2353">0fc2353</a>)</li>
+<li><strong>package:</strong> updated the schematics libs version (<a href="https://github.com/angular-material-extensions/contacts/commit/d26b704">d26b704</a>)</li>
+</ul>
 <h3 id="features">Features</h3>
+<ul>
+<li><strong>package:</strong> added angular schematics support (<a href="https://github.com/angular-material-extensions/contacts/commit/636cefd">636cefd</a>)</li>
+</ul>
+<h1 id="310-2018-10-28"><a href="https://github.com/angular-material-extensions/contacts/compare/v3.0.0...v3.1.0">3.1.0</a> (2018-10-28)</h1>
+<h3 id="features-1">Features</h3>
 <ul>
 <li><strong>demo:</strong> updated angular to v7 (<a href="https://github.com/angular-material-extensions/contacts/commit/de24c8e">de24c8e</a>)</li>
 <li><strong>package:</strong> added support of angular v7 (<a href="https://github.com/angular-material-extensions/contacts/commit/6386a76">6386a76</a>)</li>
 <li><strong>package:</strong> updated angular to v7.0.1 (<a href="https://github.com/angular-material-extensions/contacts/commit/7a0db70">7a0db70</a>)</li>
 </ul>
-<p><a name="3.0.0"></a></p>
-<h1 id="3-0-0-2018-06-14-"><a href="https://github.com/angular-material-extensions/contacts/compare/8.5.1...v3.0.0">3.0.0</a> (2018-06-14)</h1>
-<p><a name="8.5.1"></a></p>
-<h2 id="8-5-1-2018-06-13-"><a href="https://github.com/angular-material-extensions/contacts/compare/4.14.109...8.5.1">8.5.1</a> (2018-06-13)</h2>
-<p><a name="2.0.0"></a></p>
-<h1 id="2-0-0-2018-06-13-"><a href="https://github.com/angular-material-extensions/contacts/compare/v1.0.3...v2.0.0">2.0.0</a> (2018-06-13)</h1>
-<h3 id="bug-fixes">Bug Fixes</h3>
+<h1 id="300-2018-06-14"><a href="https://github.com/angular-material-extensions/contacts/compare/8.5.1...v3.0.0">3.0.0</a> (2018-06-14)</h1>
+<h2 id="851-2018-06-13"><a href="https://github.com/angular-material-extensions/contacts/compare/4.14.109...8.5.1">8.5.1</a> (2018-06-13)</h2>
+<h1 id="200-2018-06-13"><a href="https://github.com/angular-material-extensions/contacts/compare/v1.0.3...v2.0.0">2.0.0</a> (2018-06-13)</h1>
+<h3 id="bug-fixes-1">Bug Fixes</h3>
 <ul>
 <li><strong>layout:</strong> adjusted the layout after upgrading angular and material to v6 (<a href="https://github.com/angular-material-extensions/contacts/commit/ed739f4">ed739f4</a>)</li>
 </ul>
-<h3 id="features">Features</h3>
+<h3 id="features-2">Features</h3>
 <ul>
 <li><strong>ngx-material-contacts:</strong> supporting angular v6 and material v7  rxjs v6 (<a href="https://github.com/angular-material-extensions/contacts/commit/92d313a">92d313a</a>)</li>
 </ul>
-<p><a name="1.0.3"></a></p>
-<h2 id="1-0-3-2018-05-14-"><a href="https://github.com/angular-material-extensions/contacts/compare/v1.0.2...v1.0.3">1.0.3</a> (2018-05-14)</h2>
-<h3 id="bug-fixes">Bug Fixes</h3>
+<h2 id="103-2018-05-14"><a href="https://github.com/angular-material-extensions/contacts/compare/v1.0.2...v1.0.3">1.0.3</a> (2018-05-14)</h2>
+<h3 id="bug-fixes-2">Bug Fixes</h3>
 <ul>
 <li><strong>ngx-material-contacts:</strong> removed matsort to be able to render the table (<a href="https://github.com/angular-material-extensions/contacts/commit/19bfdb2">19bfdb2</a>)</li>
 </ul>
-<p><a name="1.0.2"></a></p>
-<h2 id="1-0-2-2018-05-14-"><a href="https://github.com/angular-material-extensions/contacts/compare/v1.0.1...v1.0.2">1.0.2</a> (2018-05-14)</h2>
-<h3 id="bug-fixes">Bug Fixes</h3>
+<h2 id="102-2018-05-14"><a href="https://github.com/angular-material-extensions/contacts/compare/v1.0.1...v1.0.2">1.0.2</a> (2018-05-14)</h2>
+<h3 id="bug-fixes-3">Bug Fixes</h3>
 <ul>
 <li><strong>ngx-material-contact-new-user:</strong> removed the old component (<a href="https://github.com/angular-material-extensions/contacts/commit/811d3b8">811d3b8</a>)</li>
 </ul>
-<h3 id="features">Features</h3>
+<h3 id="features-3">Features</h3>
 <ul>
 <li><strong>ngx-material-contact:</strong> added a new menu component for the contacts (<a href="https://github.com/angular-material-extensions/contacts/commit/a5e18ef">a5e18ef</a>)</li>
 <li><strong>ngx-material-contact:</strong> added isLoading input and onAddingNewContactCanceled output (<a href="https://github.com/angular-material-extensions/contacts/commit/63fcf3f">63fcf3f</a>)</li>
@@ -368,18 +87,16 @@
 <li><strong>ngx-material-contacts:</strong> integration of the contact menu + filter functions (<a href="https://github.com/angular-material-extensions/contacts/commit/a83cd25">a83cd25</a>)</li>
 <li><strong>ngx-material-contacts:</strong> optional menu for filter purposes (<a href="https://github.com/angular-material-extensions/contacts/commit/c8678ea">c8678ea</a>)</li>
 </ul>
-<p><a name="1.0.1"></a></p>
-<h2 id="1-0-1-2018-04-26-"><a href="https://github.com/angular-material-extensions/contacts/compare/v1.0.0...v1.0.1">1.0.1</a> (2018-04-26)</h2>
-<p><a name="1.0.0"></a></p>
-<h1 id="1-0-0-2018-04-25-"><a href="https://github.com/angular-material-extensions/contacts/compare/0f2bda4...v1.0.0">1.0.0</a> (2018-04-25)</h1>
-<h3 id="bug-fixes">Bug Fixes</h3>
+<h2 id="101-2018-04-26"><a href="https://github.com/angular-material-extensions/contacts/compare/v1.0.0...v1.0.1">1.0.1</a> (2018-04-26)</h2>
+<h1 id="100-2018-04-25"><a href="https://github.com/angular-material-extensions/contacts/compare/0f2bda4...v1.0.0">1.0.0</a> (2018-04-25)</h1>
+<h3 id="bug-fixes-4">Bug Fixes</h3>
 <ul>
 <li><strong>module:</strong> fixed required imports (<a href="https://github.com/angular-material-extensions/contacts/commit/23e4220">23e4220</a>)</li>
 <li><strong>new-user-component:</strong> removed unwanted method (<a href="https://github.com/angular-material-extensions/contacts/commit/d6dd3fd">d6dd3fd</a>)</li>
 <li><strong>ngx-material-contacts:</strong> stop propagation on click within a cell (<a href="https://github.com/angular-material-extensions/contacts/commit/9dd5d84">9dd5d84</a>)</li>
 <li><strong>project:</strong> added reactive forms module (required) (<a href="https://github.com/angular-material-extensions/contacts/commit/e0966c0">e0966c0</a>)</li>
 </ul>
-<h3 id="features">Features</h3>
+<h3 id="features-4">Features</h3>
 <ul>
 <li><strong>ngx-material-contact-new-user:</strong> added phone number form control (<a href="https://github.com/angular-material-extensions/contacts/commit/2b25a92">2b25a92</a>)</li>
 <li><strong>ngx-material-contacts:</strong> added a new contact dialog + methods, to push a new user/contact (<a href="https://github.com/angular-material-extensions/contacts/commit/a1bfd35">a1bfd35</a>)</li>
@@ -408,9 +125,12 @@
 
 
 
+
+
+
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -422,6 +142,18 @@
            </div>
        </div>
 
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'changelog.html';
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
        <script src="./js/libs/bootstrap-native.js"></script>
 
        <script src="./js/libs/es6-shim.min.js"></script>
@@ -431,20 +163,16 @@
 
        <script src="./js/compodoc.js"></script>
 
-        <script>
-            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
-            var COMPODOC_CURRENT_PAGE_URL = 'changelog.html';
-        </script>
-
-       <script src="./js/search/search.js"></script>
-       <script src="./js/search/lunr.min.js"></script>
-       <script src="./js/search/search-lunr.js"></script>
-
        <script src="./js/tabs.js"></script>
        <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
        <script src="./js/libs/prism.js"></script>
        <script src="./js/sourceCode.js"></script>
-       <script src="./js/search/search_index.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
 
 
     </body>

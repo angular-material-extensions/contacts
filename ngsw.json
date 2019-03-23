@@ -1,5 +1,6 @@
 {
   "configVersion": 1,
+  "timestamp": 1553321029624,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -290,7 +291,7 @@
     "/assets/tutorials/npm_i_animations.mp4": "9670daebf521d3f8ae6d12b5e5184c9b5decdf40",
     "/assets/tutorials/npm_i_material_cdk.mp4": "3b454f8357a55ff17bbc6d69ba034689a12945e7",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "cfaaae4ec79ad59ff86bb94567418cb9cd753778"
+    "/index.html": "8898704c76b8c0bbceadc4dfa5b78291fd9b4e8b"
   },
   "navigationUrls": [
     {
