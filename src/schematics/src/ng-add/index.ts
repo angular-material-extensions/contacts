@@ -30,12 +30,12 @@ export function addPackageJsonDependencies(): Rule {
     const dependencies: NodeDependency[] = [
       {
         type: NodeDependencyType.Default,
-        version: loadPackageVersionGracefully(context) || '3.2.0',
+        version: loadPackageVersionGracefully(context) || 'latest',
         name: '@angular-material-extensions/contacts'
       },
-      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.9', name: '@angular/animations'},
-      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.9', name: '@angular/forms'},
-      {type: NodeDependencyType.Default, version: '7.0.0-beta.23', name: '@angular/flex-layout'},
+      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.10', name: '@angular/animations'},
+      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.10', name: '@angular/forms'},
+      {type: NodeDependencyType.Default, version: '7.0.0-beta.24', name: '@angular/flex-layout'},
       {type: NodeDependencyType.Default, version: '^2.3.1', name: 'ng2-avatar'},
     ];
 
