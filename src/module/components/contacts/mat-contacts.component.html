@@ -108,7 +108,7 @@
         </ng-container>
 
         <mat-header-row *matHeaderRowDef="contactsDisplayedColumns"></mat-header-row>
-        <mat-row *matRowDef="let row; columns: contactsDisplayedColumns;"
+        <mat-row *matRowDef="let row; columns: contactsDisplayedColumns; matRipple"
                  (click)="select(row)">
         </mat-row>
       </mat-table>
