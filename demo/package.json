@@ -52,7 +52,7 @@
     "ngx-markdown": "^7.1.4",
     "ngx-material-pages": "^1.3.2",
     "rxjs": "^6.4.0",
-    "rxjs-compat": "^6.4.0",
+    "rxjs-compat": "^6.5.1",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
